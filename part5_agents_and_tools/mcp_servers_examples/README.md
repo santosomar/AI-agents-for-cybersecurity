@@ -59,7 +59,7 @@ This script sets up and runs a cybersecurity agent. It performs the following st
 1.  **Initializes an `MultiServerMCPClient`**: Connects to the `cyber_mcp_server.py` to access its tools.
 2.  **Fetches Tools**: Dynamically retrieves the list of available tools from the server.
 3.  **Creates a ReAct Agent**: Uses `langgraph.prebuilt.create_react_agent` to create an agent that can reason and decide which tool to use.
-4.  **Initializes an LLM**: Uses `ChatOpenAI` with the `gpt-4.1-mini` model as the brain of the agent.
+4.  **Initializes an LLM**: Uses `ChatOpenAI` with the `gpt-5-mini` model as the brain of the agent.
 5.  **Invokes the Agent**: Runs the agent with specific tasks, such as performing an Nmap scan and fetching the CISA KEV catalog.
 
 ## Prerequisites

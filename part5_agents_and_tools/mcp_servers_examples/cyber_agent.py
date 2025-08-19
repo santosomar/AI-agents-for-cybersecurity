@@ -55,7 +55,7 @@ async def main():
 
     print("OpenAI API key found. Initializing AI model...")
     try:
-        llm = ChatOpenAI(model="gpt-4.1-mini")
+        llm = ChatOpenAI(model="gpt-5-mini")
         
         # Create a ReAct agent with the fetched tools
         agent = create_react_agent(llm, tools)

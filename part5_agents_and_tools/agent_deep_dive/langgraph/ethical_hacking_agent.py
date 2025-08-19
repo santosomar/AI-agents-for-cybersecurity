@@ -90,7 +90,7 @@ class AgentState(TypedDict):
 
 # Initialize the AI model and bind the tools to it
 # This allows the model to decide when to call a tool.
-model = ChatOpenAI(temperature=0.2, model="gpt-4.1-mini").bind_tools(tools)
+model = ChatOpenAI(temperature=0.2, model="gpt-5-mini").bind_tools(tools)
 
 def should_continue(state: AgentState) -> str:
     """Conditional logic to decide whether to continue or end the workflow."""

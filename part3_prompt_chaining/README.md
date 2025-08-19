@@ -8,7 +8,7 @@ This directory contains examples demonstrating various prompt chaining technique
 
 *   **Purpose**: Demonstrates a fundamental LCEL chain.
 *   **Functionality**:
-    *   Initializes a `ChatOpenAI` model (`gpt-4.1-mini`).
+    *   Initializes a `ChatOpenAI` model (`gpt-5-mini`).
     *   Uses a `ChatPromptTemplate` to instruct an AI (as an 'ethical hacker') to provide a specified number of techniques and tools for a given topic.
     *   Includes custom processing steps using `RunnableLambda`:
         *   `uppercase_output`: Converts the AI's string output to uppercase.
@@ -34,7 +34,7 @@ This directory contains examples demonstrating various prompt chaining technique
     *   Classifies the severity of a reported vulnerability (critical, high, medium, or low) using a `classification_template`.
     *   Based on the classification, routes the input to one of four specialized sub-chains, each with a prompt template tailored to the severity level.
     *   Each sub-chain generates an appropriate response (e.g., pen test plan for critical, remediation strategy for high).
-    *   Initializes a `ChatOpenAI` model (`gpt-4.1-mini`).
+    *   Initializes a `ChatOpenAI` model (`gpt-5-mini`).
     *   Invokes the chain with an example vulnerability ("Unpatched remote code execution vulnerability in an Apache httpd web server") and prints the result.
 
 ### 4. `branching_chains_threat_hunting.py`
@@ -44,7 +44,7 @@ This directory contains examples demonstrating various prompt chaining technique
     *   Classifies an input IOC as IP address, domain, file hash, or behavior pattern using a `classification_template` and a helper function `determine_indicator_type`.
     *   Uses `RunnableBranch` to route the IOC to a specialized analysis path. Each path has a unique `ChatPromptTemplate` instructing an AI (as an expert threat hunter) to generate a detailed threat hunting plan specific to the IOC type.
     *   Employs `RunnableMap` to preserve the original indicator alongside its classification for use in the branched chains.
-    *   Initializes a `ChatOpenAI` model (`gpt-4.1-mini`).
+    *   Initializes a `ChatOpenAI` model (`gpt-5-mini`).
     *   Runs the chain with example IOCs of each type and prints the generated hunting plans.
 
 ### 5. `parallel_chains.py`
@@ -59,7 +59,7 @@ This directory contains examples demonstrating various prompt chaining technique
     *   These branches are implemented using `RunnableLambda` functions that format specific prompts, which are then piped to the AI model.
     *   `RunnableParallel` executes these two branches.
     *   The outputs from both branches are then combined by a final `RunnableLambda` (`create_pentest_plan`) into a single penetration testing plan.
-    *   Initializes a `ChatOpenAI` model (`gpt-4.1-mini`).
+    *   Initializes a `ChatOpenAI` model (`gpt-5-mini`).
     *   Invokes the chain with an example target ("E-commerce website running in the cloud") and prints the plan.
 
 ### 6. `parallel_chains_threat_hunting.py`
@@ -74,13 +74,13 @@ This directory contains examples demonstrating various prompt chaining technique
         *   **Mitigation**: Recommends containment, monitoring, and long-term defense.
     *   Each branch uses a specific `ChatPromptTemplate` and is constructed as a `RunnableLambda` piped to the AI model.
     *   The results from the initial assessment and all parallel branches are combined into a `COMPREHENSIVE THREAT HUNTING REPORT` by the `create_threat_hunting_report` function, orchestrated via `RunnableLambda` and `RunnableParallel` to manage inputs.
-    *   Initializes a `ChatOpenAI` model (`gpt-4.1-mini`).
+    *   Initializes a `ChatOpenAI` model (`gpt-5-mini`).
     *   Runs the chain with example indicators and prints the detailed report.
 
 ## Common Elements
 
 *   **`dotenv`**: Used in all scripts to load environment variables (like API keys) from a `.env` file.
-*   **`ChatOpenAI`**: The primary language model interface, typically initialized with `gpt-4.1-mini`.
+*   **`ChatOpenAI`**: The primary language model interface, typically initialized with `gpt-5-mini`.
 *   **`ChatPromptTemplate`**: Used to structure the input to the language model, often defining a system message (persona) and a human message (task).
 *   **`StrOutputParser`**: A common output parser to convert the model's message object into a simple string.
 *   **`RunnableLambda`**: Allows arbitrary Python functions to be integrated into LCEL chains.

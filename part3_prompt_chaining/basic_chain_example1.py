@@ -15,7 +15,7 @@ from langchain_openai import ChatOpenAI
 load_dotenv()
 
 # Create a ChatOpenAI model
-model = ChatOpenAI(model="gpt-4.1-mini")
+model = ChatOpenAI(model="gpt-5-mini")
 
 # Define prompt templates
 prompt_template = ChatPromptTemplate.from_messages(

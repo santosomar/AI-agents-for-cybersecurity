@@ -43,7 +43,7 @@ Question: {question}
 prompt = ChatPromptTemplate.from_template(prompt_template)
 
 # Initialize the language model
-llm = ChatOpenAI(model="gpt-4.1-mini")
+llm = ChatOpenAI(model="gpt-5-mini")
 
 # Helper function to format the retrieved documents
 def format_docs(docs):

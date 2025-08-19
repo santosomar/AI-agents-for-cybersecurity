@@ -24,7 +24,7 @@ load_dotenv()
 
 # --- 0. Initialize the AI Model ---
 # We'll use this LLM to make decisions in our graph.
-model = ChatOpenAI(temperature=0.2, model="gpt-4.1-mini")
+model = ChatOpenAI(temperature=0.2, model="gpt-5-mini")
 
 
 # --- Pydantic model for structured output ---

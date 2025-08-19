@@ -16,7 +16,7 @@ import json
 load_dotenv()
 
 # Create a ChatOpenAI model
-model = ChatOpenAI(model="gpt-4.1-mini")
+model = ChatOpenAI(model="gpt-5-mini")
 
 # Define the initial incident analysis prompt template
 initial_analysis_prompt = ChatPromptTemplate.from_messages(

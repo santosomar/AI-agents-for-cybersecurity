@@ -15,7 +15,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Create a ChatOpenAI model
-model = ChatOpenAI(model="gpt-4.1-mini")
+model = ChatOpenAI(model="gpt-5-mini")
 
 # Define the chat structure with a system message for context and a user message for the query.
 chat_prompt_template = ChatPromptTemplate.from_messages([

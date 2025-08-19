@@ -52,7 +52,7 @@ part4_rag_examples/
     -   **Functionality**: Loads data from `data/tesla.json`, creates separate Chroma vector stores (`db/chroma_db_openai` and `db/chroma_db_huggingface`) for each embedding type, and queries both to compare results.
 
 -   **`one_off_question.py`**
-    -   **Purpose**: Illustrates answering a single user question by retrieving relevant documents from a pre-existing vector store (`db/chroma_db_with_metadata`) and feeding them to an LLM (`gpt-4.1-mini`).
+    -   **Purpose**: Illustrates answering a single user question by retrieving relevant documents from a pre-existing vector store (`db/chroma_db_with_metadata`) and feeding them to an LLM (`gpt-5-mini`).
     -   **Functionality**: Retrieves documents, combines them with the user query into a prompt, and uses `ChatOpenAI` to generate an answer. Responds "I'm not sure" if the answer isn't in the documents.
 
 -   **`rag_basics_metadata_part1.py`**

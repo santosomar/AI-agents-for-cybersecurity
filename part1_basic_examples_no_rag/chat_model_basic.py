@@ -1,6 +1,6 @@
 # This is a basic example of using the Langchain OpenAI Chat Model.
 # This example demonstrates how to invoke the model with a message and print the result.
-# The model used in this example is "gpt-4.1-mini".
+# The model used in this example is "gpt-5-mini".
 # Author: Omar Santos @santosomar
 
 # LangChain Chat Model Documents: https://python.langchain.com/v0.2/docs/integrations/chat/
@@ -14,7 +14,7 @@ from langchain_openai import ChatOpenAI
 load_dotenv()
 
 # Create an instance of the ChatOpenAI model with the model name
-model = ChatOpenAI(model="gpt-4.1-mini")
+model = ChatOpenAI(model="gpt-5-mini")
 
 # Interact with the model by invoking it with a message
 # The message is a string that represents the input to the model

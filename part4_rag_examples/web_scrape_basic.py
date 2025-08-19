@@ -79,8 +79,8 @@ for i, doc in enumerate(relevant_docs, 1):
 print("\n--- Putting it all together. Answering the question using the RAG chain ---")
 
 
-# Define the LLM (gpt-4.1-mini in this example)
-llm = ChatOpenAI(model="gpt-4.1-mini")
+# Define the LLM (gpt-5-mini in this example)
+llm = ChatOpenAI(model="gpt-5-mini")
 
 # Define the prompt template
 template = """

@@ -16,7 +16,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Create a ChatOpenAI model
-model = ChatOpenAI(model="gpt-4.1-mini")
+model = ChatOpenAI(model="gpt-5-mini")
 prompt_with_history = ChatPromptTemplate.from_messages([
  ("system", "You are a helpful assistant."),
  MessagesPlaceholder(variable_name="chat_history"),
