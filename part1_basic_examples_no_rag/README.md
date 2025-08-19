@@ -80,13 +80,13 @@ python chat_model_basic.py
 
 The script will:
 1. Load your OpenAI API key from the environment
-2. Initialize a chat model (gpt-4.1-mini)
+2. Initialize a chat model (gpt-5-mini)
 3. Send a query about Retrieval Augmented Generation in Cybersecurity
 4. Display both the full response object and its content
 
 ## Notes
 
-- The example uses the "gpt-4.1-mini" model, but you can modify this to use other OpenAI models
+- The example uses the "gpt-5-mini" model, but you can modify this to use other OpenAI models
 - Make sure to keep your API key secure and never commit it to version control
 - This is a basic example without RAG capabilities - see other examples for more advanced features
 

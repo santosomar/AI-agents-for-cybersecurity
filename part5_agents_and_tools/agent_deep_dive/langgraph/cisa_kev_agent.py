@@ -22,7 +22,7 @@ load_dotenv()
 
 # --- 0. Initialize the AI Model ---
 # We'll use this LLM to summarize the vulnerabilities.
-model = ChatOpenAI(temperature=0.2, model="gpt-4.1-mini")
+model = ChatOpenAI(temperature=0.2, model="gpt-5-mini")
 
 # CISA KEV Catalog URL
 CISA_KEV_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
