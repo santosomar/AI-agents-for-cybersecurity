@@ -1,0 +1,1001 @@
+CVE_ID	Year	Severity	Vendor	Product	CWE	Impact	Description
+CVE-2026-0001	2026	Critical	NebulaSec	QuantumOS	CWE-79 (XSS)	RCE	Remote Code Execution via CWE-79 in QuantumOS service endpoint
+CVE-2027-0001	2027	High	Arcturus Labs	NovaCMS	CWE-89 (SQLi)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2028-0001	2028	High	OrionWorks	SkyDrive	CWE-120 (Buffer Overflow)	Data Exfiltration	Sensitive data exposure through CWE-120 in SkyDrive API
+CVE-2029-0001	2029	Low	Pioneer Systems	IoTConnect	CWE-352 (CSRF)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2030-0001	2030	High	Vertex Cyber	NeuroDB	CWE-22 (Path Traversal)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2031-0001	2031	Low	BlueHelix	BioScan	CWE-327 (Broken Crypto)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2026-0002	2026	Medium	SolarNode	StarPortal	CWE-863 (AuthZ)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2027-0002	2027	High	NimbusForge	HyperChain	CWE-20 (Input Validation)	Integrity Breach	Tampering of configuration/state due to CWE-20 weakness in HyperChain
+CVE-2028-0002	2028	High	NebulaSec	AstroFile	CWE-77 (Command Injection)	RCE	Remote Code Execution via CWE-77 in AstroFile service endpoint
+CVE-2029-0002	2029	Medium	Arcturus Labs	AetherMail	CWE-502 (Deserialization)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2030-0002	2030	Critical	OrionWorks	SentinelAI	CWE-918 (SSRF)	Data Exfiltration	Sensitive data exposure through CWE-918 in SentinelAI API
+CVE-2031-0002	2031	High	Pioneer Systems	FluxGateway	CWE-434 (Unrestricted File Upload)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2026-0003	2026	High	Vertex Cyber	HeliosEdge	CWE-295 (TLS Cert Validation)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2027-0003	2027	Critical	BlueHelix	ChronosDB	CWE-451 (UI Redress/Clickjacking)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2028-0003	2028	Medium	SolarNode	AuroraMesh	CWE-79 (XSS)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2029-0003	2029	Low	NimbusForge	CipherKit	CWE-89 (SQLi)	Integrity Breach	Tampering of configuration/state due to CWE-89 weakness in CipherKit
+CVE-2030-0003	2030	Medium	NebulaSec	QuantumOS	CWE-120 (Buffer Overflow)	RCE	Remote Code Execution via CWE-120 in QuantumOS service endpoint
+CVE-2031-0003	2031	High	Arcturus Labs	NovaCMS	CWE-352 (CSRF)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2026-0004	2026	Medium	OrionWorks	SkyDrive	CWE-22 (Path Traversal)	Data Exfiltration	Sensitive data exposure through CWE-22 in SkyDrive API
+CVE-2027-0004	2027	Low	Pioneer Systems	IoTConnect	CWE-327 (Broken Crypto)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2028-0004	2028	Critical	Vertex Cyber	NeuroDB	CWE-863 (AuthZ)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2029-0004	2029	High	BlueHelix	BioScan	CWE-20 (Input Validation)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2030-0004	2030	Medium	SolarNode	StarPortal	CWE-77 (Command Injection)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2031-0004	2031	Medium	NimbusForge	HyperChain	CWE-502 (Deserialization)	Integrity Breach	Tampering of configuration/state due to CWE-502 weakness in HyperChain
+CVE-2026-0005	2026	Critical	NebulaSec	AstroFile	CWE-918 (SSRF)	RCE	Remote Code Execution via CWE-918 in AstroFile service endpoint
+CVE-2027-0005	2027	High	Arcturus Labs	AetherMail	CWE-434 (Unrestricted File Upload)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2028-0005	2028	High	OrionWorks	SentinelAI	CWE-295 (TLS Cert Validation)	Data Exfiltration	Sensitive data exposure through CWE-295 in SentinelAI API
+CVE-2029-0005	2029	High	Pioneer Systems	FluxGateway	CWE-451 (UI Redress/Clickjacking)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2030-0005	2030	Critical	Vertex Cyber	HeliosEdge	CWE-79 (XSS)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2031-0005	2031	Medium	BlueHelix	ChronosDB	CWE-89 (SQLi)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2026-0006	2026	High	SolarNode	AuroraMesh	CWE-120 (Buffer Overflow)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2027-0006	2027	Medium	NimbusForge	CipherKit	CWE-352 (CSRF)	Integrity Breach	Tampering of configuration/state due to CWE-352 weakness in CipherKit
+CVE-2028-0006	2028	Medium	NebulaSec	QuantumOS	CWE-22 (Path Traversal)	RCE	Remote Code Execution via CWE-22 in QuantumOS service endpoint
+CVE-2029-0006	2029	Medium	Arcturus Labs	NovaCMS	CWE-327 (Broken Crypto)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2030-0006	2030	Critical	OrionWorks	SkyDrive	CWE-863 (AuthZ)	Data Exfiltration	Sensitive data exposure through CWE-863 in SkyDrive API
+CVE-2031-0006	2031	Medium	Pioneer Systems	IoTConnect	CWE-20 (Input Validation)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2026-0007	2026	Medium	Vertex Cyber	NeuroDB	CWE-77 (Command Injection)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2027-0007	2027	Low	BlueHelix	BioScan	CWE-502 (Deserialization)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2028-0007	2028	Critical	SolarNode	StarPortal	CWE-918 (SSRF)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2029-0007	2029	Critical	NimbusForge	HyperChain	CWE-434 (Unrestricted File Upload)	Integrity Breach	Tampering of configuration/state due to CWE-434 weakness in HyperChain
+CVE-2030-0007	2030	Medium	NebulaSec	AstroFile	CWE-295 (TLS Cert Validation)	RCE	Remote Code Execution via CWE-295 in AstroFile service endpoint
+CVE-2031-0007	2031	Medium	Arcturus Labs	AetherMail	CWE-451 (UI Redress/Clickjacking)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2026-0008	2026	Critical	OrionWorks	SentinelAI	CWE-79 (XSS)	Data Exfiltration	Sensitive data exposure through CWE-79 in SentinelAI API
+CVE-2027-0008	2027	High	Pioneer Systems	FluxGateway	CWE-89 (SQLi)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2028-0008	2028	Critical	Vertex Cyber	HeliosEdge	CWE-120 (Buffer Overflow)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2029-0008	2029	High	BlueHelix	ChronosDB	CWE-352 (CSRF)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2030-0008	2030	Medium	SolarNode	AuroraMesh	CWE-22 (Path Traversal)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2031-0008	2031	High	NimbusForge	CipherKit	CWE-327 (Broken Crypto)	Integrity Breach	Tampering of configuration/state due to CWE-327 weakness in CipherKit
+CVE-2026-0009	2026	Critical	NebulaSec	QuantumOS	CWE-863 (AuthZ)	RCE	Remote Code Execution via CWE-863 in QuantumOS service endpoint
+CVE-2027-0009	2027	Medium	Arcturus Labs	NovaCMS	CWE-20 (Input Validation)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2028-0009	2028	Critical	OrionWorks	SkyDrive	CWE-77 (Command Injection)	Data Exfiltration	Sensitive data exposure through CWE-77 in SkyDrive API
+CVE-2029-0009	2029	Low	Pioneer Systems	IoTConnect	CWE-502 (Deserialization)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2030-0009	2030	Medium	Vertex Cyber	NeuroDB	CWE-918 (SSRF)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2031-0009	2031	Low	BlueHelix	BioScan	CWE-434 (Unrestricted File Upload)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2026-0010	2026	Critical	SolarNode	StarPortal	CWE-295 (TLS Cert Validation)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2027-0010	2027	Medium	NimbusForge	HyperChain	CWE-451 (UI Redress/Clickjacking)	Integrity Breach	Tampering of configuration/state due to CWE-451 weakness in HyperChain
+CVE-2028-0010	2028	Critical	NebulaSec	AstroFile	CWE-79 (XSS)	RCE	Remote Code Execution via CWE-79 in AstroFile service endpoint
+CVE-2029-0010	2029	High	Arcturus Labs	AetherMail	CWE-89 (SQLi)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2030-0010	2030	Critical	OrionWorks	SentinelAI	CWE-120 (Buffer Overflow)	Data Exfiltration	Sensitive data exposure through CWE-120 in SentinelAI API
+CVE-2031-0010	2031	Critical	Pioneer Systems	FluxGateway	CWE-352 (CSRF)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2026-0011	2026	Critical	Vertex Cyber	HeliosEdge	CWE-22 (Path Traversal)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2027-0011	2027	Critical	BlueHelix	ChronosDB	CWE-327 (Broken Crypto)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2028-0011	2028	Low	SolarNode	AuroraMesh	CWE-863 (AuthZ)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2029-0011	2029	Medium	NimbusForge	CipherKit	CWE-20 (Input Validation)	Integrity Breach	Tampering of configuration/state due to CWE-20 weakness in CipherKit
+CVE-2030-0011	2030	High	NebulaSec	QuantumOS	CWE-77 (Command Injection)	RCE	Remote Code Execution via CWE-77 in QuantumOS service endpoint
+CVE-2031-0011	2031	Critical	Arcturus Labs	NovaCMS	CWE-502 (Deserialization)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2026-0012	2026	High	OrionWorks	SkyDrive	CWE-918 (SSRF)	Data Exfiltration	Sensitive data exposure through CWE-918 in SkyDrive API
+CVE-2027-0012	2027	Medium	Pioneer Systems	IoTConnect	CWE-434 (Unrestricted File Upload)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2028-0012	2028	Critical	Vertex Cyber	NeuroDB	CWE-295 (TLS Cert Validation)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2029-0012	2029	High	BlueHelix	BioScan	CWE-451 (UI Redress/Clickjacking)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2030-0012	2030	Medium	SolarNode	StarPortal	CWE-79 (XSS)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2031-0012	2031	High	NimbusForge	HyperChain	CWE-89 (SQLi)	Integrity Breach	Tampering of configuration/state due to CWE-89 weakness in HyperChain
+CVE-2026-0013	2026	High	NebulaSec	AstroFile	CWE-120 (Buffer Overflow)	RCE	Remote Code Execution via CWE-120 in AstroFile service endpoint
+CVE-2027-0013	2027	High	Arcturus Labs	AetherMail	CWE-352 (CSRF)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2028-0013	2028	High	OrionWorks	SentinelAI	CWE-22 (Path Traversal)	Data Exfiltration	Sensitive data exposure through CWE-22 in SentinelAI API
+CVE-2029-0013	2029	Medium	Pioneer Systems	FluxGateway	CWE-327 (Broken Crypto)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2030-0013	2030	Medium	Vertex Cyber	HeliosEdge	CWE-863 (AuthZ)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2031-0013	2031	Medium	BlueHelix	ChronosDB	CWE-20 (Input Validation)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2026-0014	2026	Critical	SolarNode	AuroraMesh	CWE-77 (Command Injection)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2027-0014	2027	High	NimbusForge	CipherKit	CWE-502 (Deserialization)	Integrity Breach	Tampering of configuration/state due to CWE-502 weakness in CipherKit
+CVE-2028-0014	2028	Medium	NebulaSec	QuantumOS	CWE-918 (SSRF)	RCE	Remote Code Execution via CWE-918 in QuantumOS service endpoint
+CVE-2029-0014	2029	Medium	Arcturus Labs	NovaCMS	CWE-434 (Unrestricted File Upload)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2030-0014	2030	High	OrionWorks	SkyDrive	CWE-295 (TLS Cert Validation)	Data Exfiltration	Sensitive data exposure through CWE-295 in SkyDrive API
+CVE-2031-0014	2031	Low	Pioneer Systems	IoTConnect	CWE-451 (UI Redress/Clickjacking)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2026-0015	2026	Medium	Vertex Cyber	NeuroDB	CWE-79 (XSS)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2027-0015	2027	Medium	BlueHelix	BioScan	CWE-89 (SQLi)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2028-0015	2028	Critical	SolarNode	StarPortal	CWE-120 (Buffer Overflow)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2029-0015	2029	High	NimbusForge	HyperChain	CWE-352 (CSRF)	Integrity Breach	Tampering of configuration/state due to CWE-352 weakness in HyperChain
+CVE-2030-0015	2030	Critical	NebulaSec	AstroFile	CWE-22 (Path Traversal)	RCE	Remote Code Execution via CWE-22 in AstroFile service endpoint
+CVE-2031-0015	2031	High	Arcturus Labs	AetherMail	CWE-327 (Broken Crypto)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2026-0016	2026	High	OrionWorks	SentinelAI	CWE-863 (AuthZ)	Data Exfiltration	Sensitive data exposure through CWE-863 in SentinelAI API
+CVE-2027-0016	2027	Critical	Pioneer Systems	FluxGateway	CWE-20 (Input Validation)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2028-0016	2028	Critical	Vertex Cyber	HeliosEdge	CWE-77 (Command Injection)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2029-0016	2029	Medium	BlueHelix	ChronosDB	CWE-502 (Deserialization)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2030-0016	2030	Medium	SolarNode	AuroraMesh	CWE-918 (SSRF)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2031-0016	2031	Medium	NimbusForge	CipherKit	CWE-434 (Unrestricted File Upload)	Integrity Breach	Tampering of configuration/state due to CWE-434 weakness in CipherKit
+CVE-2026-0017	2026	High	NebulaSec	QuantumOS	CWE-295 (TLS Cert Validation)	RCE	Remote Code Execution via CWE-295 in QuantumOS service endpoint
+CVE-2027-0017	2027	High	Arcturus Labs	NovaCMS	CWE-451 (UI Redress/Clickjacking)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2028-0017	2028	Critical	OrionWorks	SkyDrive	CWE-79 (XSS)	Data Exfiltration	Sensitive data exposure through CWE-79 in SkyDrive API
+CVE-2029-0017	2029	Critical	Pioneer Systems	IoTConnect	CWE-89 (SQLi)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2030-0017	2030	High	Vertex Cyber	NeuroDB	CWE-120 (Buffer Overflow)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2031-0017	2031	Medium	BlueHelix	BioScan	CWE-352 (CSRF)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2026-0018	2026	High	SolarNode	StarPortal	CWE-22 (Path Traversal)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2027-0018	2027	High	NimbusForge	HyperChain	CWE-327 (Broken Crypto)	Integrity Breach	Tampering of configuration/state due to CWE-327 weakness in HyperChain
+CVE-2028-0018	2028	Critical	NebulaSec	AstroFile	CWE-863 (AuthZ)	RCE	Remote Code Execution via CWE-863 in AstroFile service endpoint
+CVE-2029-0018	2029	Medium	Arcturus Labs	AetherMail	CWE-20 (Input Validation)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2030-0018	2030	Medium	OrionWorks	SentinelAI	CWE-77 (Command Injection)	Data Exfiltration	Sensitive data exposure through CWE-77 in SentinelAI API
+CVE-2031-0018	2031	Medium	Pioneer Systems	FluxGateway	CWE-502 (Deserialization)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2026-0019	2026	High	Vertex Cyber	HeliosEdge	CWE-918 (SSRF)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2027-0019	2027	Medium	BlueHelix	ChronosDB	CWE-434 (Unrestricted File Upload)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2028-0019	2028	High	SolarNode	AuroraMesh	CWE-295 (TLS Cert Validation)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2029-0019	2029	Critical	NimbusForge	CipherKit	CWE-451 (UI Redress/Clickjacking)	Integrity Breach	Tampering of configuration/state due to CWE-451 weakness in CipherKit
+CVE-2030-0019	2030	High	NebulaSec	QuantumOS	CWE-79 (XSS)	RCE	Remote Code Execution via CWE-79 in QuantumOS service endpoint
+CVE-2031-0019	2031	Low	Arcturus Labs	NovaCMS	CWE-89 (SQLi)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2026-0020	2026	Critical	OrionWorks	SkyDrive	CWE-120 (Buffer Overflow)	Data Exfiltration	Sensitive data exposure through CWE-120 in SkyDrive API
+CVE-2027-0020	2027	Medium	Pioneer Systems	IoTConnect	CWE-352 (CSRF)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2028-0020	2028	Critical	Vertex Cyber	NeuroDB	CWE-22 (Path Traversal)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2029-0020	2029	Medium	BlueHelix	BioScan	CWE-327 (Broken Crypto)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2030-0020	2030	Medium	SolarNode	StarPortal	CWE-863 (AuthZ)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2031-0020	2031	High	NimbusForge	HyperChain	CWE-20 (Input Validation)	Integrity Breach	Tampering of configuration/state due to CWE-20 weakness in HyperChain
+CVE-2026-0021	2026	Medium	NebulaSec	AstroFile	CWE-77 (Command Injection)	RCE	Remote Code Execution via CWE-77 in AstroFile service endpoint
+CVE-2027-0021	2027	Low	Arcturus Labs	AetherMail	CWE-502 (Deserialization)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2028-0021	2028	High	OrionWorks	SentinelAI	CWE-918 (SSRF)	Data Exfiltration	Sensitive data exposure through CWE-918 in SentinelAI API
+CVE-2029-0021	2029	High	Pioneer Systems	FluxGateway	CWE-434 (Unrestricted File Upload)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2030-0021	2030	Medium	Vertex Cyber	HeliosEdge	CWE-295 (TLS Cert Validation)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2031-0021	2031	Critical	BlueHelix	ChronosDB	CWE-451 (UI Redress/Clickjacking)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2026-0022	2026	Low	SolarNode	AuroraMesh	CWE-79 (XSS)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2027-0022	2027	Critical	NimbusForge	CipherKit	CWE-89 (SQLi)	Integrity Breach	Tampering of configuration/state due to CWE-89 weakness in CipherKit
+CVE-2028-0022	2028	High	NebulaSec	QuantumOS	CWE-120 (Buffer Overflow)	RCE	Remote Code Execution via CWE-120 in QuantumOS service endpoint
+CVE-2029-0022	2029	Critical	Arcturus Labs	NovaCMS	CWE-352 (CSRF)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2030-0022	2030	High	OrionWorks	SkyDrive	CWE-22 (Path Traversal)	Data Exfiltration	Sensitive data exposure through CWE-22 in SkyDrive API
+CVE-2031-0022	2031	Medium	Pioneer Systems	IoTConnect	CWE-327 (Broken Crypto)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2026-0023	2026	Critical	Vertex Cyber	NeuroDB	CWE-863 (AuthZ)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2027-0023	2027	Critical	BlueHelix	BioScan	CWE-20 (Input Validation)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2028-0023	2028	Critical	SolarNode	StarPortal	CWE-77 (Command Injection)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2029-0023	2029	Medium	NimbusForge	HyperChain	CWE-502 (Deserialization)	Integrity Breach	Tampering of configuration/state due to CWE-502 weakness in HyperChain
+CVE-2030-0023	2030	High	NebulaSec	AstroFile	CWE-918 (SSRF)	RCE	Remote Code Execution via CWE-918 in AstroFile service endpoint
+CVE-2031-0023	2031	Medium	Arcturus Labs	AetherMail	CWE-434 (Unrestricted File Upload)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2026-0024	2026	High	OrionWorks	SentinelAI	CWE-295 (TLS Cert Validation)	Data Exfiltration	Sensitive data exposure through CWE-295 in SentinelAI API
+CVE-2027-0024	2027	High	Pioneer Systems	FluxGateway	CWE-451 (UI Redress/Clickjacking)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2028-0024	2028	High	Vertex Cyber	HeliosEdge	CWE-79 (XSS)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2029-0024	2029	Critical	BlueHelix	ChronosDB	CWE-89 (SQLi)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2030-0024	2030	High	SolarNode	AuroraMesh	CWE-120 (Buffer Overflow)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2031-0024	2031	Critical	NimbusForge	CipherKit	CWE-352 (CSRF)	Integrity Breach	Tampering of configuration/state due to CWE-352 weakness in CipherKit
+CVE-2026-0025	2026	Critical	NebulaSec	QuantumOS	CWE-22 (Path Traversal)	RCE	Remote Code Execution via CWE-22 in QuantumOS service endpoint
+CVE-2027-0025	2027	High	Arcturus Labs	NovaCMS	CWE-327 (Broken Crypto)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2028-0025	2028	Critical	OrionWorks	SkyDrive	CWE-863 (AuthZ)	Data Exfiltration	Sensitive data exposure through CWE-863 in SkyDrive API
+CVE-2029-0025	2029	Medium	Pioneer Systems	IoTConnect	CWE-20 (Input Validation)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2030-0025	2030	Critical	Vertex Cyber	NeuroDB	CWE-77 (Command Injection)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2031-0025	2031	Medium	BlueHelix	BioScan	CWE-502 (Deserialization)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2026-0026	2026	Critical	SolarNode	StarPortal	CWE-918 (SSRF)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2027-0026	2027	High	NimbusForge	HyperChain	CWE-434 (Unrestricted File Upload)	Integrity Breach	Tampering of configuration/state due to CWE-434 weakness in HyperChain
+CVE-2028-0026	2028	Critical	NebulaSec	AstroFile	CWE-295 (TLS Cert Validation)	RCE	Remote Code Execution via CWE-295 in AstroFile service endpoint
+CVE-2029-0026	2029	Medium	Arcturus Labs	AetherMail	CWE-451 (UI Redress/Clickjacking)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2030-0026	2030	Medium	OrionWorks	SentinelAI	CWE-79 (XSS)	Data Exfiltration	Sensitive data exposure through CWE-79 in SentinelAI API
+CVE-2031-0026	2031	High	Pioneer Systems	FluxGateway	CWE-89 (SQLi)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2026-0027	2026	Critical	Vertex Cyber	HeliosEdge	CWE-120 (Buffer Overflow)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2027-0027	2027	Medium	BlueHelix	ChronosDB	CWE-352 (CSRF)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2028-0027	2028	High	SolarNode	AuroraMesh	CWE-22 (Path Traversal)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2029-0027	2029	Critical	NimbusForge	CipherKit	CWE-327 (Broken Crypto)	Integrity Breach	Tampering of configuration/state due to CWE-327 weakness in CipherKit
+CVE-2030-0027	2030	High	NebulaSec	QuantumOS	CWE-863 (AuthZ)	RCE	Remote Code Execution via CWE-863 in QuantumOS service endpoint
+CVE-2031-0027	2031	Critical	Arcturus Labs	NovaCMS	CWE-20 (Input Validation)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2026-0028	2026	High	OrionWorks	SkyDrive	CWE-77 (Command Injection)	Data Exfiltration	Sensitive data exposure through CWE-77 in SkyDrive API
+CVE-2027-0028	2027	Critical	Pioneer Systems	IoTConnect	CWE-502 (Deserialization)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2028-0028	2028	Medium	Vertex Cyber	NeuroDB	CWE-918 (SSRF)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2029-0028	2029	Medium	BlueHelix	BioScan	CWE-434 (Unrestricted File Upload)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2030-0028	2030	Critical	SolarNode	StarPortal	CWE-295 (TLS Cert Validation)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2031-0028	2031	Critical	NimbusForge	HyperChain	CWE-451 (UI Redress/Clickjacking)	Integrity Breach	Tampering of configuration/state due to CWE-451 weakness in HyperChain
+CVE-2026-0029	2026	Critical	NebulaSec	AstroFile	CWE-79 (XSS)	RCE	Remote Code Execution via CWE-79 in AstroFile service endpoint
+CVE-2027-0029	2027	Medium	Arcturus Labs	AetherMail	CWE-89 (SQLi)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2028-0029	2028	High	OrionWorks	SentinelAI	CWE-120 (Buffer Overflow)	Data Exfiltration	Sensitive data exposure through CWE-120 in SentinelAI API
+CVE-2029-0029	2029	Low	Pioneer Systems	FluxGateway	CWE-352 (CSRF)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2030-0029	2030	Low	Vertex Cyber	HeliosEdge	CWE-22 (Path Traversal)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2031-0029	2031	High	BlueHelix	ChronosDB	CWE-327 (Broken Crypto)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2026-0030	2026	Medium	SolarNode	AuroraMesh	CWE-863 (AuthZ)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2027-0030	2027	Medium	NimbusForge	CipherKit	CWE-20 (Input Validation)	Integrity Breach	Tampering of configuration/state due to CWE-20 weakness in CipherKit
+CVE-2028-0030	2028	High	NebulaSec	QuantumOS	CWE-77 (Command Injection)	RCE	Remote Code Execution via CWE-77 in QuantumOS service endpoint
+CVE-2029-0030	2029	High	Arcturus Labs	NovaCMS	CWE-502 (Deserialization)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2030-0030	2030	Critical	OrionWorks	SkyDrive	CWE-918 (SSRF)	Data Exfiltration	Sensitive data exposure through CWE-918 in SkyDrive API
+CVE-2031-0030	2031	Critical	Pioneer Systems	IoTConnect	CWE-434 (Unrestricted File Upload)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2026-0031	2026	High	Vertex Cyber	NeuroDB	CWE-295 (TLS Cert Validation)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2027-0031	2027	High	BlueHelix	BioScan	CWE-451 (UI Redress/Clickjacking)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2028-0031	2028	Critical	SolarNode	StarPortal	CWE-79 (XSS)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2029-0031	2029	Medium	NimbusForge	HyperChain	CWE-89 (SQLi)	Integrity Breach	Tampering of configuration/state due to CWE-89 weakness in HyperChain
+CVE-2030-0031	2030	Low	NebulaSec	AstroFile	CWE-120 (Buffer Overflow)	RCE	Remote Code Execution via CWE-120 in AstroFile service endpoint
+CVE-2031-0031	2031	High	Arcturus Labs	AetherMail	CWE-352 (CSRF)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2026-0032	2026	Critical	OrionWorks	SentinelAI	CWE-22 (Path Traversal)	Data Exfiltration	Sensitive data exposure through CWE-22 in SentinelAI API
+CVE-2027-0032	2027	High	Pioneer Systems	FluxGateway	CWE-327 (Broken Crypto)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2028-0032	2028	Critical	Vertex Cyber	HeliosEdge	CWE-863 (AuthZ)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2029-0032	2029	Medium	BlueHelix	ChronosDB	CWE-20 (Input Validation)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2030-0032	2030	High	SolarNode	AuroraMesh	CWE-77 (Command Injection)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2031-0032	2031	Medium	NimbusForge	CipherKit	CWE-502 (Deserialization)	Integrity Breach	Tampering of configuration/state due to CWE-502 weakness in CipherKit
+CVE-2026-0033	2026	Medium	NebulaSec	QuantumOS	CWE-918 (SSRF)	RCE	Remote Code Execution via CWE-918 in QuantumOS service endpoint
+CVE-2027-0033	2027	Low	Arcturus Labs	NovaCMS	CWE-434 (Unrestricted File Upload)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2028-0033	2028	Critical	OrionWorks	SkyDrive	CWE-295 (TLS Cert Validation)	Data Exfiltration	Sensitive data exposure through CWE-295 in SkyDrive API
+CVE-2029-0033	2029	Critical	Pioneer Systems	IoTConnect	CWE-451 (UI Redress/Clickjacking)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2030-0033	2030	Medium	Vertex Cyber	NeuroDB	CWE-79 (XSS)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2031-0033	2031	High	BlueHelix	BioScan	CWE-89 (SQLi)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2026-0034	2026	Medium	SolarNode	StarPortal	CWE-120 (Buffer Overflow)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2027-0034	2027	Critical	NimbusForge	HyperChain	CWE-352 (CSRF)	Integrity Breach	Tampering of configuration/state due to CWE-352 weakness in HyperChain
+CVE-2028-0034	2028	Medium	NebulaSec	AstroFile	CWE-22 (Path Traversal)	RCE	Remote Code Execution via CWE-22 in AstroFile service endpoint
+CVE-2029-0034	2029	High	Arcturus Labs	AetherMail	CWE-327 (Broken Crypto)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2030-0034	2030	Critical	OrionWorks	SentinelAI	CWE-863 (AuthZ)	Data Exfiltration	Sensitive data exposure through CWE-863 in SentinelAI API
+CVE-2031-0034	2031	High	Pioneer Systems	FluxGateway	CWE-20 (Input Validation)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2026-0035	2026	Medium	Vertex Cyber	HeliosEdge	CWE-77 (Command Injection)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2027-0035	2027	Critical	BlueHelix	ChronosDB	CWE-502 (Deserialization)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2028-0035	2028	High	SolarNode	AuroraMesh	CWE-918 (SSRF)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2029-0035	2029	Critical	NimbusForge	CipherKit	CWE-434 (Unrestricted File Upload)	Integrity Breach	Tampering of configuration/state due to CWE-434 weakness in CipherKit
+CVE-2030-0035	2030	Medium	NebulaSec	QuantumOS	CWE-295 (TLS Cert Validation)	RCE	Remote Code Execution via CWE-295 in QuantumOS service endpoint
+CVE-2031-0035	2031	High	Arcturus Labs	NovaCMS	CWE-451 (UI Redress/Clickjacking)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2026-0036	2026	High	OrionWorks	SkyDrive	CWE-79 (XSS)	Data Exfiltration	Sensitive data exposure through CWE-79 in SkyDrive API
+CVE-2027-0036	2027	Low	Pioneer Systems	IoTConnect	CWE-89 (SQLi)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2028-0036	2028	High	Vertex Cyber	NeuroDB	CWE-120 (Buffer Overflow)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2029-0036	2029	Medium	BlueHelix	BioScan	CWE-352 (CSRF)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2030-0036	2030	Low	SolarNode	StarPortal	CWE-22 (Path Traversal)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2031-0036	2031	Medium	NimbusForge	HyperChain	CWE-327 (Broken Crypto)	Integrity Breach	Tampering of configuration/state due to CWE-327 weakness in HyperChain
+CVE-2026-0037	2026	Medium	NebulaSec	AstroFile	CWE-863 (AuthZ)	RCE	Remote Code Execution via CWE-863 in AstroFile service endpoint
+CVE-2027-0037	2027	High	Arcturus Labs	AetherMail	CWE-20 (Input Validation)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2028-0037	2028	Critical	OrionWorks	SentinelAI	CWE-77 (Command Injection)	Data Exfiltration	Sensitive data exposure through CWE-77 in SentinelAI API
+CVE-2029-0037	2029	Critical	Pioneer Systems	FluxGateway	CWE-502 (Deserialization)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2030-0037	2030	High	Vertex Cyber	HeliosEdge	CWE-918 (SSRF)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2031-0037	2031	Medium	BlueHelix	ChronosDB	CWE-434 (Unrestricted File Upload)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2026-0038	2026	Low	SolarNode	AuroraMesh	CWE-295 (TLS Cert Validation)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2027-0038	2027	Critical	NimbusForge	CipherKit	CWE-451 (UI Redress/Clickjacking)	Integrity Breach	Tampering of configuration/state due to CWE-451 weakness in CipherKit
+CVE-2028-0038	2028	Critical	NebulaSec	QuantumOS	CWE-79 (XSS)	RCE	Remote Code Execution via CWE-79 in QuantumOS service endpoint
+CVE-2029-0038	2029	Critical	Arcturus Labs	NovaCMS	CWE-89 (SQLi)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2030-0038	2030	Critical	OrionWorks	SkyDrive	CWE-120 (Buffer Overflow)	Data Exfiltration	Sensitive data exposure through CWE-120 in SkyDrive API
+CVE-2031-0038	2031	Low	Pioneer Systems	IoTConnect	CWE-352 (CSRF)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2026-0039	2026	Medium	Vertex Cyber	NeuroDB	CWE-22 (Path Traversal)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2027-0039	2027	High	BlueHelix	BioScan	CWE-327 (Broken Crypto)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2028-0039	2028	Low	SolarNode	StarPortal	CWE-863 (AuthZ)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2029-0039	2029	Medium	NimbusForge	HyperChain	CWE-20 (Input Validation)	Integrity Breach	Tampering of configuration/state due to CWE-20 weakness in HyperChain
+CVE-2030-0039	2030	Critical	NebulaSec	AstroFile	CWE-77 (Command Injection)	RCE	Remote Code Execution via CWE-77 in AstroFile service endpoint
+CVE-2031-0039	2031	Medium	Arcturus Labs	AetherMail	CWE-502 (Deserialization)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2026-0040	2026	Medium	OrionWorks	SentinelAI	CWE-918 (SSRF)	Data Exfiltration	Sensitive data exposure through CWE-918 in SentinelAI API
+CVE-2027-0040	2027	Medium	Pioneer Systems	FluxGateway	CWE-434 (Unrestricted File Upload)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2028-0040	2028	Low	Vertex Cyber	HeliosEdge	CWE-295 (TLS Cert Validation)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2029-0040	2029	Low	BlueHelix	ChronosDB	CWE-451 (UI Redress/Clickjacking)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2030-0040	2030	Critical	SolarNode	AuroraMesh	CWE-79 (XSS)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2031-0040	2031	High	NimbusForge	CipherKit	CWE-89 (SQLi)	Integrity Breach	Tampering of configuration/state due to CWE-89 weakness in CipherKit
+CVE-2026-0041	2026	Medium	NebulaSec	QuantumOS	CWE-120 (Buffer Overflow)	RCE	Remote Code Execution via CWE-120 in QuantumOS service endpoint
+CVE-2027-0041	2027	Critical	Arcturus Labs	NovaCMS	CWE-352 (CSRF)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2028-0041	2028	Low	OrionWorks	SkyDrive	CWE-22 (Path Traversal)	Data Exfiltration	Sensitive data exposure through CWE-22 in SkyDrive API
+CVE-2029-0041	2029	Medium	Pioneer Systems	IoTConnect	CWE-327 (Broken Crypto)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2030-0041	2030	High	Vertex Cyber	NeuroDB	CWE-863 (AuthZ)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2031-0041	2031	High	BlueHelix	BioScan	CWE-20 (Input Validation)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2026-0042	2026	High	SolarNode	StarPortal	CWE-77 (Command Injection)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2027-0042	2027	High	NimbusForge	HyperChain	CWE-502 (Deserialization)	Integrity Breach	Tampering of configuration/state due to CWE-502 weakness in HyperChain
+CVE-2028-0042	2028	High	NebulaSec	AstroFile	CWE-918 (SSRF)	RCE	Remote Code Execution via CWE-918 in AstroFile service endpoint
+CVE-2029-0042	2029	High	Arcturus Labs	AetherMail	CWE-434 (Unrestricted File Upload)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2030-0042	2030	Medium	OrionWorks	SentinelAI	CWE-295 (TLS Cert Validation)	Data Exfiltration	Sensitive data exposure through CWE-295 in SentinelAI API
+CVE-2031-0042	2031	High	Pioneer Systems	FluxGateway	CWE-451 (UI Redress/Clickjacking)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2026-0043	2026	Critical	Vertex Cyber	HeliosEdge	CWE-79 (XSS)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2027-0043	2027	Critical	BlueHelix	ChronosDB	CWE-89 (SQLi)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2028-0043	2028	Critical	SolarNode	AuroraMesh	CWE-120 (Buffer Overflow)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2029-0043	2029	Medium	NimbusForge	CipherKit	CWE-352 (CSRF)	Integrity Breach	Tampering of configuration/state due to CWE-352 weakness in CipherKit
+CVE-2030-0043	2030	Critical	NebulaSec	QuantumOS	CWE-22 (Path Traversal)	RCE	Remote Code Execution via CWE-22 in QuantumOS service endpoint
+CVE-2031-0043	2031	High	Arcturus Labs	NovaCMS	CWE-327 (Broken Crypto)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2026-0044	2026	High	OrionWorks	SkyDrive	CWE-863 (AuthZ)	Data Exfiltration	Sensitive data exposure through CWE-863 in SkyDrive API
+CVE-2027-0044	2027	High	Pioneer Systems	IoTConnect	CWE-20 (Input Validation)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2028-0044	2028	Critical	Vertex Cyber	NeuroDB	CWE-77 (Command Injection)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2029-0044	2029	Medium	BlueHelix	BioScan	CWE-502 (Deserialization)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2030-0044	2030	Critical	SolarNode	StarPortal	CWE-918 (SSRF)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2031-0044	2031	Low	NimbusForge	HyperChain	CWE-434 (Unrestricted File Upload)	Integrity Breach	Tampering of configuration/state due to CWE-434 weakness in HyperChain
+CVE-2026-0045	2026	Critical	NebulaSec	AstroFile	CWE-295 (TLS Cert Validation)	RCE	Remote Code Execution via CWE-295 in AstroFile service endpoint
+CVE-2027-0045	2027	High	Arcturus Labs	AetherMail	CWE-451 (UI Redress/Clickjacking)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2028-0045	2028	Critical	OrionWorks	SentinelAI	CWE-79 (XSS)	Data Exfiltration	Sensitive data exposure through CWE-79 in SentinelAI API
+CVE-2029-0045	2029	High	Pioneer Systems	FluxGateway	CWE-89 (SQLi)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2030-0045	2030	Medium	Vertex Cyber	HeliosEdge	CWE-120 (Buffer Overflow)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2031-0045	2031	High	BlueHelix	ChronosDB	CWE-352 (CSRF)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2026-0046	2026	Low	SolarNode	AuroraMesh	CWE-22 (Path Traversal)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2027-0046	2027	Medium	NimbusForge	CipherKit	CWE-327 (Broken Crypto)	Integrity Breach	Tampering of configuration/state due to CWE-327 weakness in CipherKit
+CVE-2028-0046	2028	Critical	NebulaSec	QuantumOS	CWE-863 (AuthZ)	RCE	Remote Code Execution via CWE-863 in QuantumOS service endpoint
+CVE-2029-0046	2029	High	Arcturus Labs	NovaCMS	CWE-20 (Input Validation)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2030-0046	2030	Critical	OrionWorks	SkyDrive	CWE-77 (Command Injection)	Data Exfiltration	Sensitive data exposure through CWE-77 in SkyDrive API
+CVE-2031-0046	2031	Critical	Pioneer Systems	IoTConnect	CWE-502 (Deserialization)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2026-0047	2026	High	Vertex Cyber	NeuroDB	CWE-918 (SSRF)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2027-0047	2027	Medium	BlueHelix	BioScan	CWE-434 (Unrestricted File Upload)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2028-0047	2028	High	SolarNode	StarPortal	CWE-295 (TLS Cert Validation)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2029-0047	2029	High	NimbusForge	HyperChain	CWE-451 (UI Redress/Clickjacking)	Integrity Breach	Tampering of configuration/state due to CWE-451 weakness in HyperChain
+CVE-2030-0047	2030	High	NebulaSec	AstroFile	CWE-79 (XSS)	RCE	Remote Code Execution via CWE-79 in AstroFile service endpoint
+CVE-2031-0047	2031	Low	Arcturus Labs	AetherMail	CWE-89 (SQLi)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2026-0048	2026	Critical	OrionWorks	SentinelAI	CWE-120 (Buffer Overflow)	Data Exfiltration	Sensitive data exposure through CWE-120 in SentinelAI API
+CVE-2027-0048	2027	Critical	Pioneer Systems	FluxGateway	CWE-352 (CSRF)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2028-0048	2028	Critical	Vertex Cyber	HeliosEdge	CWE-22 (Path Traversal)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2029-0048	2029	Medium	BlueHelix	ChronosDB	CWE-327 (Broken Crypto)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2030-0048	2030	High	SolarNode	AuroraMesh	CWE-863 (AuthZ)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2031-0048	2031	Critical	NimbusForge	CipherKit	CWE-20 (Input Validation)	Integrity Breach	Tampering of configuration/state due to CWE-20 weakness in CipherKit
+CVE-2026-0049	2026	Critical	NebulaSec	QuantumOS	CWE-77 (Command Injection)	RCE	Remote Code Execution via CWE-77 in QuantumOS service endpoint
+CVE-2027-0049	2027	Critical	Arcturus Labs	NovaCMS	CWE-502 (Deserialization)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2028-0049	2028	High	OrionWorks	SkyDrive	CWE-918 (SSRF)	Data Exfiltration	Sensitive data exposure through CWE-918 in SkyDrive API
+CVE-2029-0049	2029	Medium	Pioneer Systems	IoTConnect	CWE-434 (Unrestricted File Upload)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2030-0049	2030	Critical	Vertex Cyber	NeuroDB	CWE-295 (TLS Cert Validation)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2031-0049	2031	Critical	BlueHelix	BioScan	CWE-451 (UI Redress/Clickjacking)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2026-0050	2026	High	SolarNode	StarPortal	CWE-79 (XSS)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2027-0050	2027	Medium	NimbusForge	HyperChain	CWE-89 (SQLi)	Integrity Breach	Tampering of configuration/state due to CWE-89 weakness in HyperChain
+CVE-2028-0050	2028	Critical	NebulaSec	AstroFile	CWE-120 (Buffer Overflow)	RCE	Remote Code Execution via CWE-120 in AstroFile service endpoint
+CVE-2029-0050	2029	Critical	Arcturus Labs	AetherMail	CWE-352 (CSRF)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2030-0050	2030	High	OrionWorks	SentinelAI	CWE-22 (Path Traversal)	Data Exfiltration	Sensitive data exposure through CWE-22 in SentinelAI API
+CVE-2031-0050	2031	Critical	Pioneer Systems	FluxGateway	CWE-327 (Broken Crypto)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2026-0051	2026	Medium	Vertex Cyber	HeliosEdge	CWE-863 (AuthZ)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2027-0051	2027	Critical	BlueHelix	ChronosDB	CWE-20 (Input Validation)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2028-0051	2028	Critical	SolarNode	AuroraMesh	CWE-77 (Command Injection)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2029-0051	2029	High	NimbusForge	CipherKit	CWE-502 (Deserialization)	Integrity Breach	Tampering of configuration/state due to CWE-502 weakness in CipherKit
+CVE-2030-0051	2030	Medium	NebulaSec	QuantumOS	CWE-918 (SSRF)	RCE	Remote Code Execution via CWE-918 in QuantumOS service endpoint
+CVE-2031-0051	2031	Critical	Arcturus Labs	NovaCMS	CWE-434 (Unrestricted File Upload)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2026-0052	2026	Medium	OrionWorks	SkyDrive	CWE-295 (TLS Cert Validation)	Data Exfiltration	Sensitive data exposure through CWE-295 in SkyDrive API
+CVE-2027-0052	2027	Medium	Pioneer Systems	IoTConnect	CWE-451 (UI Redress/Clickjacking)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2028-0052	2028	High	Vertex Cyber	NeuroDB	CWE-79 (XSS)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2029-0052	2029	Low	BlueHelix	BioScan	CWE-89 (SQLi)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2030-0052	2030	Medium	SolarNode	StarPortal	CWE-120 (Buffer Overflow)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2031-0052	2031	High	NimbusForge	HyperChain	CWE-352 (CSRF)	Integrity Breach	Tampering of configuration/state due to CWE-352 weakness in HyperChain
+CVE-2026-0053	2026	Critical	NebulaSec	AstroFile	CWE-22 (Path Traversal)	RCE	Remote Code Execution via CWE-22 in AstroFile service endpoint
+CVE-2027-0053	2027	Medium	Arcturus Labs	AetherMail	CWE-327 (Broken Crypto)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2028-0053	2028	Critical	OrionWorks	SentinelAI	CWE-863 (AuthZ)	Data Exfiltration	Sensitive data exposure through CWE-863 in SentinelAI API
+CVE-2029-0053	2029	High	Pioneer Systems	FluxGateway	CWE-20 (Input Validation)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2030-0053	2030	High	Vertex Cyber	HeliosEdge	CWE-77 (Command Injection)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2031-0053	2031	Critical	BlueHelix	ChronosDB	CWE-502 (Deserialization)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2026-0054	2026	Critical	SolarNode	AuroraMesh	CWE-918 (SSRF)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2027-0054	2027	High	NimbusForge	CipherKit	CWE-434 (Unrestricted File Upload)	Integrity Breach	Tampering of configuration/state due to CWE-434 weakness in CipherKit
+CVE-2028-0054	2028	Low	NebulaSec	QuantumOS	CWE-295 (TLS Cert Validation)	RCE	Remote Code Execution via CWE-295 in QuantumOS service endpoint
+CVE-2029-0054	2029	Medium	Arcturus Labs	NovaCMS	CWE-451 (UI Redress/Clickjacking)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2030-0054	2030	High	OrionWorks	SkyDrive	CWE-79 (XSS)	Data Exfiltration	Sensitive data exposure through CWE-79 in SkyDrive API
+CVE-2031-0054	2031	High	Pioneer Systems	IoTConnect	CWE-89 (SQLi)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2026-0055	2026	High	Vertex Cyber	NeuroDB	CWE-120 (Buffer Overflow)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2027-0055	2027	Critical	BlueHelix	BioScan	CWE-352 (CSRF)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2028-0055	2028	Medium	SolarNode	StarPortal	CWE-22 (Path Traversal)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2029-0055	2029	Medium	NimbusForge	HyperChain	CWE-327 (Broken Crypto)	Integrity Breach	Tampering of configuration/state due to CWE-327 weakness in HyperChain
+CVE-2030-0055	2030	Critical	NebulaSec	AstroFile	CWE-863 (AuthZ)	RCE	Remote Code Execution via CWE-863 in AstroFile service endpoint
+CVE-2031-0055	2031	Medium	Arcturus Labs	AetherMail	CWE-20 (Input Validation)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2026-0056	2026	Critical	OrionWorks	SentinelAI	CWE-77 (Command Injection)	Data Exfiltration	Sensitive data exposure through CWE-77 in SentinelAI API
+CVE-2027-0056	2027	High	Pioneer Systems	FluxGateway	CWE-502 (Deserialization)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2028-0056	2028	High	Vertex Cyber	HeliosEdge	CWE-918 (SSRF)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2029-0056	2029	Critical	BlueHelix	ChronosDB	CWE-434 (Unrestricted File Upload)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2030-0056	2030	Critical	SolarNode	AuroraMesh	CWE-295 (TLS Cert Validation)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2031-0056	2031	Medium	NimbusForge	CipherKit	CWE-451 (UI Redress/Clickjacking)	Integrity Breach	Tampering of configuration/state due to CWE-451 weakness in CipherKit
+CVE-2026-0057	2026	Critical	NebulaSec	QuantumOS	CWE-79 (XSS)	RCE	Remote Code Execution via CWE-79 in QuantumOS service endpoint
+CVE-2027-0057	2027	Low	Arcturus Labs	NovaCMS	CWE-89 (SQLi)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2028-0057	2028	High	OrionWorks	SkyDrive	CWE-120 (Buffer Overflow)	Data Exfiltration	Sensitive data exposure through CWE-120 in SkyDrive API
+CVE-2029-0057	2029	Medium	Pioneer Systems	IoTConnect	CWE-352 (CSRF)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2030-0057	2030	Critical	Vertex Cyber	NeuroDB	CWE-22 (Path Traversal)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2031-0057	2031	Critical	BlueHelix	BioScan	CWE-327 (Broken Crypto)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2026-0058	2026	Medium	SolarNode	StarPortal	CWE-863 (AuthZ)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2027-0058	2027	High	NimbusForge	HyperChain	CWE-20 (Input Validation)	Integrity Breach	Tampering of configuration/state due to CWE-20 weakness in HyperChain
+CVE-2028-0058	2028	Medium	NebulaSec	AstroFile	CWE-77 (Command Injection)	RCE	Remote Code Execution via CWE-77 in AstroFile service endpoint
+CVE-2029-0058	2029	Critical	Arcturus Labs	AetherMail	CWE-502 (Deserialization)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2030-0058	2030	Medium	OrionWorks	SentinelAI	CWE-918 (SSRF)	Data Exfiltration	Sensitive data exposure through CWE-918 in SentinelAI API
+CVE-2031-0058	2031	High	Pioneer Systems	FluxGateway	CWE-434 (Unrestricted File Upload)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2026-0059	2026	Medium	Vertex Cyber	HeliosEdge	CWE-295 (TLS Cert Validation)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2027-0059	2027	High	BlueHelix	ChronosDB	CWE-451 (UI Redress/Clickjacking)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2028-0059	2028	Critical	SolarNode	AuroraMesh	CWE-79 (XSS)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2029-0059	2029	Medium	NimbusForge	CipherKit	CWE-89 (SQLi)	Integrity Breach	Tampering of configuration/state due to CWE-89 weakness in CipherKit
+CVE-2030-0059	2030	Critical	NebulaSec	QuantumOS	CWE-120 (Buffer Overflow)	RCE	Remote Code Execution via CWE-120 in QuantumOS service endpoint
+CVE-2031-0059	2031	Medium	Arcturus Labs	NovaCMS	CWE-352 (CSRF)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2026-0060	2026	Critical	OrionWorks	SkyDrive	CWE-22 (Path Traversal)	Data Exfiltration	Sensitive data exposure through CWE-22 in SkyDrive API
+CVE-2027-0060	2027	Critical	Pioneer Systems	IoTConnect	CWE-327 (Broken Crypto)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2028-0060	2028	High	Vertex Cyber	NeuroDB	CWE-863 (AuthZ)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2029-0060	2029	High	BlueHelix	BioScan	CWE-20 (Input Validation)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2030-0060	2030	Low	SolarNode	StarPortal	CWE-77 (Command Injection)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2031-0060	2031	Medium	NimbusForge	HyperChain	CWE-502 (Deserialization)	Integrity Breach	Tampering of configuration/state due to CWE-502 weakness in HyperChain
+CVE-2026-0061	2026	Critical	NebulaSec	AstroFile	CWE-918 (SSRF)	RCE	Remote Code Execution via CWE-918 in AstroFile service endpoint
+CVE-2027-0061	2027	Medium	Arcturus Labs	AetherMail	CWE-434 (Unrestricted File Upload)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2028-0061	2028	Critical	OrionWorks	SentinelAI	CWE-295 (TLS Cert Validation)	Data Exfiltration	Sensitive data exposure through CWE-295 in SentinelAI API
+CVE-2029-0061	2029	High	Pioneer Systems	FluxGateway	CWE-451 (UI Redress/Clickjacking)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2030-0061	2030	High	Vertex Cyber	HeliosEdge	CWE-79 (XSS)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2031-0061	2031	Medium	BlueHelix	ChronosDB	CWE-89 (SQLi)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2026-0062	2026	Critical	SolarNode	AuroraMesh	CWE-120 (Buffer Overflow)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2027-0062	2027	High	NimbusForge	CipherKit	CWE-352 (CSRF)	Integrity Breach	Tampering of configuration/state due to CWE-352 weakness in CipherKit
+CVE-2028-0062	2028	Critical	NebulaSec	QuantumOS	CWE-22 (Path Traversal)	RCE	Remote Code Execution via CWE-22 in QuantumOS service endpoint
+CVE-2029-0062	2029	Medium	Arcturus Labs	NovaCMS	CWE-327 (Broken Crypto)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2030-0062	2030	Critical	OrionWorks	SkyDrive	CWE-863 (AuthZ)	Data Exfiltration	Sensitive data exposure through CWE-863 in SkyDrive API
+CVE-2031-0062	2031	Medium	Pioneer Systems	IoTConnect	CWE-20 (Input Validation)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2026-0063	2026	Critical	Vertex Cyber	NeuroDB	CWE-77 (Command Injection)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2027-0063	2027	Medium	BlueHelix	BioScan	CWE-502 (Deserialization)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2028-0063	2028	Medium	SolarNode	StarPortal	CWE-918 (SSRF)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2029-0063	2029	High	NimbusForge	HyperChain	CWE-434 (Unrestricted File Upload)	Integrity Breach	Tampering of configuration/state due to CWE-434 weakness in HyperChain
+CVE-2030-0063	2030	Medium	NebulaSec	AstroFile	CWE-295 (TLS Cert Validation)	RCE	Remote Code Execution via CWE-295 in AstroFile service endpoint
+CVE-2031-0063	2031	Critical	Arcturus Labs	AetherMail	CWE-451 (UI Redress/Clickjacking)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2026-0064	2026	Medium	OrionWorks	SentinelAI	CWE-79 (XSS)	Data Exfiltration	Sensitive data exposure through CWE-79 in SentinelAI API
+CVE-2027-0064	2027	High	Pioneer Systems	FluxGateway	CWE-89 (SQLi)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2028-0064	2028	Critical	Vertex Cyber	HeliosEdge	CWE-120 (Buffer Overflow)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2029-0064	2029	Critical	BlueHelix	ChronosDB	CWE-352 (CSRF)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2030-0064	2030	High	SolarNode	AuroraMesh	CWE-22 (Path Traversal)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2031-0064	2031	Critical	NimbusForge	CipherKit	CWE-327 (Broken Crypto)	Integrity Breach	Tampering of configuration/state due to CWE-327 weakness in CipherKit
+CVE-2026-0065	2026	Medium	NebulaSec	QuantumOS	CWE-863 (AuthZ)	RCE	Remote Code Execution via CWE-863 in QuantumOS service endpoint
+CVE-2027-0065	2027	Low	Arcturus Labs	NovaCMS	CWE-20 (Input Validation)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2028-0065	2028	High	OrionWorks	SkyDrive	CWE-77 (Command Injection)	Data Exfiltration	Sensitive data exposure through CWE-77 in SkyDrive API
+CVE-2029-0065	2029	High	Pioneer Systems	IoTConnect	CWE-502 (Deserialization)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2030-0065	2030	Medium	Vertex Cyber	NeuroDB	CWE-918 (SSRF)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2031-0065	2031	High	BlueHelix	BioScan	CWE-434 (Unrestricted File Upload)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2026-0066	2026	High	SolarNode	StarPortal	CWE-295 (TLS Cert Validation)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2027-0066	2027	High	NimbusForge	HyperChain	CWE-451 (UI Redress/Clickjacking)	Integrity Breach	Tampering of configuration/state due to CWE-451 weakness in HyperChain
+CVE-2028-0066	2028	High	NebulaSec	AstroFile	CWE-79 (XSS)	RCE	Remote Code Execution via CWE-79 in AstroFile service endpoint
+CVE-2029-0066	2029	Critical	Arcturus Labs	AetherMail	CWE-89 (SQLi)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2030-0066	2030	High	OrionWorks	SentinelAI	CWE-120 (Buffer Overflow)	Data Exfiltration	Sensitive data exposure through CWE-120 in SentinelAI API
+CVE-2031-0066	2031	Low	Pioneer Systems	FluxGateway	CWE-352 (CSRF)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2026-0067	2026	Medium	Vertex Cyber	HeliosEdge	CWE-22 (Path Traversal)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2027-0067	2027	Critical	BlueHelix	ChronosDB	CWE-327 (Broken Crypto)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2028-0067	2028	Medium	SolarNode	AuroraMesh	CWE-863 (AuthZ)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2029-0067	2029	Medium	NimbusForge	CipherKit	CWE-20 (Input Validation)	Integrity Breach	Tampering of configuration/state due to CWE-20 weakness in CipherKit
+CVE-2030-0067	2030	Medium	NebulaSec	QuantumOS	CWE-77 (Command Injection)	RCE	Remote Code Execution via CWE-77 in QuantumOS service endpoint
+CVE-2031-0067	2031	Medium	Arcturus Labs	NovaCMS	CWE-502 (Deserialization)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2026-0068	2026	Critical	OrionWorks	SkyDrive	CWE-918 (SSRF)	Data Exfiltration	Sensitive data exposure through CWE-918 in SkyDrive API
+CVE-2027-0068	2027	Medium	Pioneer Systems	IoTConnect	CWE-434 (Unrestricted File Upload)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2028-0068	2028	High	Vertex Cyber	NeuroDB	CWE-295 (TLS Cert Validation)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2029-0068	2029	Critical	BlueHelix	BioScan	CWE-451 (UI Redress/Clickjacking)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2030-0068	2030	Medium	SolarNode	StarPortal	CWE-79 (XSS)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2031-0068	2031	Critical	NimbusForge	HyperChain	CWE-89 (SQLi)	Integrity Breach	Tampering of configuration/state due to CWE-89 weakness in HyperChain
+CVE-2026-0069	2026	Medium	NebulaSec	AstroFile	CWE-120 (Buffer Overflow)	RCE	Remote Code Execution via CWE-120 in AstroFile service endpoint
+CVE-2027-0069	2027	Low	Arcturus Labs	AetherMail	CWE-352 (CSRF)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2028-0069	2028	High	OrionWorks	SentinelAI	CWE-22 (Path Traversal)	Data Exfiltration	Sensitive data exposure through CWE-22 in SentinelAI API
+CVE-2029-0069	2029	Critical	Pioneer Systems	FluxGateway	CWE-327 (Broken Crypto)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2030-0069	2030	Critical	Vertex Cyber	HeliosEdge	CWE-863 (AuthZ)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2031-0069	2031	High	BlueHelix	ChronosDB	CWE-20 (Input Validation)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2026-0070	2026	High	SolarNode	AuroraMesh	CWE-77 (Command Injection)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2027-0070	2027	High	NimbusForge	CipherKit	CWE-502 (Deserialization)	Integrity Breach	Tampering of configuration/state due to CWE-502 weakness in CipherKit
+CVE-2028-0070	2028	Medium	NebulaSec	QuantumOS	CWE-918 (SSRF)	RCE	Remote Code Execution via CWE-918 in QuantumOS service endpoint
+CVE-2029-0070	2029	High	Arcturus Labs	NovaCMS	CWE-434 (Unrestricted File Upload)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2030-0070	2030	High	OrionWorks	SkyDrive	CWE-295 (TLS Cert Validation)	Data Exfiltration	Sensitive data exposure through CWE-295 in SkyDrive API
+CVE-2031-0070	2031	High	Pioneer Systems	IoTConnect	CWE-451 (UI Redress/Clickjacking)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2026-0071	2026	Low	Vertex Cyber	NeuroDB	CWE-79 (XSS)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2027-0071	2027	Medium	BlueHelix	BioScan	CWE-89 (SQLi)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2028-0071	2028	Medium	SolarNode	StarPortal	CWE-120 (Buffer Overflow)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2029-0071	2029	Medium	NimbusForge	HyperChain	CWE-352 (CSRF)	Integrity Breach	Tampering of configuration/state due to CWE-352 weakness in HyperChain
+CVE-2030-0071	2030	High	NebulaSec	AstroFile	CWE-22 (Path Traversal)	RCE	Remote Code Execution via CWE-22 in AstroFile service endpoint
+CVE-2031-0071	2031	Medium	Arcturus Labs	AetherMail	CWE-327 (Broken Crypto)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2026-0072	2026	Low	OrionWorks	SentinelAI	CWE-863 (AuthZ)	Data Exfiltration	Sensitive data exposure through CWE-863 in SentinelAI API
+CVE-2027-0072	2027	High	Pioneer Systems	FluxGateway	CWE-20 (Input Validation)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2028-0072	2028	Critical	Vertex Cyber	HeliosEdge	CWE-77 (Command Injection)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2029-0072	2029	Medium	BlueHelix	ChronosDB	CWE-502 (Deserialization)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2030-0072	2030	Medium	SolarNode	AuroraMesh	CWE-918 (SSRF)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2031-0072	2031	Medium	NimbusForge	CipherKit	CWE-434 (Unrestricted File Upload)	Integrity Breach	Tampering of configuration/state due to CWE-434 weakness in CipherKit
+CVE-2026-0073	2026	High	NebulaSec	QuantumOS	CWE-295 (TLS Cert Validation)	RCE	Remote Code Execution via CWE-295 in QuantumOS service endpoint
+CVE-2027-0073	2027	High	Arcturus Labs	NovaCMS	CWE-451 (UI Redress/Clickjacking)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2028-0073	2028	High	OrionWorks	SkyDrive	CWE-79 (XSS)	Data Exfiltration	Sensitive data exposure through CWE-79 in SkyDrive API
+CVE-2029-0073	2029	Medium	Pioneer Systems	IoTConnect	CWE-89 (SQLi)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2030-0073	2030	Critical	Vertex Cyber	NeuroDB	CWE-120 (Buffer Overflow)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2031-0073	2031	Medium	BlueHelix	BioScan	CWE-352 (CSRF)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2026-0074	2026	Critical	SolarNode	StarPortal	CWE-22 (Path Traversal)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2027-0074	2027	High	NimbusForge	HyperChain	CWE-327 (Broken Crypto)	Integrity Breach	Tampering of configuration/state due to CWE-327 weakness in HyperChain
+CVE-2028-0074	2028	Medium	NebulaSec	AstroFile	CWE-863 (AuthZ)	RCE	Remote Code Execution via CWE-863 in AstroFile service endpoint
+CVE-2029-0074	2029	Critical	Arcturus Labs	AetherMail	CWE-20 (Input Validation)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2030-0074	2030	High	OrionWorks	SentinelAI	CWE-77 (Command Injection)	Data Exfiltration	Sensitive data exposure through CWE-77 in SentinelAI API
+CVE-2031-0074	2031	Medium	Pioneer Systems	FluxGateway	CWE-502 (Deserialization)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2026-0075	2026	High	Vertex Cyber	HeliosEdge	CWE-918 (SSRF)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2027-0075	2027	High	BlueHelix	ChronosDB	CWE-434 (Unrestricted File Upload)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2028-0075	2028	Medium	SolarNode	AuroraMesh	CWE-295 (TLS Cert Validation)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2029-0075	2029	Critical	NimbusForge	CipherKit	CWE-451 (UI Redress/Clickjacking)	Integrity Breach	Tampering of configuration/state due to CWE-451 weakness in CipherKit
+CVE-2030-0075	2030	High	NebulaSec	QuantumOS	CWE-79 (XSS)	RCE	Remote Code Execution via CWE-79 in QuantumOS service endpoint
+CVE-2031-0075	2031	Low	Arcturus Labs	NovaCMS	CWE-89 (SQLi)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2026-0076	2026	High	OrionWorks	SkyDrive	CWE-120 (Buffer Overflow)	Data Exfiltration	Sensitive data exposure through CWE-120 in SkyDrive API
+CVE-2027-0076	2027	Critical	Pioneer Systems	IoTConnect	CWE-352 (CSRF)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2028-0076	2028	Critical	Vertex Cyber	NeuroDB	CWE-22 (Path Traversal)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2029-0076	2029	High	BlueHelix	BioScan	CWE-327 (Broken Crypto)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2030-0076	2030	Critical	SolarNode	StarPortal	CWE-863 (AuthZ)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2031-0076	2031	Critical	NimbusForge	HyperChain	CWE-20 (Input Validation)	Integrity Breach	Tampering of configuration/state due to CWE-20 weakness in HyperChain
+CVE-2026-0077	2026	Low	NebulaSec	AstroFile	CWE-77 (Command Injection)	RCE	Remote Code Execution via CWE-77 in AstroFile service endpoint
+CVE-2027-0077	2027	Low	Arcturus Labs	AetherMail	CWE-502 (Deserialization)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2028-0077	2028	High	OrionWorks	SentinelAI	CWE-918 (SSRF)	Data Exfiltration	Sensitive data exposure through CWE-918 in SentinelAI API
+CVE-2029-0077	2029	Low	Pioneer Systems	FluxGateway	CWE-434 (Unrestricted File Upload)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2030-0077	2030	Low	Vertex Cyber	HeliosEdge	CWE-295 (TLS Cert Validation)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2031-0077	2031	High	BlueHelix	ChronosDB	CWE-451 (UI Redress/Clickjacking)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2026-0078	2026	High	SolarNode	AuroraMesh	CWE-79 (XSS)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2027-0078	2027	High	NimbusForge	CipherKit	CWE-89 (SQLi)	Integrity Breach	Tampering of configuration/state due to CWE-89 weakness in CipherKit
+CVE-2028-0078	2028	Medium	NebulaSec	QuantumOS	CWE-120 (Buffer Overflow)	RCE	Remote Code Execution via CWE-120 in QuantumOS service endpoint
+CVE-2029-0078	2029	Medium	Arcturus Labs	NovaCMS	CWE-352 (CSRF)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2030-0078	2030	Critical	OrionWorks	SkyDrive	CWE-22 (Path Traversal)	Data Exfiltration	Sensitive data exposure through CWE-22 in SkyDrive API
+CVE-2031-0078	2031	High	Pioneer Systems	IoTConnect	CWE-327 (Broken Crypto)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2026-0079	2026	High	Vertex Cyber	NeuroDB	CWE-863 (AuthZ)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2027-0079	2027	High	BlueHelix	BioScan	CWE-20 (Input Validation)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2028-0079	2028	High	SolarNode	StarPortal	CWE-77 (Command Injection)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2029-0079	2029	High	NimbusForge	HyperChain	CWE-502 (Deserialization)	Integrity Breach	Tampering of configuration/state due to CWE-502 weakness in HyperChain
+CVE-2030-0079	2030	Low	NebulaSec	AstroFile	CWE-918 (SSRF)	RCE	Remote Code Execution via CWE-918 in AstroFile service endpoint
+CVE-2031-0079	2031	Medium	Arcturus Labs	AetherMail	CWE-434 (Unrestricted File Upload)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2026-0080	2026	Medium	OrionWorks	SentinelAI	CWE-295 (TLS Cert Validation)	Data Exfiltration	Sensitive data exposure through CWE-295 in SentinelAI API
+CVE-2027-0080	2027	Low	Pioneer Systems	FluxGateway	CWE-451 (UI Redress/Clickjacking)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2028-0080	2028	Medium	Vertex Cyber	HeliosEdge	CWE-79 (XSS)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2029-0080	2029	High	BlueHelix	ChronosDB	CWE-89 (SQLi)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2030-0080	2030	Medium	SolarNode	AuroraMesh	CWE-120 (Buffer Overflow)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2031-0080	2031	Medium	NimbusForge	CipherKit	CWE-352 (CSRF)	Integrity Breach	Tampering of configuration/state due to CWE-352 weakness in CipherKit
+CVE-2026-0081	2026	High	NebulaSec	QuantumOS	CWE-22 (Path Traversal)	RCE	Remote Code Execution via CWE-22 in QuantumOS service endpoint
+CVE-2027-0081	2027	High	Arcturus Labs	NovaCMS	CWE-327 (Broken Crypto)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2028-0081	2028	High	OrionWorks	SkyDrive	CWE-863 (AuthZ)	Data Exfiltration	Sensitive data exposure through CWE-863 in SkyDrive API
+CVE-2029-0081	2029	High	Pioneer Systems	IoTConnect	CWE-20 (Input Validation)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2030-0081	2030	High	Vertex Cyber	NeuroDB	CWE-77 (Command Injection)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2031-0081	2031	Medium	BlueHelix	BioScan	CWE-502 (Deserialization)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2026-0082	2026	Low	SolarNode	StarPortal	CWE-918 (SSRF)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2027-0082	2027	Medium	NimbusForge	HyperChain	CWE-434 (Unrestricted File Upload)	Integrity Breach	Tampering of configuration/state due to CWE-434 weakness in HyperChain
+CVE-2028-0082	2028	Medium	NebulaSec	AstroFile	CWE-295 (TLS Cert Validation)	RCE	Remote Code Execution via CWE-295 in AstroFile service endpoint
+CVE-2029-0082	2029	High	Arcturus Labs	AetherMail	CWE-451 (UI Redress/Clickjacking)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2030-0082	2030	High	OrionWorks	SentinelAI	CWE-79 (XSS)	Data Exfiltration	Sensitive data exposure through CWE-79 in SentinelAI API
+CVE-2031-0082	2031	High	Pioneer Systems	FluxGateway	CWE-89 (SQLi)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2026-0083	2026	High	Vertex Cyber	HeliosEdge	CWE-120 (Buffer Overflow)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2027-0083	2027	Medium	BlueHelix	ChronosDB	CWE-352 (CSRF)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2028-0083	2028	High	SolarNode	AuroraMesh	CWE-22 (Path Traversal)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2029-0083	2029	High	NimbusForge	CipherKit	CWE-327 (Broken Crypto)	Integrity Breach	Tampering of configuration/state due to CWE-327 weakness in CipherKit
+CVE-2030-0083	2030	Critical	NebulaSec	QuantumOS	CWE-863 (AuthZ)	RCE	Remote Code Execution via CWE-863 in QuantumOS service endpoint
+CVE-2031-0083	2031	Medium	Arcturus Labs	NovaCMS	CWE-20 (Input Validation)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2026-0084	2026	Low	OrionWorks	SkyDrive	CWE-77 (Command Injection)	Data Exfiltration	Sensitive data exposure through CWE-77 in SkyDrive API
+CVE-2027-0084	2027	Critical	Pioneer Systems	IoTConnect	CWE-502 (Deserialization)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2028-0084	2028	Medium	Vertex Cyber	NeuroDB	CWE-918 (SSRF)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2029-0084	2029	High	BlueHelix	BioScan	CWE-434 (Unrestricted File Upload)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2030-0084	2030	High	SolarNode	StarPortal	CWE-295 (TLS Cert Validation)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2031-0084	2031	Medium	NimbusForge	HyperChain	CWE-451 (UI Redress/Clickjacking)	Integrity Breach	Tampering of configuration/state due to CWE-451 weakness in HyperChain
+CVE-2026-0085	2026	Medium	NebulaSec	AstroFile	CWE-79 (XSS)	RCE	Remote Code Execution via CWE-79 in AstroFile service endpoint
+CVE-2027-0085	2027	High	Arcturus Labs	AetherMail	CWE-89 (SQLi)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2028-0085	2028	High	OrionWorks	SentinelAI	CWE-120 (Buffer Overflow)	Data Exfiltration	Sensitive data exposure through CWE-120 in SentinelAI API
+CVE-2029-0085	2029	Medium	Pioneer Systems	FluxGateway	CWE-352 (CSRF)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2030-0085	2030	Medium	Vertex Cyber	HeliosEdge	CWE-22 (Path Traversal)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2031-0085	2031	Medium	BlueHelix	ChronosDB	CWE-327 (Broken Crypto)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2026-0086	2026	Critical	SolarNode	AuroraMesh	CWE-863 (AuthZ)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2027-0086	2027	High	NimbusForge	CipherKit	CWE-20 (Input Validation)	Integrity Breach	Tampering of configuration/state due to CWE-20 weakness in CipherKit
+CVE-2028-0086	2028	Critical	NebulaSec	QuantumOS	CWE-77 (Command Injection)	RCE	Remote Code Execution via CWE-77 in QuantumOS service endpoint
+CVE-2029-0086	2029	Low	Arcturus Labs	NovaCMS	CWE-502 (Deserialization)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2030-0086	2030	Critical	OrionWorks	SkyDrive	CWE-918 (SSRF)	Data Exfiltration	Sensitive data exposure through CWE-918 in SkyDrive API
+CVE-2031-0086	2031	High	Pioneer Systems	IoTConnect	CWE-434 (Unrestricted File Upload)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2026-0087	2026	Critical	Vertex Cyber	NeuroDB	CWE-295 (TLS Cert Validation)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2027-0087	2027	High	BlueHelix	BioScan	CWE-451 (UI Redress/Clickjacking)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2028-0087	2028	High	SolarNode	StarPortal	CWE-79 (XSS)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2029-0087	2029	Medium	NimbusForge	HyperChain	CWE-89 (SQLi)	Integrity Breach	Tampering of configuration/state due to CWE-89 weakness in HyperChain
+CVE-2030-0087	2030	High	NebulaSec	AstroFile	CWE-120 (Buffer Overflow)	RCE	Remote Code Execution via CWE-120 in AstroFile service endpoint
+CVE-2031-0087	2031	Medium	Arcturus Labs	AetherMail	CWE-352 (CSRF)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2026-0088	2026	High	OrionWorks	SentinelAI	CWE-22 (Path Traversal)	Data Exfiltration	Sensitive data exposure through CWE-22 in SentinelAI API
+CVE-2027-0088	2027	Critical	Pioneer Systems	FluxGateway	CWE-327 (Broken Crypto)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2028-0088	2028	High	Vertex Cyber	HeliosEdge	CWE-863 (AuthZ)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2029-0088	2029	Critical	BlueHelix	ChronosDB	CWE-20 (Input Validation)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2030-0088	2030	Medium	SolarNode	AuroraMesh	CWE-77 (Command Injection)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2031-0088	2031	Critical	NimbusForge	CipherKit	CWE-502 (Deserialization)	Integrity Breach	Tampering of configuration/state due to CWE-502 weakness in CipherKit
+CVE-2026-0089	2026	Critical	NebulaSec	QuantumOS	CWE-918 (SSRF)	RCE	Remote Code Execution via CWE-918 in QuantumOS service endpoint
+CVE-2027-0089	2027	High	Arcturus Labs	NovaCMS	CWE-434 (Unrestricted File Upload)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2028-0089	2028	High	OrionWorks	SkyDrive	CWE-295 (TLS Cert Validation)	Data Exfiltration	Sensitive data exposure through CWE-295 in SkyDrive API
+CVE-2029-0089	2029	High	Pioneer Systems	IoTConnect	CWE-451 (UI Redress/Clickjacking)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2030-0089	2030	Low	Vertex Cyber	NeuroDB	CWE-79 (XSS)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2031-0089	2031	High	BlueHelix	BioScan	CWE-89 (SQLi)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2026-0090	2026	High	SolarNode	StarPortal	CWE-120 (Buffer Overflow)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2027-0090	2027	Medium	NimbusForge	HyperChain	CWE-352 (CSRF)	Integrity Breach	Tampering of configuration/state due to CWE-352 weakness in HyperChain
+CVE-2028-0090	2028	High	NebulaSec	AstroFile	CWE-22 (Path Traversal)	RCE	Remote Code Execution via CWE-22 in AstroFile service endpoint
+CVE-2029-0090	2029	Low	Arcturus Labs	AetherMail	CWE-327 (Broken Crypto)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2030-0090	2030	High	OrionWorks	SentinelAI	CWE-863 (AuthZ)	Data Exfiltration	Sensitive data exposure through CWE-863 in SentinelAI API
+CVE-2031-0090	2031	High	Pioneer Systems	FluxGateway	CWE-20 (Input Validation)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2026-0091	2026	Medium	Vertex Cyber	HeliosEdge	CWE-77 (Command Injection)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2027-0091	2027	Medium	BlueHelix	ChronosDB	CWE-502 (Deserialization)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2028-0091	2028	Critical	SolarNode	AuroraMesh	CWE-918 (SSRF)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2029-0091	2029	Critical	NimbusForge	CipherKit	CWE-434 (Unrestricted File Upload)	Integrity Breach	Tampering of configuration/state due to CWE-434 weakness in CipherKit
+CVE-2030-0091	2030	Critical	NebulaSec	QuantumOS	CWE-295 (TLS Cert Validation)	RCE	Remote Code Execution via CWE-295 in QuantumOS service endpoint
+CVE-2031-0091	2031	High	Arcturus Labs	NovaCMS	CWE-451 (UI Redress/Clickjacking)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2026-0092	2026	High	OrionWorks	SkyDrive	CWE-79 (XSS)	Data Exfiltration	Sensitive data exposure through CWE-79 in SkyDrive API
+CVE-2027-0092	2027	Medium	Pioneer Systems	IoTConnect	CWE-89 (SQLi)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2028-0092	2028	Critical	Vertex Cyber	NeuroDB	CWE-120 (Buffer Overflow)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2029-0092	2029	High	BlueHelix	BioScan	CWE-352 (CSRF)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2030-0092	2030	Low	SolarNode	StarPortal	CWE-22 (Path Traversal)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2031-0092	2031	Medium	NimbusForge	HyperChain	CWE-327 (Broken Crypto)	Integrity Breach	Tampering of configuration/state due to CWE-327 weakness in HyperChain
+CVE-2026-0093	2026	Critical	NebulaSec	AstroFile	CWE-863 (AuthZ)	RCE	Remote Code Execution via CWE-863 in AstroFile service endpoint
+CVE-2027-0093	2027	High	Arcturus Labs	AetherMail	CWE-20 (Input Validation)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2028-0093	2028	Medium	OrionWorks	SentinelAI	CWE-77 (Command Injection)	Data Exfiltration	Sensitive data exposure through CWE-77 in SentinelAI API
+CVE-2029-0093	2029	High	Pioneer Systems	FluxGateway	CWE-502 (Deserialization)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2030-0093	2030	High	Vertex Cyber	HeliosEdge	CWE-918 (SSRF)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2031-0093	2031	High	BlueHelix	ChronosDB	CWE-434 (Unrestricted File Upload)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2026-0094	2026	Medium	SolarNode	AuroraMesh	CWE-295 (TLS Cert Validation)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2027-0094	2027	Medium	NimbusForge	CipherKit	CWE-451 (UI Redress/Clickjacking)	Integrity Breach	Tampering of configuration/state due to CWE-451 weakness in CipherKit
+CVE-2028-0094	2028	Medium	NebulaSec	QuantumOS	CWE-79 (XSS)	RCE	Remote Code Execution via CWE-79 in QuantumOS service endpoint
+CVE-2029-0094	2029	Critical	Arcturus Labs	NovaCMS	CWE-89 (SQLi)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2030-0094	2030	High	OrionWorks	SkyDrive	CWE-120 (Buffer Overflow)	Data Exfiltration	Sensitive data exposure through CWE-120 in SkyDrive API
+CVE-2031-0094	2031	High	Pioneer Systems	IoTConnect	CWE-352 (CSRF)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2026-0095	2026	Critical	Vertex Cyber	NeuroDB	CWE-22 (Path Traversal)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2027-0095	2027	Critical	BlueHelix	BioScan	CWE-327 (Broken Crypto)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2028-0095	2028	Critical	SolarNode	StarPortal	CWE-863 (AuthZ)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2029-0095	2029	High	NimbusForge	HyperChain	CWE-20 (Input Validation)	Integrity Breach	Tampering of configuration/state due to CWE-20 weakness in HyperChain
+CVE-2030-0095	2030	Low	NebulaSec	AstroFile	CWE-77 (Command Injection)	RCE	Remote Code Execution via CWE-77 in AstroFile service endpoint
+CVE-2031-0095	2031	High	Arcturus Labs	AetherMail	CWE-502 (Deserialization)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2026-0096	2026	High	OrionWorks	SentinelAI	CWE-918 (SSRF)	Data Exfiltration	Sensitive data exposure through CWE-918 in SentinelAI API
+CVE-2027-0096	2027	Medium	Pioneer Systems	FluxGateway	CWE-434 (Unrestricted File Upload)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2028-0096	2028	High	Vertex Cyber	HeliosEdge	CWE-295 (TLS Cert Validation)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2029-0096	2029	Medium	BlueHelix	ChronosDB	CWE-451 (UI Redress/Clickjacking)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2030-0096	2030	Medium	SolarNode	AuroraMesh	CWE-79 (XSS)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2031-0096	2031	High	NimbusForge	CipherKit	CWE-89 (SQLi)	Integrity Breach	Tampering of configuration/state due to CWE-89 weakness in CipherKit
+CVE-2026-0097	2026	Critical	NebulaSec	QuantumOS	CWE-120 (Buffer Overflow)	RCE	Remote Code Execution via CWE-120 in QuantumOS service endpoint
+CVE-2027-0097	2027	Critical	Arcturus Labs	NovaCMS	CWE-352 (CSRF)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2028-0097	2028	Critical	OrionWorks	SkyDrive	CWE-22 (Path Traversal)	Data Exfiltration	Sensitive data exposure through CWE-22 in SkyDrive API
+CVE-2029-0097	2029	Low	Pioneer Systems	IoTConnect	CWE-327 (Broken Crypto)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2030-0097	2030	Medium	Vertex Cyber	NeuroDB	CWE-863 (AuthZ)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2031-0097	2031	Critical	BlueHelix	BioScan	CWE-20 (Input Validation)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2026-0098	2026	High	SolarNode	StarPortal	CWE-77 (Command Injection)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2027-0098	2027	Critical	NimbusForge	HyperChain	CWE-502 (Deserialization)	Integrity Breach	Tampering of configuration/state due to CWE-502 weakness in HyperChain
+CVE-2028-0098	2028	Medium	NebulaSec	AstroFile	CWE-918 (SSRF)	RCE	Remote Code Execution via CWE-918 in AstroFile service endpoint
+CVE-2029-0098	2029	Critical	Arcturus Labs	AetherMail	CWE-434 (Unrestricted File Upload)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2030-0098	2030	Medium	OrionWorks	SentinelAI	CWE-295 (TLS Cert Validation)	Data Exfiltration	Sensitive data exposure through CWE-295 in SentinelAI API
+CVE-2031-0098	2031	High	Pioneer Systems	FluxGateway	CWE-451 (UI Redress/Clickjacking)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2026-0099	2026	High	Vertex Cyber	HeliosEdge	CWE-79 (XSS)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2027-0099	2027	Critical	BlueHelix	ChronosDB	CWE-89 (SQLi)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2028-0099	2028	High	SolarNode	AuroraMesh	CWE-120 (Buffer Overflow)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2029-0099	2029	Critical	NimbusForge	CipherKit	CWE-352 (CSRF)	Integrity Breach	Tampering of configuration/state due to CWE-352 weakness in CipherKit
+CVE-2030-0099	2030	Low	NebulaSec	QuantumOS	CWE-22 (Path Traversal)	RCE	Remote Code Execution via CWE-22 in QuantumOS service endpoint
+CVE-2031-0099	2031	Medium	Arcturus Labs	NovaCMS	CWE-327 (Broken Crypto)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2026-0100	2026	Critical	OrionWorks	SkyDrive	CWE-863 (AuthZ)	Data Exfiltration	Sensitive data exposure through CWE-863 in SkyDrive API
+CVE-2027-0100	2027	Medium	Pioneer Systems	IoTConnect	CWE-20 (Input Validation)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2028-0100	2028	Critical	Vertex Cyber	NeuroDB	CWE-77 (Command Injection)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2029-0100	2029	High	BlueHelix	BioScan	CWE-502 (Deserialization)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2030-0100	2030	Low	SolarNode	StarPortal	CWE-918 (SSRF)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2031-0100	2031	Medium	NimbusForge	HyperChain	CWE-434 (Unrestricted File Upload)	Integrity Breach	Tampering of configuration/state due to CWE-434 weakness in HyperChain
+CVE-2026-0101	2026	Critical	NebulaSec	AstroFile	CWE-295 (TLS Cert Validation)	RCE	Remote Code Execution via CWE-295 in AstroFile service endpoint
+CVE-2027-0101	2027	Critical	Arcturus Labs	AetherMail	CWE-451 (UI Redress/Clickjacking)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2028-0101	2028	High	OrionWorks	SentinelAI	CWE-79 (XSS)	Data Exfiltration	Sensitive data exposure through CWE-79 in SentinelAI API
+CVE-2029-0101	2029	High	Pioneer Systems	FluxGateway	CWE-89 (SQLi)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2030-0101	2030	Low	Vertex Cyber	HeliosEdge	CWE-120 (Buffer Overflow)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2031-0101	2031	Medium	BlueHelix	ChronosDB	CWE-352 (CSRF)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2026-0102	2026	High	SolarNode	AuroraMesh	CWE-22 (Path Traversal)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2027-0102	2027	High	NimbusForge	CipherKit	CWE-327 (Broken Crypto)	Integrity Breach	Tampering of configuration/state due to CWE-327 weakness in CipherKit
+CVE-2028-0102	2028	Medium	NebulaSec	QuantumOS	CWE-863 (AuthZ)	RCE	Remote Code Execution via CWE-863 in QuantumOS service endpoint
+CVE-2029-0102	2029	High	Arcturus Labs	NovaCMS	CWE-20 (Input Validation)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2030-0102	2030	Medium	OrionWorks	SkyDrive	CWE-77 (Command Injection)	Data Exfiltration	Sensitive data exposure through CWE-77 in SkyDrive API
+CVE-2031-0102	2031	High	Pioneer Systems	IoTConnect	CWE-502 (Deserialization)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2026-0103	2026	Low	Vertex Cyber	NeuroDB	CWE-918 (SSRF)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2027-0103	2027	Medium	BlueHelix	BioScan	CWE-434 (Unrestricted File Upload)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2028-0103	2028	Critical	SolarNode	StarPortal	CWE-295 (TLS Cert Validation)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2029-0103	2029	Medium	NimbusForge	HyperChain	CWE-451 (UI Redress/Clickjacking)	Integrity Breach	Tampering of configuration/state due to CWE-451 weakness in HyperChain
+CVE-2030-0103	2030	Medium	NebulaSec	AstroFile	CWE-79 (XSS)	RCE	Remote Code Execution via CWE-79 in AstroFile service endpoint
+CVE-2031-0103	2031	Medium	Arcturus Labs	AetherMail	CWE-89 (SQLi)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2026-0104	2026	High	OrionWorks	SentinelAI	CWE-120 (Buffer Overflow)	Data Exfiltration	Sensitive data exposure through CWE-120 in SentinelAI API
+CVE-2027-0104	2027	High	Pioneer Systems	FluxGateway	CWE-352 (CSRF)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2028-0104	2028	Low	Vertex Cyber	HeliosEdge	CWE-22 (Path Traversal)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2029-0104	2029	Low	BlueHelix	ChronosDB	CWE-327 (Broken Crypto)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2030-0104	2030	Low	SolarNode	AuroraMesh	CWE-863 (AuthZ)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2031-0104	2031	Low	NimbusForge	CipherKit	CWE-20 (Input Validation)	Integrity Breach	Tampering of configuration/state due to CWE-20 weakness in CipherKit
+CVE-2026-0105	2026	Critical	NebulaSec	QuantumOS	CWE-77 (Command Injection)	RCE	Remote Code Execution via CWE-77 in QuantumOS service endpoint
+CVE-2027-0105	2027	High	Arcturus Labs	NovaCMS	CWE-502 (Deserialization)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2028-0105	2028	High	OrionWorks	SkyDrive	CWE-918 (SSRF)	Data Exfiltration	Sensitive data exposure through CWE-918 in SkyDrive API
+CVE-2029-0105	2029	Medium	Pioneer Systems	IoTConnect	CWE-434 (Unrestricted File Upload)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2030-0105	2030	Medium	Vertex Cyber	NeuroDB	CWE-295 (TLS Cert Validation)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2031-0105	2031	Medium	BlueHelix	BioScan	CWE-451 (UI Redress/Clickjacking)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2026-0106	2026	High	SolarNode	StarPortal	CWE-79 (XSS)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2027-0106	2027	High	NimbusForge	HyperChain	CWE-89 (SQLi)	Integrity Breach	Tampering of configuration/state due to CWE-89 weakness in HyperChain
+CVE-2028-0106	2028	High	NebulaSec	AstroFile	CWE-120 (Buffer Overflow)	RCE	Remote Code Execution via CWE-120 in AstroFile service endpoint
+CVE-2029-0106	2029	High	Arcturus Labs	AetherMail	CWE-352 (CSRF)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2030-0106	2030	High	OrionWorks	SentinelAI	CWE-22 (Path Traversal)	Data Exfiltration	Sensitive data exposure through CWE-22 in SentinelAI API
+CVE-2031-0106	2031	Critical	Pioneer Systems	FluxGateway	CWE-327 (Broken Crypto)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2026-0107	2026	Medium	Vertex Cyber	HeliosEdge	CWE-863 (AuthZ)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2027-0107	2027	High	BlueHelix	ChronosDB	CWE-20 (Input Validation)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2028-0107	2028	High	SolarNode	AuroraMesh	CWE-77 (Command Injection)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2029-0107	2029	High	NimbusForge	CipherKit	CWE-502 (Deserialization)	Integrity Breach	Tampering of configuration/state due to CWE-502 weakness in CipherKit
+CVE-2030-0107	2030	Low	NebulaSec	QuantumOS	CWE-918 (SSRF)	RCE	Remote Code Execution via CWE-918 in QuantumOS service endpoint
+CVE-2031-0107	2031	High	Arcturus Labs	NovaCMS	CWE-434 (Unrestricted File Upload)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2026-0108	2026	Critical	OrionWorks	SkyDrive	CWE-295 (TLS Cert Validation)	Data Exfiltration	Sensitive data exposure through CWE-295 in SkyDrive API
+CVE-2027-0108	2027	Critical	Pioneer Systems	IoTConnect	CWE-451 (UI Redress/Clickjacking)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2028-0108	2028	High	Vertex Cyber	NeuroDB	CWE-79 (XSS)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2029-0108	2029	Medium	BlueHelix	BioScan	CWE-89 (SQLi)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2030-0108	2030	Medium	SolarNode	StarPortal	CWE-120 (Buffer Overflow)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2031-0108	2031	High	NimbusForge	HyperChain	CWE-352 (CSRF)	Integrity Breach	Tampering of configuration/state due to CWE-352 weakness in HyperChain
+CVE-2026-0109	2026	Low	NebulaSec	AstroFile	CWE-22 (Path Traversal)	RCE	Remote Code Execution via CWE-22 in AstroFile service endpoint
+CVE-2027-0109	2027	Critical	Arcturus Labs	AetherMail	CWE-327 (Broken Crypto)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2028-0109	2028	High	OrionWorks	SentinelAI	CWE-863 (AuthZ)	Data Exfiltration	Sensitive data exposure through CWE-863 in SentinelAI API
+CVE-2029-0109	2029	Critical	Pioneer Systems	FluxGateway	CWE-20 (Input Validation)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2030-0109	2030	Medium	Vertex Cyber	HeliosEdge	CWE-77 (Command Injection)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2031-0109	2031	Medium	BlueHelix	ChronosDB	CWE-502 (Deserialization)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2026-0110	2026	High	SolarNode	AuroraMesh	CWE-918 (SSRF)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2027-0110	2027	High	NimbusForge	CipherKit	CWE-434 (Unrestricted File Upload)	Integrity Breach	Tampering of configuration/state due to CWE-434 weakness in CipherKit
+CVE-2028-0110	2028	Medium	NebulaSec	QuantumOS	CWE-295 (TLS Cert Validation)	RCE	Remote Code Execution via CWE-295 in QuantumOS service endpoint
+CVE-2029-0110	2029	Critical	Arcturus Labs	NovaCMS	CWE-451 (UI Redress/Clickjacking)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2030-0110	2030	High	OrionWorks	SkyDrive	CWE-79 (XSS)	Data Exfiltration	Sensitive data exposure through CWE-79 in SkyDrive API
+CVE-2031-0110	2031	Low	Pioneer Systems	IoTConnect	CWE-89 (SQLi)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2026-0111	2026	Critical	Vertex Cyber	NeuroDB	CWE-120 (Buffer Overflow)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2027-0111	2027	Critical	BlueHelix	BioScan	CWE-352 (CSRF)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2028-0111	2028	Critical	SolarNode	StarPortal	CWE-22 (Path Traversal)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2029-0111	2029	High	NimbusForge	HyperChain	CWE-327 (Broken Crypto)	Integrity Breach	Tampering of configuration/state due to CWE-327 weakness in HyperChain
+CVE-2030-0111	2030	High	NebulaSec	AstroFile	CWE-863 (AuthZ)	RCE	Remote Code Execution via CWE-863 in AstroFile service endpoint
+CVE-2031-0111	2031	High	Arcturus Labs	AetherMail	CWE-20 (Input Validation)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2026-0112	2026	High	OrionWorks	SentinelAI	CWE-77 (Command Injection)	Data Exfiltration	Sensitive data exposure through CWE-77 in SentinelAI API
+CVE-2027-0112	2027	High	Pioneer Systems	FluxGateway	CWE-502 (Deserialization)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2028-0112	2028	Medium	Vertex Cyber	HeliosEdge	CWE-918 (SSRF)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2029-0112	2029	Critical	BlueHelix	ChronosDB	CWE-434 (Unrestricted File Upload)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2030-0112	2030	Medium	SolarNode	AuroraMesh	CWE-295 (TLS Cert Validation)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2031-0112	2031	Critical	NimbusForge	CipherKit	CWE-451 (UI Redress/Clickjacking)	Integrity Breach	Tampering of configuration/state due to CWE-451 weakness in CipherKit
+CVE-2026-0113	2026	Low	NebulaSec	QuantumOS	CWE-79 (XSS)	RCE	Remote Code Execution via CWE-79 in QuantumOS service endpoint
+CVE-2027-0113	2027	High	Arcturus Labs	NovaCMS	CWE-89 (SQLi)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2028-0113	2028	High	OrionWorks	SkyDrive	CWE-120 (Buffer Overflow)	Data Exfiltration	Sensitive data exposure through CWE-120 in SkyDrive API
+CVE-2029-0113	2029	High	Pioneer Systems	IoTConnect	CWE-352 (CSRF)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2030-0113	2030	Low	Vertex Cyber	NeuroDB	CWE-22 (Path Traversal)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2031-0113	2031	High	BlueHelix	BioScan	CWE-327 (Broken Crypto)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2026-0114	2026	Critical	SolarNode	StarPortal	CWE-863 (AuthZ)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2027-0114	2027	High	NimbusForge	HyperChain	CWE-20 (Input Validation)	Integrity Breach	Tampering of configuration/state due to CWE-20 weakness in HyperChain
+CVE-2028-0114	2028	Medium	NebulaSec	AstroFile	CWE-77 (Command Injection)	RCE	Remote Code Execution via CWE-77 in AstroFile service endpoint
+CVE-2029-0114	2029	Critical	Arcturus Labs	AetherMail	CWE-502 (Deserialization)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2030-0114	2030	Critical	OrionWorks	SentinelAI	CWE-918 (SSRF)	Data Exfiltration	Sensitive data exposure through CWE-918 in SentinelAI API
+CVE-2031-0114	2031	High	Pioneer Systems	FluxGateway	CWE-434 (Unrestricted File Upload)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2026-0115	2026	Medium	Vertex Cyber	HeliosEdge	CWE-295 (TLS Cert Validation)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2027-0115	2027	Critical	BlueHelix	ChronosDB	CWE-451 (UI Redress/Clickjacking)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2028-0115	2028	Medium	SolarNode	AuroraMesh	CWE-79 (XSS)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2029-0115	2029	Critical	NimbusForge	CipherKit	CWE-89 (SQLi)	Integrity Breach	Tampering of configuration/state due to CWE-89 weakness in CipherKit
+CVE-2030-0115	2030	Critical	NebulaSec	QuantumOS	CWE-120 (Buffer Overflow)	RCE	Remote Code Execution via CWE-120 in QuantumOS service endpoint
+CVE-2031-0115	2031	High	Arcturus Labs	NovaCMS	CWE-352 (CSRF)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2026-0116	2026	Medium	OrionWorks	SkyDrive	CWE-22 (Path Traversal)	Data Exfiltration	Sensitive data exposure through CWE-22 in SkyDrive API
+CVE-2027-0116	2027	Critical	Pioneer Systems	IoTConnect	CWE-327 (Broken Crypto)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2028-0116	2028	High	Vertex Cyber	NeuroDB	CWE-863 (AuthZ)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2029-0116	2029	High	BlueHelix	BioScan	CWE-20 (Input Validation)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2030-0116	2030	Critical	SolarNode	StarPortal	CWE-77 (Command Injection)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2031-0116	2031	Critical	NimbusForge	HyperChain	CWE-502 (Deserialization)	Integrity Breach	Tampering of configuration/state due to CWE-502 weakness in HyperChain
+CVE-2026-0117	2026	High	NebulaSec	AstroFile	CWE-918 (SSRF)	RCE	Remote Code Execution via CWE-918 in AstroFile service endpoint
+CVE-2027-0117	2027	High	Arcturus Labs	AetherMail	CWE-434 (Unrestricted File Upload)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2028-0117	2028	Medium	OrionWorks	SentinelAI	CWE-295 (TLS Cert Validation)	Data Exfiltration	Sensitive data exposure through CWE-295 in SentinelAI API
+CVE-2029-0117	2029	High	Pioneer Systems	FluxGateway	CWE-451 (UI Redress/Clickjacking)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2030-0117	2030	High	Vertex Cyber	HeliosEdge	CWE-79 (XSS)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2031-0117	2031	High	BlueHelix	ChronosDB	CWE-89 (SQLi)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2026-0118	2026	Critical	SolarNode	AuroraMesh	CWE-120 (Buffer Overflow)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2027-0118	2027	Critical	NimbusForge	CipherKit	CWE-352 (CSRF)	Integrity Breach	Tampering of configuration/state due to CWE-352 weakness in CipherKit
+CVE-2028-0118	2028	Medium	NebulaSec	QuantumOS	CWE-22 (Path Traversal)	RCE	Remote Code Execution via CWE-22 in QuantumOS service endpoint
+CVE-2029-0118	2029	Medium	Arcturus Labs	NovaCMS	CWE-327 (Broken Crypto)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2030-0118	2030	Medium	OrionWorks	SkyDrive	CWE-863 (AuthZ)	Data Exfiltration	Sensitive data exposure through CWE-863 in SkyDrive API
+CVE-2031-0118	2031	Medium	Pioneer Systems	IoTConnect	CWE-20 (Input Validation)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2026-0119	2026	Medium	Vertex Cyber	NeuroDB	CWE-77 (Command Injection)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2027-0119	2027	Critical	BlueHelix	BioScan	CWE-502 (Deserialization)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2028-0119	2028	Medium	SolarNode	StarPortal	CWE-918 (SSRF)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2029-0119	2029	Critical	NimbusForge	HyperChain	CWE-434 (Unrestricted File Upload)	Integrity Breach	Tampering of configuration/state due to CWE-434 weakness in HyperChain
+CVE-2030-0119	2030	Critical	NebulaSec	AstroFile	CWE-295 (TLS Cert Validation)	RCE	Remote Code Execution via CWE-295 in AstroFile service endpoint
+CVE-2031-0119	2031	Critical	Arcturus Labs	AetherMail	CWE-451 (UI Redress/Clickjacking)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2026-0120	2026	Critical	OrionWorks	SentinelAI	CWE-79 (XSS)	Data Exfiltration	Sensitive data exposure through CWE-79 in SentinelAI API
+CVE-2027-0120	2027	Critical	Pioneer Systems	FluxGateway	CWE-89 (SQLi)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2028-0120	2028	Critical	Vertex Cyber	HeliosEdge	CWE-120 (Buffer Overflow)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2029-0120	2029	High	BlueHelix	ChronosDB	CWE-352 (CSRF)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2030-0120	2030	High	SolarNode	AuroraMesh	CWE-22 (Path Traversal)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2031-0120	2031	High	NimbusForge	CipherKit	CWE-327 (Broken Crypto)	Integrity Breach	Tampering of configuration/state due to CWE-327 weakness in CipherKit
+CVE-2026-0121	2026	Critical	NebulaSec	QuantumOS	CWE-863 (AuthZ)	RCE	Remote Code Execution via CWE-863 in QuantumOS service endpoint
+CVE-2027-0121	2027	Low	Arcturus Labs	NovaCMS	CWE-20 (Input Validation)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2028-0121	2028	Low	OrionWorks	SkyDrive	CWE-77 (Command Injection)	Data Exfiltration	Sensitive data exposure through CWE-77 in SkyDrive API
+CVE-2029-0121	2029	Critical	Pioneer Systems	IoTConnect	CWE-502 (Deserialization)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2030-0121	2030	Medium	Vertex Cyber	NeuroDB	CWE-918 (SSRF)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2031-0121	2031	Medium	BlueHelix	BioScan	CWE-434 (Unrestricted File Upload)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2026-0122	2026	Medium	SolarNode	StarPortal	CWE-295 (TLS Cert Validation)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2027-0122	2027	Medium	NimbusForge	HyperChain	CWE-451 (UI Redress/Clickjacking)	Integrity Breach	Tampering of configuration/state due to CWE-451 weakness in HyperChain
+CVE-2028-0122	2028	Low	NebulaSec	AstroFile	CWE-79 (XSS)	RCE	Remote Code Execution via CWE-79 in AstroFile service endpoint
+CVE-2029-0122	2029	Critical	Arcturus Labs	AetherMail	CWE-89 (SQLi)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2030-0122	2030	Critical	OrionWorks	SentinelAI	CWE-120 (Buffer Overflow)	Data Exfiltration	Sensitive data exposure through CWE-120 in SentinelAI API
+CVE-2031-0122	2031	Medium	Pioneer Systems	FluxGateway	CWE-352 (CSRF)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2026-0123	2026	Low	Vertex Cyber	HeliosEdge	CWE-22 (Path Traversal)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2027-0123	2027	Medium	BlueHelix	ChronosDB	CWE-327 (Broken Crypto)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2028-0123	2028	Medium	SolarNode	AuroraMesh	CWE-863 (AuthZ)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2029-0123	2029	Medium	NimbusForge	CipherKit	CWE-20 (Input Validation)	Integrity Breach	Tampering of configuration/state due to CWE-20 weakness in CipherKit
+CVE-2030-0123	2030	High	NebulaSec	QuantumOS	CWE-77 (Command Injection)	RCE	Remote Code Execution via CWE-77 in QuantumOS service endpoint
+CVE-2031-0123	2031	Critical	Arcturus Labs	NovaCMS	CWE-502 (Deserialization)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2026-0124	2026	Medium	OrionWorks	SkyDrive	CWE-918 (SSRF)	Data Exfiltration	Sensitive data exposure through CWE-918 in SkyDrive API
+CVE-2027-0124	2027	Critical	Pioneer Systems	IoTConnect	CWE-434 (Unrestricted File Upload)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2028-0124	2028	Low	Vertex Cyber	NeuroDB	CWE-295 (TLS Cert Validation)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2029-0124	2029	Medium	BlueHelix	BioScan	CWE-451 (UI Redress/Clickjacking)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2030-0124	2030	Low	SolarNode	StarPortal	CWE-79 (XSS)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2031-0124	2031	Medium	NimbusForge	HyperChain	CWE-89 (SQLi)	Integrity Breach	Tampering of configuration/state due to CWE-89 weakness in HyperChain
+CVE-2026-0125	2026	Medium	NebulaSec	AstroFile	CWE-120 (Buffer Overflow)	RCE	Remote Code Execution via CWE-120 in AstroFile service endpoint
+CVE-2027-0125	2027	High	Arcturus Labs	AetherMail	CWE-352 (CSRF)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2028-0125	2028	High	OrionWorks	SentinelAI	CWE-22 (Path Traversal)	Data Exfiltration	Sensitive data exposure through CWE-22 in SentinelAI API
+CVE-2029-0125	2029	Critical	Pioneer Systems	FluxGateway	CWE-327 (Broken Crypto)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2030-0125	2030	Critical	Vertex Cyber	HeliosEdge	CWE-863 (AuthZ)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2031-0125	2031	Critical	BlueHelix	ChronosDB	CWE-20 (Input Validation)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2026-0126	2026	High	SolarNode	AuroraMesh	CWE-77 (Command Injection)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2027-0126	2027	Medium	NimbusForge	CipherKit	CWE-502 (Deserialization)	Integrity Breach	Tampering of configuration/state due to CWE-502 weakness in CipherKit
+CVE-2028-0126	2028	Medium	NebulaSec	QuantumOS	CWE-918 (SSRF)	RCE	Remote Code Execution via CWE-918 in QuantumOS service endpoint
+CVE-2029-0126	2029	High	Arcturus Labs	NovaCMS	CWE-434 (Unrestricted File Upload)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2030-0126	2030	Medium	OrionWorks	SkyDrive	CWE-295 (TLS Cert Validation)	Data Exfiltration	Sensitive data exposure through CWE-295 in SkyDrive API
+CVE-2031-0126	2031	Medium	Pioneer Systems	IoTConnect	CWE-451 (UI Redress/Clickjacking)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2026-0127	2026	Medium	Vertex Cyber	NeuroDB	CWE-79 (XSS)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2027-0127	2027	Critical	BlueHelix	BioScan	CWE-89 (SQLi)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2028-0127	2028	High	SolarNode	StarPortal	CWE-120 (Buffer Overflow)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2029-0127	2029	Medium	NimbusForge	HyperChain	CWE-352 (CSRF)	Integrity Breach	Tampering of configuration/state due to CWE-352 weakness in HyperChain
+CVE-2030-0127	2030	High	NebulaSec	AstroFile	CWE-22 (Path Traversal)	RCE	Remote Code Execution via CWE-22 in AstroFile service endpoint
+CVE-2031-0127	2031	Medium	Arcturus Labs	AetherMail	CWE-327 (Broken Crypto)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2026-0128	2026	Medium	OrionWorks	SentinelAI	CWE-863 (AuthZ)	Data Exfiltration	Sensitive data exposure through CWE-863 in SentinelAI API
+CVE-2027-0128	2027	Critical	Pioneer Systems	FluxGateway	CWE-20 (Input Validation)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2028-0128	2028	Low	Vertex Cyber	HeliosEdge	CWE-77 (Command Injection)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2029-0128	2029	Low	BlueHelix	ChronosDB	CWE-502 (Deserialization)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2030-0128	2030	Critical	SolarNode	AuroraMesh	CWE-918 (SSRF)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2031-0128	2031	Medium	NimbusForge	CipherKit	CWE-434 (Unrestricted File Upload)	Integrity Breach	Tampering of configuration/state due to CWE-434 weakness in CipherKit
+CVE-2026-0129	2026	Critical	NebulaSec	QuantumOS	CWE-295 (TLS Cert Validation)	RCE	Remote Code Execution via CWE-295 in QuantumOS service endpoint
+CVE-2027-0129	2027	Low	Arcturus Labs	NovaCMS	CWE-451 (UI Redress/Clickjacking)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2028-0129	2028	High	OrionWorks	SkyDrive	CWE-79 (XSS)	Data Exfiltration	Sensitive data exposure through CWE-79 in SkyDrive API
+CVE-2029-0129	2029	Medium	Pioneer Systems	IoTConnect	CWE-89 (SQLi)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2030-0129	2030	High	Vertex Cyber	NeuroDB	CWE-120 (Buffer Overflow)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2031-0129	2031	High	BlueHelix	BioScan	CWE-352 (CSRF)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2026-0130	2026	Low	SolarNode	StarPortal	CWE-22 (Path Traversal)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2027-0130	2027	High	NimbusForge	HyperChain	CWE-327 (Broken Crypto)	Integrity Breach	Tampering of configuration/state due to CWE-327 weakness in HyperChain
+CVE-2028-0130	2028	Critical	NebulaSec	AstroFile	CWE-863 (AuthZ)	RCE	Remote Code Execution via CWE-863 in AstroFile service endpoint
+CVE-2029-0130	2029	High	Arcturus Labs	AetherMail	CWE-20 (Input Validation)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2030-0130	2030	High	OrionWorks	SentinelAI	CWE-77 (Command Injection)	Data Exfiltration	Sensitive data exposure through CWE-77 in SentinelAI API
+CVE-2031-0130	2031	Medium	Pioneer Systems	FluxGateway	CWE-502 (Deserialization)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2026-0131	2026	Low	Vertex Cyber	HeliosEdge	CWE-918 (SSRF)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2027-0131	2027	Critical	BlueHelix	ChronosDB	CWE-434 (Unrestricted File Upload)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2028-0131	2028	Critical	SolarNode	AuroraMesh	CWE-295 (TLS Cert Validation)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2029-0131	2029	Medium	NimbusForge	CipherKit	CWE-451 (UI Redress/Clickjacking)	Integrity Breach	Tampering of configuration/state due to CWE-451 weakness in CipherKit
+CVE-2030-0131	2030	Medium	NebulaSec	QuantumOS	CWE-79 (XSS)	RCE	Remote Code Execution via CWE-79 in QuantumOS service endpoint
+CVE-2031-0131	2031	High	Arcturus Labs	NovaCMS	CWE-89 (SQLi)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2026-0132	2026	Critical	OrionWorks	SkyDrive	CWE-120 (Buffer Overflow)	Data Exfiltration	Sensitive data exposure through CWE-120 in SkyDrive API
+CVE-2027-0132	2027	Medium	Pioneer Systems	IoTConnect	CWE-352 (CSRF)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2028-0132	2028	High	Vertex Cyber	NeuroDB	CWE-22 (Path Traversal)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2029-0132	2029	High	BlueHelix	BioScan	CWE-327 (Broken Crypto)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2030-0132	2030	Medium	SolarNode	StarPortal	CWE-863 (AuthZ)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2031-0132	2031	Critical	NimbusForge	HyperChain	CWE-20 (Input Validation)	Integrity Breach	Tampering of configuration/state due to CWE-20 weakness in HyperChain
+CVE-2026-0133	2026	Critical	NebulaSec	AstroFile	CWE-77 (Command Injection)	RCE	Remote Code Execution via CWE-77 in AstroFile service endpoint
+CVE-2027-0133	2027	Critical	Arcturus Labs	AetherMail	CWE-502 (Deserialization)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2028-0133	2028	Medium	OrionWorks	SentinelAI	CWE-918 (SSRF)	Data Exfiltration	Sensitive data exposure through CWE-918 in SentinelAI API
+CVE-2029-0133	2029	Medium	Pioneer Systems	FluxGateway	CWE-434 (Unrestricted File Upload)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2030-0133	2030	High	Vertex Cyber	HeliosEdge	CWE-295 (TLS Cert Validation)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2031-0133	2031	Critical	BlueHelix	ChronosDB	CWE-451 (UI Redress/Clickjacking)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2026-0134	2026	High	SolarNode	AuroraMesh	CWE-79 (XSS)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2027-0134	2027	Critical	NimbusForge	CipherKit	CWE-89 (SQLi)	Integrity Breach	Tampering of configuration/state due to CWE-89 weakness in CipherKit
+CVE-2028-0134	2028	Medium	NebulaSec	QuantumOS	CWE-120 (Buffer Overflow)	RCE	Remote Code Execution via CWE-120 in QuantumOS service endpoint
+CVE-2029-0134	2029	High	Arcturus Labs	NovaCMS	CWE-352 (CSRF)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2030-0134	2030	Medium	OrionWorks	SkyDrive	CWE-22 (Path Traversal)	Data Exfiltration	Sensitive data exposure through CWE-22 in SkyDrive API
+CVE-2031-0134	2031	Critical	Pioneer Systems	IoTConnect	CWE-327 (Broken Crypto)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2026-0135	2026	Medium	Vertex Cyber	NeuroDB	CWE-863 (AuthZ)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2027-0135	2027	Critical	BlueHelix	BioScan	CWE-20 (Input Validation)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2028-0135	2028	Medium	SolarNode	StarPortal	CWE-77 (Command Injection)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2029-0135	2029	Medium	NimbusForge	HyperChain	CWE-502 (Deserialization)	Integrity Breach	Tampering of configuration/state due to CWE-502 weakness in HyperChain
+CVE-2030-0135	2030	Medium	NebulaSec	AstroFile	CWE-918 (SSRF)	RCE	Remote Code Execution via CWE-918 in AstroFile service endpoint
+CVE-2031-0135	2031	Critical	Arcturus Labs	AetherMail	CWE-434 (Unrestricted File Upload)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2026-0136	2026	Critical	OrionWorks	SentinelAI	CWE-295 (TLS Cert Validation)	Data Exfiltration	Sensitive data exposure through CWE-295 in SentinelAI API
+CVE-2027-0136	2027	High	Pioneer Systems	FluxGateway	CWE-451 (UI Redress/Clickjacking)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2028-0136	2028	High	Vertex Cyber	HeliosEdge	CWE-79 (XSS)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2029-0136	2029	Low	BlueHelix	ChronosDB	CWE-89 (SQLi)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2030-0136	2030	High	SolarNode	AuroraMesh	CWE-120 (Buffer Overflow)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2031-0136	2031	Critical	NimbusForge	CipherKit	CWE-352 (CSRF)	Integrity Breach	Tampering of configuration/state due to CWE-352 weakness in CipherKit
+CVE-2026-0137	2026	Critical	NebulaSec	QuantumOS	CWE-22 (Path Traversal)	RCE	Remote Code Execution via CWE-22 in QuantumOS service endpoint
+CVE-2027-0137	2027	High	Arcturus Labs	NovaCMS	CWE-327 (Broken Crypto)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2028-0137	2028	Critical	OrionWorks	SkyDrive	CWE-863 (AuthZ)	Data Exfiltration	Sensitive data exposure through CWE-863 in SkyDrive API
+CVE-2029-0137	2029	Medium	Pioneer Systems	IoTConnect	CWE-20 (Input Validation)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2030-0137	2030	Medium	Vertex Cyber	NeuroDB	CWE-77 (Command Injection)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2031-0137	2031	Critical	BlueHelix	BioScan	CWE-502 (Deserialization)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2026-0138	2026	Medium	SolarNode	StarPortal	CWE-918 (SSRF)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2027-0138	2027	High	NimbusForge	HyperChain	CWE-434 (Unrestricted File Upload)	Integrity Breach	Tampering of configuration/state due to CWE-434 weakness in HyperChain
+CVE-2028-0138	2028	Medium	NebulaSec	AstroFile	CWE-295 (TLS Cert Validation)	RCE	Remote Code Execution via CWE-295 in AstroFile service endpoint
+CVE-2029-0138	2029	Medium	Arcturus Labs	AetherMail	CWE-451 (UI Redress/Clickjacking)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2030-0138	2030	Medium	OrionWorks	SentinelAI	CWE-79 (XSS)	Data Exfiltration	Sensitive data exposure through CWE-79 in SentinelAI API
+CVE-2031-0138	2031	Medium	Pioneer Systems	FluxGateway	CWE-89 (SQLi)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2026-0139	2026	Critical	Vertex Cyber	HeliosEdge	CWE-120 (Buffer Overflow)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2027-0139	2027	High	BlueHelix	ChronosDB	CWE-352 (CSRF)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2028-0139	2028	Critical	SolarNode	AuroraMesh	CWE-22 (Path Traversal)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2029-0139	2029	High	NimbusForge	CipherKit	CWE-327 (Broken Crypto)	Integrity Breach	Tampering of configuration/state due to CWE-327 weakness in CipherKit
+CVE-2030-0139	2030	Medium	NebulaSec	QuantumOS	CWE-863 (AuthZ)	RCE	Remote Code Execution via CWE-863 in QuantumOS service endpoint
+CVE-2031-0139	2031	Medium	Arcturus Labs	NovaCMS	CWE-20 (Input Validation)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2026-0140	2026	High	OrionWorks	SkyDrive	CWE-77 (Command Injection)	Data Exfiltration	Sensitive data exposure through CWE-77 in SkyDrive API
+CVE-2027-0140	2027	Critical	Pioneer Systems	IoTConnect	CWE-502 (Deserialization)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2028-0140	2028	Medium	Vertex Cyber	NeuroDB	CWE-918 (SSRF)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2029-0140	2029	High	BlueHelix	BioScan	CWE-434 (Unrestricted File Upload)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2030-0140	2030	Low	SolarNode	StarPortal	CWE-295 (TLS Cert Validation)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2031-0140	2031	High	NimbusForge	HyperChain	CWE-451 (UI Redress/Clickjacking)	Integrity Breach	Tampering of configuration/state due to CWE-451 weakness in HyperChain
+CVE-2026-0141	2026	High	NebulaSec	AstroFile	CWE-79 (XSS)	RCE	Remote Code Execution via CWE-79 in AstroFile service endpoint
+CVE-2027-0141	2027	Low	Arcturus Labs	AetherMail	CWE-89 (SQLi)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2028-0141	2028	High	OrionWorks	SentinelAI	CWE-120 (Buffer Overflow)	Data Exfiltration	Sensitive data exposure through CWE-120 in SentinelAI API
+CVE-2029-0141	2029	Medium	Pioneer Systems	FluxGateway	CWE-352 (CSRF)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2030-0141	2030	Medium	Vertex Cyber	HeliosEdge	CWE-22 (Path Traversal)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2031-0141	2031	Critical	BlueHelix	ChronosDB	CWE-327 (Broken Crypto)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2026-0142	2026	Critical	SolarNode	AuroraMesh	CWE-863 (AuthZ)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2027-0142	2027	High	NimbusForge	CipherKit	CWE-20 (Input Validation)	Integrity Breach	Tampering of configuration/state due to CWE-20 weakness in CipherKit
+CVE-2028-0142	2028	Critical	NebulaSec	QuantumOS	CWE-77 (Command Injection)	RCE	Remote Code Execution via CWE-77 in QuantumOS service endpoint
+CVE-2029-0142	2029	Critical	Arcturus Labs	NovaCMS	CWE-502 (Deserialization)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2030-0142	2030	Low	OrionWorks	SkyDrive	CWE-918 (SSRF)	Data Exfiltration	Sensitive data exposure through CWE-918 in SkyDrive API
+CVE-2031-0142	2031	Critical	Pioneer Systems	IoTConnect	CWE-434 (Unrestricted File Upload)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2026-0143	2026	Critical	Vertex Cyber	NeuroDB	CWE-295 (TLS Cert Validation)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2027-0143	2027	Medium	BlueHelix	BioScan	CWE-451 (UI Redress/Clickjacking)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2028-0143	2028	Critical	SolarNode	StarPortal	CWE-79 (XSS)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2029-0143	2029	Medium	NimbusForge	HyperChain	CWE-89 (SQLi)	Integrity Breach	Tampering of configuration/state due to CWE-89 weakness in HyperChain
+CVE-2030-0143	2030	Medium	NebulaSec	AstroFile	CWE-120 (Buffer Overflow)	RCE	Remote Code Execution via CWE-120 in AstroFile service endpoint
+CVE-2031-0143	2031	High	Arcturus Labs	AetherMail	CWE-352 (CSRF)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2026-0144	2026	High	OrionWorks	SentinelAI	CWE-22 (Path Traversal)	Data Exfiltration	Sensitive data exposure through CWE-22 in SentinelAI API
+CVE-2027-0144	2027	High	Pioneer Systems	FluxGateway	CWE-327 (Broken Crypto)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2028-0144	2028	Critical	Vertex Cyber	HeliosEdge	CWE-863 (AuthZ)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2029-0144	2029	High	BlueHelix	ChronosDB	CWE-20 (Input Validation)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2030-0144	2030	Medium	SolarNode	AuroraMesh	CWE-77 (Command Injection)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2031-0144	2031	High	NimbusForge	CipherKit	CWE-502 (Deserialization)	Integrity Breach	Tampering of configuration/state due to CWE-502 weakness in CipherKit
+CVE-2026-0145	2026	Medium	NebulaSec	QuantumOS	CWE-918 (SSRF)	RCE	Remote Code Execution via CWE-918 in QuantumOS service endpoint
+CVE-2027-0145	2027	Medium	Arcturus Labs	NovaCMS	CWE-434 (Unrestricted File Upload)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2028-0145	2028	High	OrionWorks	SkyDrive	CWE-295 (TLS Cert Validation)	Data Exfiltration	Sensitive data exposure through CWE-295 in SkyDrive API
+CVE-2029-0145	2029	Medium	Pioneer Systems	IoTConnect	CWE-451 (UI Redress/Clickjacking)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2030-0145	2030	High	Vertex Cyber	NeuroDB	CWE-79 (XSS)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2031-0145	2031	Medium	BlueHelix	BioScan	CWE-89 (SQLi)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2026-0146	2026	Critical	SolarNode	StarPortal	CWE-120 (Buffer Overflow)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2027-0146	2027	Critical	NimbusForge	HyperChain	CWE-352 (CSRF)	Integrity Breach	Tampering of configuration/state due to CWE-352 weakness in HyperChain
+CVE-2028-0146	2028	High	NebulaSec	AstroFile	CWE-22 (Path Traversal)	RCE	Remote Code Execution via CWE-22 in AstroFile service endpoint
+CVE-2029-0146	2029	Medium	Arcturus Labs	AetherMail	CWE-327 (Broken Crypto)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2030-0146	2030	Critical	OrionWorks	SentinelAI	CWE-863 (AuthZ)	Data Exfiltration	Sensitive data exposure through CWE-863 in SentinelAI API
+CVE-2031-0146	2031	Low	Pioneer Systems	FluxGateway	CWE-20 (Input Validation)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2026-0147	2026	High	Vertex Cyber	HeliosEdge	CWE-77 (Command Injection)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2027-0147	2027	High	BlueHelix	ChronosDB	CWE-502 (Deserialization)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2028-0147	2028	Critical	SolarNode	AuroraMesh	CWE-918 (SSRF)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2029-0147	2029	Medium	NimbusForge	CipherKit	CWE-434 (Unrestricted File Upload)	Integrity Breach	Tampering of configuration/state due to CWE-434 weakness in CipherKit
+CVE-2030-0147	2030	Critical	NebulaSec	QuantumOS	CWE-295 (TLS Cert Validation)	RCE	Remote Code Execution via CWE-295 in QuantumOS service endpoint
+CVE-2031-0147	2031	Critical	Arcturus Labs	NovaCMS	CWE-451 (UI Redress/Clickjacking)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2026-0148	2026	High	OrionWorks	SkyDrive	CWE-79 (XSS)	Data Exfiltration	Sensitive data exposure through CWE-79 in SkyDrive API
+CVE-2027-0148	2027	Low	Pioneer Systems	IoTConnect	CWE-89 (SQLi)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2028-0148	2028	Critical	Vertex Cyber	NeuroDB	CWE-120 (Buffer Overflow)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2029-0148	2029	Medium	BlueHelix	BioScan	CWE-352 (CSRF)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2030-0148	2030	Critical	SolarNode	StarPortal	CWE-22 (Path Traversal)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2031-0148	2031	High	NimbusForge	HyperChain	CWE-327 (Broken Crypto)	Integrity Breach	Tampering of configuration/state due to CWE-327 weakness in HyperChain
+CVE-2026-0149	2026	Medium	NebulaSec	AstroFile	CWE-863 (AuthZ)	RCE	Remote Code Execution via CWE-863 in AstroFile service endpoint
+CVE-2027-0149	2027	High	Arcturus Labs	AetherMail	CWE-20 (Input Validation)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2028-0149	2028	Critical	OrionWorks	SentinelAI	CWE-77 (Command Injection)	Data Exfiltration	Sensitive data exposure through CWE-77 in SentinelAI API
+CVE-2029-0149	2029	High	Pioneer Systems	FluxGateway	CWE-502 (Deserialization)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2030-0149	2030	High	Vertex Cyber	HeliosEdge	CWE-918 (SSRF)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2031-0149	2031	High	BlueHelix	ChronosDB	CWE-434 (Unrestricted File Upload)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2026-0150	2026	Medium	SolarNode	AuroraMesh	CWE-295 (TLS Cert Validation)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2027-0150	2027	Critical	NimbusForge	CipherKit	CWE-451 (UI Redress/Clickjacking)	Integrity Breach	Tampering of configuration/state due to CWE-451 weakness in CipherKit
+CVE-2028-0150	2028	Critical	NebulaSec	QuantumOS	CWE-79 (XSS)	RCE	Remote Code Execution via CWE-79 in QuantumOS service endpoint
+CVE-2029-0150	2029	Medium	Arcturus Labs	NovaCMS	CWE-89 (SQLi)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2030-0150	2030	Medium	OrionWorks	SkyDrive	CWE-120 (Buffer Overflow)	Data Exfiltration	Sensitive data exposure through CWE-120 in SkyDrive API
+CVE-2031-0150	2031	Medium	Pioneer Systems	IoTConnect	CWE-352 (CSRF)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2026-0151	2026	High	Vertex Cyber	NeuroDB	CWE-22 (Path Traversal)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2027-0151	2027	High	BlueHelix	BioScan	CWE-327 (Broken Crypto)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2028-0151	2028	High	SolarNode	StarPortal	CWE-863 (AuthZ)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2029-0151	2029	Low	NimbusForge	HyperChain	CWE-20 (Input Validation)	Integrity Breach	Tampering of configuration/state due to CWE-20 weakness in HyperChain
+CVE-2030-0151	2030	Critical	NebulaSec	AstroFile	CWE-77 (Command Injection)	RCE	Remote Code Execution via CWE-77 in AstroFile service endpoint
+CVE-2031-0151	2031	Medium	Arcturus Labs	AetherMail	CWE-502 (Deserialization)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2026-0152	2026	Medium	OrionWorks	SentinelAI	CWE-918 (SSRF)	Data Exfiltration	Sensitive data exposure through CWE-918 in SentinelAI API
+CVE-2027-0152	2027	Medium	Pioneer Systems	FluxGateway	CWE-434 (Unrestricted File Upload)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2028-0152	2028	Critical	Vertex Cyber	HeliosEdge	CWE-295 (TLS Cert Validation)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2029-0152	2029	Critical	BlueHelix	ChronosDB	CWE-451 (UI Redress/Clickjacking)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2030-0152	2030	Low	SolarNode	AuroraMesh	CWE-79 (XSS)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2031-0152	2031	High	NimbusForge	CipherKit	CWE-89 (SQLi)	Integrity Breach	Tampering of configuration/state due to CWE-89 weakness in CipherKit
+CVE-2026-0153	2026	Medium	NebulaSec	QuantumOS	CWE-120 (Buffer Overflow)	RCE	Remote Code Execution via CWE-120 in QuantumOS service endpoint
+CVE-2027-0153	2027	High	Arcturus Labs	NovaCMS	CWE-352 (CSRF)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2028-0153	2028	High	OrionWorks	SkyDrive	CWE-22 (Path Traversal)	Data Exfiltration	Sensitive data exposure through CWE-22 in SkyDrive API
+CVE-2029-0153	2029	Medium	Pioneer Systems	IoTConnect	CWE-327 (Broken Crypto)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2030-0153	2030	Medium	Vertex Cyber	NeuroDB	CWE-863 (AuthZ)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2031-0153	2031	High	BlueHelix	BioScan	CWE-20 (Input Validation)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2026-0154	2026	Critical	SolarNode	StarPortal	CWE-77 (Command Injection)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2027-0154	2027	Medium	NimbusForge	HyperChain	CWE-502 (Deserialization)	Integrity Breach	Tampering of configuration/state due to CWE-502 weakness in HyperChain
+CVE-2028-0154	2028	High	NebulaSec	AstroFile	CWE-918 (SSRF)	RCE	Remote Code Execution via CWE-918 in AstroFile service endpoint
+CVE-2029-0154	2029	Medium	Arcturus Labs	AetherMail	CWE-434 (Unrestricted File Upload)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2030-0154	2030	Medium	OrionWorks	SentinelAI	CWE-295 (TLS Cert Validation)	Data Exfiltration	Sensitive data exposure through CWE-295 in SentinelAI API
+CVE-2031-0154	2031	Critical	Pioneer Systems	FluxGateway	CWE-451 (UI Redress/Clickjacking)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2026-0155	2026	Medium	Vertex Cyber	HeliosEdge	CWE-79 (XSS)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2027-0155	2027	High	BlueHelix	ChronosDB	CWE-89 (SQLi)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2028-0155	2028	Medium	SolarNode	AuroraMesh	CWE-120 (Buffer Overflow)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2029-0155	2029	Medium	NimbusForge	CipherKit	CWE-352 (CSRF)	Integrity Breach	Tampering of configuration/state due to CWE-352 weakness in CipherKit
+CVE-2030-0155	2030	Low	NebulaSec	QuantumOS	CWE-22 (Path Traversal)	RCE	Remote Code Execution via CWE-22 in QuantumOS service endpoint
+CVE-2031-0155	2031	Critical	Arcturus Labs	NovaCMS	CWE-327 (Broken Crypto)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2026-0156	2026	Critical	OrionWorks	SkyDrive	CWE-863 (AuthZ)	Data Exfiltration	Sensitive data exposure through CWE-863 in SkyDrive API
+CVE-2027-0156	2027	Medium	Pioneer Systems	IoTConnect	CWE-20 (Input Validation)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2028-0156	2028	Critical	Vertex Cyber	NeuroDB	CWE-77 (Command Injection)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2029-0156	2029	High	BlueHelix	BioScan	CWE-502 (Deserialization)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2030-0156	2030	Medium	SolarNode	StarPortal	CWE-918 (SSRF)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2031-0156	2031	Critical	NimbusForge	HyperChain	CWE-434 (Unrestricted File Upload)	Integrity Breach	Tampering of configuration/state due to CWE-434 weakness in HyperChain
+CVE-2026-0157	2026	High	NebulaSec	AstroFile	CWE-295 (TLS Cert Validation)	RCE	Remote Code Execution via CWE-295 in AstroFile service endpoint
+CVE-2027-0157	2027	High	Arcturus Labs	AetherMail	CWE-451 (UI Redress/Clickjacking)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2028-0157	2028	Low	OrionWorks	SentinelAI	CWE-79 (XSS)	Data Exfiltration	Sensitive data exposure through CWE-79 in SentinelAI API
+CVE-2029-0157	2029	Medium	Pioneer Systems	FluxGateway	CWE-89 (SQLi)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2030-0157	2030	Medium	Vertex Cyber	HeliosEdge	CWE-120 (Buffer Overflow)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2031-0157	2031	High	BlueHelix	ChronosDB	CWE-352 (CSRF)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2026-0158	2026	High	SolarNode	AuroraMesh	CWE-22 (Path Traversal)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2027-0158	2027	Medium	NimbusForge	CipherKit	CWE-327 (Broken Crypto)	Integrity Breach	Tampering of configuration/state due to CWE-327 weakness in CipherKit
+CVE-2028-0158	2028	High	NebulaSec	QuantumOS	CWE-863 (AuthZ)	RCE	Remote Code Execution via CWE-863 in QuantumOS service endpoint
+CVE-2029-0158	2029	High	Arcturus Labs	NovaCMS	CWE-20 (Input Validation)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2030-0158	2030	Critical	OrionWorks	SkyDrive	CWE-77 (Command Injection)	Data Exfiltration	Sensitive data exposure through CWE-77 in SkyDrive API
+CVE-2031-0158	2031	High	Pioneer Systems	IoTConnect	CWE-502 (Deserialization)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2026-0159	2026	Medium	Vertex Cyber	NeuroDB	CWE-918 (SSRF)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2027-0159	2027	High	BlueHelix	BioScan	CWE-434 (Unrestricted File Upload)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2028-0159	2028	Critical	SolarNode	StarPortal	CWE-295 (TLS Cert Validation)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2029-0159	2029	Critical	NimbusForge	HyperChain	CWE-451 (UI Redress/Clickjacking)	Integrity Breach	Tampering of configuration/state due to CWE-451 weakness in HyperChain
+CVE-2030-0159	2030	Critical	NebulaSec	AstroFile	CWE-79 (XSS)	RCE	Remote Code Execution via CWE-79 in AstroFile service endpoint
+CVE-2031-0159	2031	High	Arcturus Labs	AetherMail	CWE-89 (SQLi)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2026-0160	2026	Critical	OrionWorks	SentinelAI	CWE-120 (Buffer Overflow)	Data Exfiltration	Sensitive data exposure through CWE-120 in SentinelAI API
+CVE-2027-0160	2027	Medium	Pioneer Systems	FluxGateway	CWE-352 (CSRF)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2028-0160	2028	High	Vertex Cyber	HeliosEdge	CWE-22 (Path Traversal)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2029-0160	2029	Critical	BlueHelix	ChronosDB	CWE-327 (Broken Crypto)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2030-0160	2030	High	SolarNode	AuroraMesh	CWE-863 (AuthZ)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2031-0160	2031	Medium	NimbusForge	CipherKit	CWE-20 (Input Validation)	Integrity Breach	Tampering of configuration/state due to CWE-20 weakness in CipherKit
+CVE-2026-0161	2026	Medium	NebulaSec	QuantumOS	CWE-77 (Command Injection)	RCE	Remote Code Execution via CWE-77 in QuantumOS service endpoint
+CVE-2027-0161	2027	Medium	Arcturus Labs	NovaCMS	CWE-502 (Deserialization)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2028-0161	2028	Medium	OrionWorks	SkyDrive	CWE-918 (SSRF)	Data Exfiltration	Sensitive data exposure through CWE-918 in SkyDrive API
+CVE-2029-0161	2029	Critical	Pioneer Systems	IoTConnect	CWE-434 (Unrestricted File Upload)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2030-0161	2030	Low	Vertex Cyber	NeuroDB	CWE-295 (TLS Cert Validation)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2031-0161	2031	Medium	BlueHelix	BioScan	CWE-451 (UI Redress/Clickjacking)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2026-0162	2026	Low	SolarNode	StarPortal	CWE-79 (XSS)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2027-0162	2027	Medium	NimbusForge	HyperChain	CWE-89 (SQLi)	Integrity Breach	Tampering of configuration/state due to CWE-89 weakness in HyperChain
+CVE-2028-0162	2028	Medium	NebulaSec	AstroFile	CWE-120 (Buffer Overflow)	RCE	Remote Code Execution via CWE-120 in AstroFile service endpoint
+CVE-2029-0162	2029	Medium	Arcturus Labs	AetherMail	CWE-352 (CSRF)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2030-0162	2030	High	OrionWorks	SentinelAI	CWE-22 (Path Traversal)	Data Exfiltration	Sensitive data exposure through CWE-22 in SentinelAI API
+CVE-2031-0162	2031	Low	Pioneer Systems	FluxGateway	CWE-327 (Broken Crypto)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2026-0163	2026	Critical	Vertex Cyber	HeliosEdge	CWE-863 (AuthZ)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2027-0163	2027	High	BlueHelix	ChronosDB	CWE-20 (Input Validation)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2028-0163	2028	High	SolarNode	AuroraMesh	CWE-77 (Command Injection)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2029-0163	2029	High	NimbusForge	CipherKit	CWE-502 (Deserialization)	Integrity Breach	Tampering of configuration/state due to CWE-502 weakness in CipherKit
+CVE-2030-0163	2030	High	NebulaSec	QuantumOS	CWE-918 (SSRF)	RCE	Remote Code Execution via CWE-918 in QuantumOS service endpoint
+CVE-2031-0163	2031	Critical	Arcturus Labs	NovaCMS	CWE-434 (Unrestricted File Upload)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2026-0164	2026	High	OrionWorks	SkyDrive	CWE-295 (TLS Cert Validation)	Data Exfiltration	Sensitive data exposure through CWE-295 in SkyDrive API
+CVE-2027-0164	2027	Medium	Pioneer Systems	IoTConnect	CWE-451 (UI Redress/Clickjacking)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2028-0164	2028	High	Vertex Cyber	NeuroDB	CWE-79 (XSS)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2029-0164	2029	Medium	BlueHelix	BioScan	CWE-89 (SQLi)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2030-0164	2030	Medium	SolarNode	StarPortal	CWE-120 (Buffer Overflow)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2031-0164	2031	Critical	NimbusForge	HyperChain	CWE-352 (CSRF)	Integrity Breach	Tampering of configuration/state due to CWE-352 weakness in HyperChain
+CVE-2026-0165	2026	Medium	NebulaSec	AstroFile	CWE-22 (Path Traversal)	RCE	Remote Code Execution via CWE-22 in AstroFile service endpoint
+CVE-2027-0165	2027	Medium	Arcturus Labs	AetherMail	CWE-327 (Broken Crypto)	Privilege Escalation	Privilege escalation due to improper access checks in AetherMail
+CVE-2028-0165	2028	Medium	OrionWorks	SentinelAI	CWE-863 (AuthZ)	Data Exfiltration	Sensitive data exposure through CWE-863 in SentinelAI API
+CVE-2029-0165	2029	High	Pioneer Systems	FluxGateway	CWE-20 (Input Validation)	Session Hijacking	Session fixation enabling account takeover in FluxGateway
+CVE-2030-0165	2030	Critical	Vertex Cyber	HeliosEdge	CWE-77 (Command Injection)	DoS	Denial of Service via resource exhaustion in HeliosEdge
+CVE-2031-0165	2031	Medium	BlueHelix	ChronosDB	CWE-502 (Deserialization)	Unauthorized Access	Bypass of authentication flow in ChronosDB authentication pipeline
+CVE-2026-0166	2026	Medium	SolarNode	AuroraMesh	CWE-918 (SSRF)	Data Leakage	Information disclosure via misconfigured object storage in AuroraMesh
+CVE-2027-0166	2027	Critical	NimbusForge	CipherKit	CWE-434 (Unrestricted File Upload)	Integrity Breach	Tampering of configuration/state due to CWE-434 weakness in CipherKit
+CVE-2028-0166	2028	High	NebulaSec	QuantumOS	CWE-295 (TLS Cert Validation)	RCE	Remote Code Execution via CWE-295 in QuantumOS service endpoint
+CVE-2029-0166	2029	Medium	Arcturus Labs	NovaCMS	CWE-451 (UI Redress/Clickjacking)	Privilege Escalation	Privilege escalation due to improper access checks in NovaCMS
+CVE-2030-0166	2030	Critical	OrionWorks	SkyDrive	CWE-79 (XSS)	Data Exfiltration	Sensitive data exposure through CWE-79 in SkyDrive API
+CVE-2031-0166	2031	Critical	Pioneer Systems	IoTConnect	CWE-89 (SQLi)	Session Hijacking	Session fixation enabling account takeover in IoTConnect
+CVE-2026-0167	2026	Low	Vertex Cyber	NeuroDB	CWE-120 (Buffer Overflow)	DoS	Denial of Service via resource exhaustion in NeuroDB
+CVE-2027-0167	2027	High	BlueHelix	BioScan	CWE-352 (CSRF)	Unauthorized Access	Bypass of authentication flow in BioScan authentication pipeline
+CVE-2028-0167	2028	High	SolarNode	StarPortal	CWE-22 (Path Traversal)	Data Leakage	Information disclosure via misconfigured object storage in StarPortal
+CVE-2029-0167	2029	Low	NimbusForge	HyperChain	CWE-327 (Broken Crypto)	Integrity Breach	Tampering of configuration/state due to CWE-327 weakness in HyperChain
