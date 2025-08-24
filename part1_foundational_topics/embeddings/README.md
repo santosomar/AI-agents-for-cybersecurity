@@ -7,6 +7,7 @@ This directory contains example files and scripts for working with embeddings in
 ### Files
 
 - **`embeddings.py`** - Basic Python script demonstrating how to generate embeddings using OpenAI's API
+- **`clustering.py`** - Advanced clustering analysis script with comprehensive visualizations
 - **`CVE_vectors_1000.tsv`** - Tab-separated file containing 1000 embedding vectors for CVE data
 - **`CVE_metadata_1000.tsv`** - Tab-separated file containing metadata for the corresponding CVE entries
 
@@ -31,9 +32,60 @@ This file contains structured metadata for each CVE entry with the following col
 | `Impact` | Primary impact type (RCE, DoS, Data Leakage, etc.) |
 | `Description` | Brief description of the vulnerability |
 
-## Using with TensorFlow Embedding Projector
+## Clustering Analysis with Python Visualizations
 
-The TSV files in this directory are specifically formatted for use with [TensorFlow's Embedding Projector](https://projector.tensorflow.org/), a powerful tool for visualizing high-dimensional data. This allows you to visualize the embeddings in a 2D or 3D space, and to color-code and filter points based on CVE attributes like severity, vendor, CWE type, etc. This is a great way to explore the data and learn about vector embeddings.
+The `clustering.py` script provides a comprehensive clustering analysis of the CVE embeddings with built-in visualizations. This script performs K-means clustering and creates detailed visual analyses without requiring external tools.
+
+### Features
+
+- **K-means Clustering**: Groups similar CVEs into clusters based on their embedding vectors
+- **Dimensionality Reduction**: Uses PCA and t-SNE to visualize high-dimensional data in 2D
+- **Comprehensive Visualizations**: Creates multiple charts and plots for analysis
+- **Statistical Analysis**: Provides detailed cluster characteristics and summaries
+- **High-Quality Exports**: Saves publication-ready PNG files at 300 DPI
+
+### Generated Visualizations
+
+The script creates two comprehensive visualization files:
+
+1. **`cve_clustering_analysis.png`** - Main analysis dashboard containing:
+   - PCA and t-SNE cluster visualizations
+   - Cluster size distribution
+   - Severity distribution by cluster
+   - Top 10 CWE types
+   - Impact types distribution
+
+2. **`cve_detailed_analysis.png`** - Detailed metadata analysis containing:
+   - t-SNE plots colored by severity levels
+   - t-SNE plots colored by top vendors
+   - Cluster centers with labels
+   - CVE distribution timeline by year
+
+### Prerequisites
+
+To run the clustering script, install the required packages:
+
+```bash
+pip install pandas numpy scikit-learn matplotlib seaborn
+```
+
+### Usage
+
+```bash
+python3 clustering.py
+```
+
+The script will:
+1. Load the CVE vectors and metadata
+2. Perform K-means clustering (default: 10 clusters)
+3. Reduce dimensionality using PCA and t-SNE
+4. Generate comprehensive visualizations
+5. Display plots on screen and save as PNG files
+6. Print detailed cluster analysis to console
+
+## Using with TensorFlow Embedding Projector (Alternative)
+
+The TSV files in this directory are also specifically formatted for use with [TensorFlow's Embedding Projector](https://projector.tensorflow.org/), a powerful web-based tool for visualizing high-dimensional data. This provides an interactive alternative to the Python clustering script.
 
 ### How to Use
 
@@ -72,13 +124,15 @@ Using the Embedding Projector with this CVE data allows you to:
 
 ## Getting Started with Embeddings
 
+### Basic Embeddings (`embeddings.py`)
+
 The `embeddings.py` script demonstrates the basic process of generating embeddings using OpenAI's API. This is useful for:
 
 - Understanding how text is converted to numerical vectors
 - Creating your own embeddings for custom security data
 - Experimenting with different embedding models
 
-### Prerequisites
+#### Prerequisites
 
 To run the embedding script, you'll need:
 
@@ -92,23 +146,31 @@ And set your OpenAI API key as an environment variable:
 export OPENAI_API_KEY="your-api-key-here"
 ```
 
+### Advanced Analysis (`clustering.py`)
+
+For comprehensive clustering analysis and visualization of the provided CVE dataset, use the `clustering.py` script. This provides immediate insights without requiring API keys or external services.
+
 ## Educational Value
 
 This directory serves as a practical introduction to:
 
 - **Vector Embeddings**: Understanding how text becomes numerical representations
-- **High-Dimensional Data Visualization**: Using tools like t-SNE and UMAP
+- **Machine Learning Clustering**: Applying K-means clustering to cybersecurity data
+- **High-Dimensional Data Visualization**: Using PCA, t-SNE, and statistical plots
 - **Cybersecurity Data Analysis**: Applying ML techniques to vulnerability data
-- **Interactive Data Exploration**: Leveraging web-based visualization tools
+- **Python Data Science**: Using pandas, scikit-learn, matplotlib, and seaborn
+- **Interactive Data Exploration**: Both programmatic and web-based visualization tools
 
 ## Next Steps
 
 After exploring this data, consider:
 
-1. Creating embeddings for your own security datasets
-2. Experimenting with different embedding models
-3. Building RAG (Retrieval-Augmented Generation) systems using these embeddings
-4. Developing custom visualization tools for your specific use cases
+1. **Modify Clustering Parameters**: Experiment with different numbers of clusters or algorithms
+2. **Create Custom Embeddings**: Generate embeddings for your own security datasets using `embeddings.py`
+3. **Advanced Analysis**: Add more sophisticated clustering algorithms (DBSCAN, hierarchical clustering)
+4. **Build RAG Systems**: Use these embeddings for Retrieval-Augmented Generation applications
+5. **Develop Custom Tools**: Create specialized visualization tools for your specific use cases
+6. **Time Series Analysis**: Analyze how vulnerability patterns change over time
 
 ---
 
