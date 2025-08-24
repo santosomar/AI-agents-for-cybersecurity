@@ -20,3 +20,8 @@ unstructured
 langchain-mcp-adapters
 mcp
 requests
+scikit-learn
+matplotlib
+pandas
+numpy
+seaborn
