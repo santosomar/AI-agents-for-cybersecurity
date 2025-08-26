@@ -2,7 +2,7 @@
 
 This directory provides a collection of Python scripts demonstrating various aspects of Retrieval-Augmented Generation (RAG) tailored for cybersecurity use cases. These examples cover fundamental RAG concepts such as document loading, text splitting, embedding generation, vector store creation, and querying, primarily using LangChain and OpenAI.
 
-##Basic Examples Explained:
+## Basic Examples Explained:
 
 ```mermaid
 graph TD
