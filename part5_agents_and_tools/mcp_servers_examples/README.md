@@ -6,6 +6,9 @@ This directory contains a practical example of a Model Context Protocol (MCP) ag
 
 - [What is MCP?](#what-is-mcp)
 - [Overview](#overview)
+- [Available MCP Servers](#available-mcp-servers)
+  - [Basic Cybersecurity MCP Server](#1-basic-cybersecurity-mcp-server)
+  - [Shodan MCP Server](#2-shodan-mcp-server-shodan_mcp)
 - [Components](#components)
   - [`cyber_mcp_server.py`](#cyber_mcp_serverpy)
   - [`cyber_agent.py`](#cyber_agentpy)
@@ -27,10 +30,42 @@ For AI agents, MCP unlocks several key capabilities:
 
 ## Overview
 
-The project consists of two main components:
+This directory contains multiple MCP server implementations and examples:
 
+## Available MCP Servers
+
+### 1. Basic Cybersecurity MCP Server
 1.  **MCP Server (`cyber_mcp_server.py`)**: A server that exposes cybersecurity-related tools, such as an Nmap scanner and a CISA Known Exploited Vulnerabilities (KEV) catalog fetcher.
 2.  **MCP Agent (`cyber_agent.py`)**: A client application that connects to the MCP server, discovers the available tools, and uses a LangGraph ReAct agent powered by an LLM to interact with these tools based on natural language commands.
+
+### 2. Shodan MCP Server (`shodan_mcp/`)
+A comprehensive MCP server for Shodan's cybersecurity search engine using FastMCP's OpenAPI integration.
+
+**Features:**
+- Automatic tool generation from Shodan's OpenAPI specification
+- Full API coverage with zero maintenance required
+- Intelligent route mapping for better MCP integration
+- Secure authentication and comprehensive error handling
+- Ready for AI agent integration with LangGraph
+
+**Quick Start:**
+```bash
+cd shodan_mcp/
+pip install -r requirements.txt
+export SHODAN_API_KEY='your_key_here'
+python shodan_mcp.py
+```
+
+**Ethical Hacking Agent:**
+```bash
+cd shodan_mcp/
+cp env_template.txt .env  # Edit with your API keys
+python test_agent_setup.py  # Validate setup
+python ethical_hacking_agent.py  # Run AI agent
+python demo_agent.py  # See demo without dependencies
+```
+
+See `shodan_mcp/README.md` for detailed documentation, usage examples, and integration patterns.
 
 This example showcases how to build a system where an AI agent can leverage external tools to perform complex cybersecurity tasks.
 

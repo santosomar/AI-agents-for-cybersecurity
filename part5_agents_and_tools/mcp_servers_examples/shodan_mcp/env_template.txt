@@ -1,0 +1,14 @@
+# Environment Variables Template for Ethical Hacking Agent
+# Copy this content to a .env file and fill in your API keys
+
+# OpenAI API Key (required for the AI agent)
+# Get your API key from: https://platform.openai.com/api-keys
+OPENAI_API_KEY=your_openai_api_key_here
+
+# Shodan API Key (required for Shodan MCP server)
+# Get a free API key from: https://account.shodan.io/register
+SHODAN_API_KEY=your_shodan_api_key_here
+
+# Optional: Adjust model settings
+# OPENAI_MODEL=gpt-4  # or gpt-3.5-turbo for faster/cheaper responses
+# OPENAI_TEMPERATURE=0.1  # Lower values for more focused responses
