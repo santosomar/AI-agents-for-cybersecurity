@@ -1,0 +1,26 @@
+# Requirements for Shodan MCP Server (OpenAPI Integration)
+# Install with: pip install -r requirements.txt
+
+# Core MCP framework with OpenAPI support
+FastMCP>=0.1.0
+
+# HTTP client for async requests (required by FastMCP OpenAPI integration)
+httpx>=0.25.0
+
+# Optional: Enhanced performance and features
+orjson>=3.9.0          # Fast JSON parsing
+pydantic>=2.0.0        # Data validation
+structlog>=23.1.0      # Better logging
+
+# Agent dependencies (required for ethical_hacking_agent.py)
+langgraph>=0.1.0       # Agent framework
+langchain-mcp-adapters>=0.1.0  # MCP integration
+langchain-openai>=0.1.0  # OpenAI integration
+python-dotenv>=1.0.0   # Environment variable management
+
+# Development dependencies (optional)
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+black>=23.7.0
+mypy>=1.5.0
+ruff>=0.1.0            # Fast linter
