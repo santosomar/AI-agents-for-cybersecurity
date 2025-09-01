@@ -59,7 +59,7 @@ tools = [
 # Pull the structured chat prompt from the hub to guide the conversation with the agent
 prompt = hub.pull("hwchase17/structured-chat-agent")
 
-# Create a ChatOpenAI model for generating responses to user queries using GPT-4o-mini model. You can use any other model as well.
+# Create a ChatOpenAI model for generating responses to user queries using gpt-5-mini model. You can use any other model as well.
 llm = ChatOpenAI(model="gpt-5-mini")
 
 # Create a structured Chat Agent with Conversation Buffer Memory
