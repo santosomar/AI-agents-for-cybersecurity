@@ -8,7 +8,7 @@ Here's a comprehensive example showing how to use the Splunk MCP server to build
 from langchain_openai import ChatOpenAI
 
 # Initialize the LLM with Splunk MCP server
-llm = ChatOpenAI(model="gpt-4o", output_version="responses/v1")
+llm = ChatOpenAI(model="gpt-5.2", output_version="responses/v1")
 
 # Bind the Splunk MCP server as a tool
 llm_with_splunk = llm.bind_tools([
@@ -89,7 +89,7 @@ def create_splunk_llm(splunk_mcp_url: str, require_query_approval: bool = True):
         splunk_mcp_url: URL of your Splunk MCP server
         require_query_approval: Whether to require human approval for queries
     """
-    llm = ChatOpenAI(model="gpt-4o", temperature=0, output_version="responses/v1")
+    llm = ChatOpenAI(model="gpt-5.2", temperature=0, output_version="responses/v1")
     
     approval_config = "never"
     if require_query_approval:
