@@ -48,6 +48,7 @@ This repository provides a structured learning journey covering cutting-edge AI 
 - **Web Scraping**: Dynamic content ingestion and processing (`web_scrape_basic.py`)
 - **Cost Optimization**: Embedding cost calculation utilities (`utils/embedding_cost_calculator.py`)
 - **Cybersecurity Data**: SSRF vulnerability analysis and Tesla security data examples
+- **RAG Failure Modes Reference**: [WFGY 16 Problem Map](https://github.com/onestardao/WFGY/blob/main/ProblemMap/README.md) — compact checklist of common RAG and long-context failure modes with minimal repros and concrete mitigation patterns that can help harden security-focused RAG pipelines and agents.
 
 ### Part 5: Next-Generation AI Agents & Tools
 - **Basic Agent Frameworks**: ReAct agents with tool integration (`basic_agent_and_tools.py`)
