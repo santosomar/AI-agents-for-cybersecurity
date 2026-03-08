@@ -64,6 +64,13 @@ RAG is used wherever answers need to be grounded in specific, updatable knowledg
 
 Best practices include: curating and structuring source content well, chunking for semantic coherence, tuning retrieval (e.g. chunk size, k, reranking) with clear metrics, and evaluating with a test set and reference answers. Poor or noisy source data leads to worse RAG outputs, so data quality and retrieval design are as important as the choice of LLM.
 
+For Cybersecurity, RAG is used to answer questions about the cybersecurity landscape, policies, procedures, and technologies. It is also used to generate reports and summaries of cybersecurity incidents and activities.
+You can build agents that have access to:
+- threat intelligence feeds
+- internal documentation
+- incident history
+- compliance requirements
+
 ## References / Further reading
 
 - **[Redefining Hacking](https://learning.oreilly.com/library/view/redefining-hacking-a/9780138363635/)**  
