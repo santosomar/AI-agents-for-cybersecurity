@@ -1,4 +1,4 @@
-# Attack Surface Management with LangGraph — A Step-by-Step Tutorial
+# A Step-by-Step Tutorial of Attack Surface Management / Auto Pen Test with LangGraph
 
 This tutorial walks through a **penetration-testing workflow** built with [LangGraph](https://langchain-ai.github.io/langgraph/).  The workflow models an automated attack surface management (ASM) pipeline as a directed graph whose nodes represent discrete stages of a pentest: reconnaissance, vulnerability scanning, LLM-powered analysis, optional exploitation simulation, and report generation.
 
