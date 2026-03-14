@@ -6,11 +6,11 @@ This script demonstrates how to use the Shodan MCP server in various scenarios.
 It shows integration patterns for AI agents, LangGraph workflows, and direct usage.
 
 Prerequisites:
-- pip install fastmcp httpx
+- uv sync
 - export SHODAN_API_KEY='your_key_here'
 
 Usage:
-    python example_usage.py
+    uv run example_usage.py
 """
 
 import asyncio
@@ -28,7 +28,7 @@ async def example_direct_mcp_usage():
     try:
         # This would be the actual MCP client connection
         # from mcp.client import Client
-        # client = Client("stdio", "python shodan_mcp.py")
+        # client = Client("stdio", "uv run shodan_mcp.py")
         
         # Simulated client calls (replace with actual MCP client)
         print("🔍 Searching for SSH servers...")
@@ -67,7 +67,7 @@ async def example_langgraph_integration():
     # Simulated LangGraph workflow
     class ShodanReconAgent:
         def __init__(self):
-            # self.mcp_client = Client("stdio", "python shodan_mcp.py")
+            # self.mcp_client = Client("stdio", "uv run shodan_mcp.py")
             pass
         
         async def reconnaissance_workflow(self, target_domain: str) -> Dict[str, Any]:
@@ -318,10 +318,10 @@ async def main():
     print("\n" + "=" * 60)
     print("🎉 Examples completed!")
     print("\n📚 Next Steps:")
-    print("1. Install dependencies: pip install fastmcp httpx")
+    print("1. Install dependencies: uv sync")
     print("2. Get Shodan API key: https://account.shodan.io/register")
     print("3. Set environment: export SHODAN_API_KEY='your_key'")
-    print("4. Run MCP server: python shodan_mcp.py")
+    print("4. Run MCP server: uv run shodan_mcp.py")
     print("5. Connect your AI agent to the MCP server")
     print("\n🔗 Resources:")
     print("- Shodan API Docs: https://developer.shodan.io/api")

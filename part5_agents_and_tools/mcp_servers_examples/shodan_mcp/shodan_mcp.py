@@ -208,7 +208,7 @@ def main():
         print("\n💡 Quick Setup:")
         print("1. Get a Shodan API key: https://account.shodan.io/register")
         print("2. Set environment variable: export SHODAN_API_KEY='your_key_here'")
-        print("3. Run the server: python shodan_mcp.py")
+        print("3. Run the server: uv run shodan_mcp.py")
         return 1
         
     except RuntimeError as e:
