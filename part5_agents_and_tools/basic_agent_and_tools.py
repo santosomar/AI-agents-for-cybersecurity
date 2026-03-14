@@ -19,22 +19,43 @@ from langchain_openai import ChatOpenAI
 load_dotenv()
 
 
-# Define a very simple tool function that returns the current time
-def get_current_time(*args, **kwargs):
-    """Returns the current time in H:MM AM/PM format."""
-    import datetime  # Import datetime module to get current time
+# Define a tool that checks if a given hash appears in known breached password databases
+# using the Have I Been Pwned (HIBP) k-anonymity API.
+def check_password_breach(password: str) -> str:
+    """Checks if a password has appeared in known data breaches using the
+    Have I Been Pwned k-anonymity API. Returns the number of times it has
+    been seen, or confirms it has not been found in any known breach."""
+    import hashlib
+    import urllib.request
 
-    now = datetime.datetime.now()  # Get current time
-    return now.strftime("%I:%M %p")  # Format time in H:MM AM/PM format
+    sha1_hash = hashlib.sha1(password.encode("utf-8")).hexdigest().upper()  # HIBP API requires SHA-1
+    prefix, suffix = sha1_hash[:5], sha1_hash[5:]
+
+    url = f"https://api.pwnedpasswords.com/range/{prefix}"
+    req = urllib.request.Request(url, headers={"User-Agent": "CyberAgent/1.0"})
+    with urllib.request.urlopen(req) as response:
+        body = response.read().decode("utf-8")
+
+    for line in body.splitlines():
+        hash_suffix, count = line.split(":")
+        if hash_suffix == suffix:
+            return (
+                f"WARNING: This password has been seen {count} time(s) in data breaches. "
+                "It should NOT be used."
+            )
+
+    return "This password was NOT found in any known data breaches."
 
 
 # List of tools available to the agent
 tools = [
     Tool(
-        name="Time",  # Name of the tool
-        func=get_current_time,  # Function that the tool will execute
-        # Description of the tool
-        description="Useful for when you need to know the current time",
+        name="PasswordBreachCheck",
+        func=check_password_breach,
+        description=(
+            "Checks whether a password has been exposed in known data breaches "
+            "using the Have I Been Pwned API. Input should be the password string."
+        ),
     ),
 ]
 
@@ -64,7 +85,9 @@ agent_executor = AgentExecutor.from_agent_and_tools(
 )
 
 # Run the agent with a test query
-response = agent_executor.invoke({"input": "What time is it?"})
+response = agent_executor.invoke(
+    {"input": "Is the password 'P@ssw0rd123' safe to use?"}
+)
 
 # Print the response from the agent
 print("response:", response)
