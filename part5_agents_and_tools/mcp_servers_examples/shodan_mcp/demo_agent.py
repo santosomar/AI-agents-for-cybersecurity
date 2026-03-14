@@ -7,7 +7,7 @@ configured. It shows the expected workflow and outputs without requiring
 the actual dependencies to be installed.
 
 Usage:
-    python demo_agent.py
+    uv run demo_agent.py
 """
 
 import asyncio
@@ -198,9 +198,9 @@ async def main():
     print("• Real-time threat intelligence")
     
     print(f"\n🚀 To run the real agent:")
-    print("1. Install dependencies: pip install -r requirements.txt")
+    print("1. Install dependencies: uv sync --extra agent")
     print("2. Set up API keys in .env file")
-    print("3. Run: python ethical_hacking_agent.py")
+    print("3. Run: uv run ethical_hacking_agent.py")
     
     print(f"\n⚖️  Remember:")
     print("• Always obtain proper authorization before testing")

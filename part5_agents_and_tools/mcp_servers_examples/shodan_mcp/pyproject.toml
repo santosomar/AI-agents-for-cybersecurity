@@ -1,0 +1,28 @@
+[project]
+name = "shodan-mcp"
+version = "0.1.0"
+description = "MCP server for Shodan cybersecurity search engine using FastMCP OpenAPI integration"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=2.0.0",
+    "httpx>=0.25.0",
+    "orjson>=3.9.0",
+    "pydantic>=2.0.0",
+    "structlog>=23.1.0",
+]
+
+[project.optional-dependencies]
+agent = [
+    "langgraph>=0.1.0",
+    "langchain-mcp-adapters>=0.1.0",
+    "langchain-openai>=0.1.0",
+    "python-dotenv>=1.0.0",
+]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.0",
+    "black>=23.7.0",
+    "mypy>=1.5.0",
+    "ruff>=0.1.0",
+]

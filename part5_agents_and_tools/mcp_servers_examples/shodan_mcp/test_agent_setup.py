@@ -6,7 +6,7 @@ This script validates that all dependencies and configurations are properly
 set up for the ethical hacking agent to work with the Shodan MCP server.
 
 Usage:
-    python test_agent_setup.py
+    uv run test_agent_setup.py
 """
 
 import os
@@ -74,7 +74,7 @@ def test_dependencies():
     
     if missing_packages:
         print(f"\n⚠️  Missing packages: {', '.join(missing_packages)}")
-        print("   Install with: pip install -r requirements.txt")
+        print("   Install with: uv sync --extra agent")
         return False
     
     return True
@@ -169,14 +169,14 @@ def main():
     if passed_tests == total_tests:
         print("🎉 All tests passed! The ethical hacking agent is ready to use.")
         print("\n🚀 Next steps:")
-        print("1. Run the agent: python ethical_hacking_agent.py")
-        print("2. Or run the MCP server: python shodan_mcp.py")
+        print("1. Run the agent: uv run ethical_hacking_agent.py")
+        print("2. Or run the MCP server: uv run shodan_mcp.py")
         print("3. Check the README.md for detailed usage instructions")
         return True
     else:
         print("❌ Some tests failed. Please fix the issues above.")
         print("\n🔧 Quick fixes:")
-        print("1. Install dependencies: pip install -r requirements.txt")
+        print("1. Install dependencies: uv sync --extra agent")
         print("2. Set up environment: cp env_template.txt .env (then edit .env)")
         print("3. Get API keys:")
         print("   - OpenAI: https://platform.openai.com/api-keys")

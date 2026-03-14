@@ -6,7 +6,7 @@ This script tests the OpenAPI-based Shodan MCP server functionality.
 It validates configuration, API key handling, and OpenAPI spec loading.
 
 Usage:
-    python test_shodan_openapi.py
+    uv run test_shodan_openapi.py
 """
 
 import os
@@ -214,11 +214,11 @@ def main():
     if passed == total:
         print("🎉 All tests passed! The Shodan MCP server is ready to use.")
         print("\n📦 Installation:")
-        print("pip install fastmcp httpx")
+        print("uv sync")
         print("\n🔑 Setup:")
         print("export SHODAN_API_KEY='your_key_here'")
         print("\n🚀 Run:")
-        print("python shodan_mcp.py")
+        print("uv run shodan_mcp.py")
         print("\n✨ Benefits of OpenAPI Integration:")
         print("- Automatic tool generation from Shodan's full API")
         print("- Always up-to-date with latest Shodan features")

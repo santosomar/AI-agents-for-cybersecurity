@@ -30,11 +30,13 @@ A Model Context Protocol (MCP) server that provides seamless access to Shodan's 
 
 ### Quick Setup
 
-1. **Install Dependencies**:
+1. **Install Dependencies** (using [uv](https://docs.astral.sh/uv/)):
    ```bash
-   pip install fastmcp httpx
-   # OR install from requirements
-   pip install -r requirements.txt
+   uv sync
+   # Or include agent dependencies (for ethical_hacking_agent.py)
+   uv sync --extra agent
+   # Or install everything (agent + dev tools)
+   uv sync --all-extras
    ```
 
 2. **Get Shodan API Key**:
@@ -48,7 +50,7 @@ A Model Context Protocol (MCP) server that provides seamless access to Shodan's 
 
 4. **Run the Server**:
    ```bash
-   python shodan_mcp.py
+   uv run shodan_mcp.py
    ```
 
 ## 🤖 Ethical Hacking Agent
@@ -59,7 +61,7 @@ The `ethical_hacking_agent.py` demonstrates how to use the Shodan MCP server wit
 
 1. **Install Agent Dependencies**:
    ```bash
-   pip install -r requirements.txt  # Includes agent dependencies
+   uv sync --extra agent
    ```
 
 2. **Configure Environment**:
@@ -71,12 +73,12 @@ The `ethical_hacking_agent.py` demonstrates how to use the Shodan MCP server wit
 
 3. **Test Setup**:
    ```bash
-   python test_agent_setup.py
+   uv run test_agent_setup.py
    ```
 
 4. **Run the Agent**:
    ```bash
-   python ethical_hacking_agent.py
+   uv run ethical_hacking_agent.py
    ```
 
 ### Agent Capabilities
@@ -241,7 +243,7 @@ from mcp.client import Client
 
 async def create_shodan_agent():
     # Connect to Shodan MCP server
-    client = Client("stdio", "python shodan_mcp.py")
+    client = Client("stdio", "uv run shodan_mcp.py")
     
     # All Shodan endpoints automatically available as tools
     def reconnaissance_step(state):
@@ -285,7 +287,7 @@ async def create_shodan_agent():
 Run the test suite to validate functionality:
 
 ```bash
-python test_shodan_openapi.py
+uv run test_shodan_openapi.py
 ```
 
 The tests validate:
@@ -299,7 +301,7 @@ The tests validate:
 
 ### Debug Mode
 ```bash
-SHODAN_DEBUG=true python shodan_mcp.py
+SHODAN_DEBUG=true uv run shodan_mcp.py
 ```
 
 ### Logging
