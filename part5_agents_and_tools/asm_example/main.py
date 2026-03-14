@@ -1,57 +1,85 @@
-# LangGraph Example: Pentesting Workflow Main
+# LangGraph Example: Pentesting Workflow — Main Entry Point
 #
-# This script builds the main workflow for our pentesting application using LangGraph.
-# It includes the necessary nodes and edges to discover subdomains, scan for open ports,
-# scan for vulnerabilities, and generate a report.
+# Assembles the attack surface management graph, compiles it, and runs it
+# against a target domain.  The graph demonstrates:
+#   - Linear edges (recon → vuln scan → analysis)
+#   - Conditional branching (analysis → exploitation OR report)
+#   - Shared state with Annotated reducers
 #
 # Instructor: Omar Santos @santosomar
 
+from dotenv import load_dotenv
+from langgraph.graph import END, StateGraph
 
-from langgraph.graph import StateGraph, END
+from pentest_graph_nodes import (
+    analysis_step,
+    exploitation_step,
+    reconnaissance_step,
+    report_step,
+    vulnerability_scan_step,
+)
+from pentest_graph_router import route_after_analysis
 from pentest_graph_state import AttackSurfaceState
-from pentest_graph_nodes import reconnaissance_step, vulnerability_scan_step, analysis_step, report_step
-from pentest_graph_router import should_proceed_to_report
 
-# 1. Initialize the StateGraph
+load_dotenv()
+
+# ------------------------------------------------------------------
+# 1. Build the graph
+# ------------------------------------------------------------------
 workflow = StateGraph(AttackSurfaceState)
 
-# 2. Add the nodes to the graph
+# 2. Register every node
 workflow.add_node("reconnaissance", reconnaissance_step)
 workflow.add_node("vulnerability_scan", vulnerability_scan_step)
 workflow.add_node("analysis", analysis_step)
+workflow.add_node("exploitation", exploitation_step)
 workflow.add_node("generate_report", report_step)
 
-# 3. Define the edges
+# 3. Linear edges
 workflow.set_entry_point("reconnaissance")
 workflow.add_edge("reconnaissance", "vulnerability_scan")
 workflow.add_edge("vulnerability_scan", "analysis")
 
-# 4. Add the conditional edge for routing after analysis
+# 4. Conditional edge — branch after analysis
 workflow.add_conditional_edges(
     "analysis",
-    should_proceed_to_report,
+    route_after_analysis,
     {
-        "generate_report": "generate_report"
-        # "attempt_exploitation": "exploitation_node" # Example of another branch
-    }
+        "exploitation": "exploitation",
+        "generate_report": "generate_report",
+    },
 )
+
+# exploitation always flows into the report
+workflow.add_edge("exploitation", "generate_report")
 workflow.add_edge("generate_report", END)
 
-# 5. Compile the graph into a runnable application
+# 5. Compile
 app = workflow.compile()
 
-# 6. Run the agent
-initial_state = {"target_domain": "example.com", "is_exploitable": False}
-final_state = app.invoke(initial_state)
+# ------------------------------------------------------------------
+# 6. Run
+# ------------------------------------------------------------------
+if __name__ == "__main__":
+    initial_state = {
+        "target_domain": "example.com",
+        "is_exploitable": False,
+        "subdomains": [],
+        "open_ports": {},
+        "vulnerabilities": [],
+        "workflow_log": [],
+    }
 
-# Print the final report
-print("\n" + "="*50)
-print("FINAL PENETRATION TEST REPORT")
-print("="*50 + "\n")
-print(final_state.get("report"))
+    final_state = app.invoke(initial_state)
 
-# Print the workflow log
-print("\n" + "="*50)
-print("WORKFLOW LOG")
-print("="*50 + "\n")
-print(final_state.get("workflow_log"))
+    print("\n" + "=" * 60)
+    print("  PENETRATION TEST REPORT")
+    print("=" * 60 + "\n")
+    print(final_state.get("report", "No report generated."))
+
+    print("\n" + "=" * 60)
+    print("  WORKFLOW LOG")
+    print("=" * 60 + "\n")
+    for entry in final_state.get("workflow_log", []):
+        print(f"  • {entry}")
+    print()
