@@ -10,8 +10,8 @@
 import os
 import asyncio
 from dotenv import load_dotenv
+from langchain.agents import create_agent
 from langchain_mcp_adapters.client import MultiServerMCPClient
-from langgraph.prebuilt import create_react_agent
 from langchain_openai import ChatOpenAI
 
 # Get the directory of the current script
@@ -57,8 +57,8 @@ async def main():
     try:
         llm = ChatOpenAI(model="gpt-5-mini")
         
-        # Create a ReAct agent with the fetched tools
-        agent = create_react_agent(llm, tools)
+        # Create an agent with the fetched tools (LangChain prebuilt graph on LangGraph)
+        agent = create_agent(model=llm, tools=tools)
         print("AI model and agent initialized successfully.")
     except Exception as e:
         print(f"Error initializing AI model or agent: {e}")
