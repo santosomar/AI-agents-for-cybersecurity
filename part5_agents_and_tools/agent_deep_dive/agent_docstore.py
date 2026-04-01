@@ -53,7 +53,7 @@ retriever = db.as_retriever(
 )
 
 # Create a ChatOpenAI model
-llm = ChatOpenAI(model="gpt-5-mini")
+llm = ChatOpenAI(model="gpt-5.4-mini")
 
 # Contextualize question prompt
 # This system prompt helps the AI understand that it should reformulate the question

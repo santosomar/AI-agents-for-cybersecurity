@@ -24,7 +24,7 @@ class IncidentState(TypedDict):
     indicators_of_compromise: List[str]
 
 # Create a ChatOpenAI model
-model = ChatOpenAI()
+model = ChatOpenAI(model="gpt-5.4-mini")
 
 def initial_analysis(state: dict):
     """

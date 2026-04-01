@@ -42,7 +42,7 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 
 # Setup
-llm = ChatOpenAI(model="gpt-4o-mini")
+llm = ChatOpenAI(model="gpt-5.4-mini")
 embeddings = OpenAIEmbeddings()
 
 # Create vector store
@@ -95,7 +95,7 @@ from langchain_core.messages import HumanMessage, AIMessage
 import operator
 
 # Setup LLM and embeddings
-llm = ChatOpenAI(model="gpt-4o", temperature=0)
+llm = ChatOpenAI(model="gpt-5.4-mini", temperature=0)
 embeddings = OpenAIEmbeddings()
 
 # Create knowledge base
@@ -273,7 +273,7 @@ def search_policy_docs(query: str) -> str:
 # Create agent with multiple specialized retrievers
 tools = [search_technical_docs, search_business_docs, search_policy_docs]
 
-llm = ChatOpenAI(model="gpt-4o", temperature=0)
+llm = ChatOpenAI(model="gpt-5.4-mini", temperature=0)
 llm_with_tools = llm.bind_tools(tools)
 
 # The agent will intelligently choose which knowledge base to query
@@ -310,7 +310,7 @@ class QueryRefinementState(TypedDict):
     iteration: int
     final_answer: str
 
-llm = ChatOpenAI(model="gpt-4o")
+llm = ChatOpenAI(model="gpt-5.4-mini")
 
 async def generate_queries(state: QueryRefinementState, config):
     """Generate multiple refined queries"""
@@ -549,7 +549,7 @@ from langchain_openai import ChatOpenAI
 from langchain_core.tools import tool
 
 # Production-ready Agentic RAG
-llm = ChatOpenAI(model="gpt-4o", temperature=0)
+llm = ChatOpenAI(model="gpt-5.4-mini", temperature=0)
 
 @tool
 def search_documentation(query: str, doc_type: str = "general") -> str:
