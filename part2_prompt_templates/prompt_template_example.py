@@ -12,7 +12,7 @@ from langchain_openai import ChatOpenAI
 load_dotenv()
 
 # Create a ChatOpenAI model
-model = ChatOpenAI(model="gpt-5-mini")
+model = ChatOpenAI(model="gpt-5.4-mini")
 
 # EXAMPLE 1: Create a ChatPromptTemplate using a template string
 # The template string contains a placeholder for the topic

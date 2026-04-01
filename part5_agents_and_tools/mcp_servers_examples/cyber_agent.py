@@ -55,7 +55,7 @@ async def main():
 
     print("OpenAI API key found. Initializing AI model...")
     try:
-        llm = ChatOpenAI(model="gpt-5-mini")
+        llm = ChatOpenAI(model="gpt-5.4-mini")
         
         # Create an agent with the fetched tools (LangChain prebuilt graph on LangGraph)
         agent = create_agent(model=llm, tools=tools)

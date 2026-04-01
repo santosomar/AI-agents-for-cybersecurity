@@ -44,7 +44,7 @@ else:
 retriever = vectordb.as_retriever()
 
 # Initialize the language model used by the agent
-llm = ChatOpenAI(model="gpt-5-mini", temperature=0)
+llm = ChatOpenAI(model="gpt-5.4-mini", temperature=0)
 
 
 class AgentState(TypedDict):

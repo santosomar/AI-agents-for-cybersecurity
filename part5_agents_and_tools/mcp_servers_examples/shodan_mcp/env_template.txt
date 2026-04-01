@@ -10,5 +10,5 @@ OPENAI_API_KEY=your_openai_api_key_here
 SHODAN_API_KEY=your_shodan_api_key_here
 
 # Optional: Adjust model settings
-# OPENAI_MODEL=gpt-4  # or gpt-3.5-turbo for faster/cheaper responses
+# OPENAI_MODEL=gpt-5.4-mini  # override default chat model when using OpenAI-backed agents
 # OPENAI_TEMPERATURE=0.1  # Lower values for more focused responses
