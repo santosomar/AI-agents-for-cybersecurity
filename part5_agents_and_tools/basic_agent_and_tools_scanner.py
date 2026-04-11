@@ -75,7 +75,6 @@ agent = create_react_agent(
     llm=llm,
     tools=tools,
     prompt=prompt,
-    stop_sequence=True,
 )
 
 # Create an agent executor from the agent and tools
