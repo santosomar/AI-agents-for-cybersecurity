@@ -39,12 +39,21 @@
 from __future__ import annotations
 
 import json
+import os
 
 from dotenv import load_dotenv
 from deepagents import create_deep_agent
 
 # Load OPENAI_API_KEY (and friends) from a .env file if present.
 load_dotenv()
+
+# Quiet LangSmith tracing unless it is explicitly configured with an API key.
+# Without a valid key/plan, every run upload returns HTTP 403 and floods the
+# console with "Failed to multipart ingest runs" noise. If you DO have a
+# LangSmith key set, tracing is left enabled so you can observe the run.
+if not (os.environ.get("LANGSMITH_API_KEY") or os.environ.get("LANGCHAIN_API_KEY")):
+    os.environ["LANGSMITH_TRACING"] = "false"
+    os.environ["LANGCHAIN_TRACING_V2"] = "false"
 
 # The provider:model string deepagents will use for the supervisor and, by
 # default, every subagent. Keep it consistent with the rest of the repo.
