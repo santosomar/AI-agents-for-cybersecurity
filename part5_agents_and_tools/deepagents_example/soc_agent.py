@@ -21,6 +21,20 @@
 # example is completely safe to run. Only the LLM calls require network + an API key.
 #
 # Instructor: Omar Santos @santosomar
+#
+# Run it self-contained with uv (no project sync needed):
+#   uv run part5_agents_and_tools/deepagents_example/soc_agent.py
+# The PEP 723 metadata block below lets uv build an isolated environment with
+# only this script's dependencies.
+
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#     "deepagents",
+#     "langchain-openai",
+#     "python-dotenv",
+# ]
+# ///
 
 from __future__ import annotations
 
