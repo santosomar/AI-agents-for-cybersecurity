@@ -119,22 +119,37 @@ models the SOC's change‑control / rules‑of‑engagement.
 
 ## Prerequisites
 
-- **Python 3.13+**
+- **Python 3.11+** (this script declares `requires-python = ">=3.11"`; the rest of the repo targets 3.13+)
 - An **OpenAI API key** (or change `MODEL` to any provider DeepAgents supports)
-- The `deepagents` package (already added to the root `pyproject.toml`)
+- [`uv`](https://docs.astral.sh/uv/) (recommended) or `pip` + the `deepagents` package
 
 ## Running the example
+
+This script is **self‑contained** via a [PEP 723](https://peps.python.org/pep-0723/)
+inline metadata block (it declares its own dependencies). The easiest way to run it is
+to let `uv` build a throwaway isolated environment for just this script — **no project
+`uv sync` required**. This is especially useful on platforms where the repo's heavier
+dependencies (e.g. `torch`) have no compatible wheel.
 
 From the repository root:
 
 ```bash
-# Install dependencies (adds deepagents to the environment)
-uv sync --python python3.13
-
 # Provide your API key (or put it in a .env file at the repo root)
 export OPENAI_API_KEY="your-key-here"
 
-# Run the SOC agent
+# Run the SOC agent — uv reads the inline dependencies and isolates the run
+uv run part5_agents_and_tools/deepagents_example/soc_agent.py
+```
+
+> **Important:** run the file directly (`uv run <script.py>`), **not**
+> `uv run python <script.py>`. Passing the file lets `uv` detect the inline metadata
+> and build the isolated environment; adding `python` would instead use the shared
+> project environment (which may fail to sync on some platforms).
+
+Alternatively, use the shared project environment (if it syncs on your platform):
+
+```bash
+uv sync --python python3.13
 uv run python part5_agents_and_tools/deepagents_example/soc_agent.py
 ```
 
@@ -155,8 +170,10 @@ python part5_agents_and_tools/deepagents_example/soc_agent.py
    affected assets and users, a timeline, IOCs, correlated alerts, and **staged**
    response actions each marked *PENDING APPROVAL*.
 
-> Tip: set `LANGSMITH_TRACING=true` and a `LANGSMITH_API_KEY` to watch the supervisor
-> trace and each subagent run separately in LangSmith.
+> Tip: LangSmith tracing is **off by default** here — the script disables it
+> automatically unless a `LANGSMITH_API_KEY` is set, to avoid noisy `403` upload errors
+> for users who haven't configured LangSmith. To watch the supervisor and each subagent
+> run separately, set `LANGSMITH_API_KEY` (and optionally `LANGSMITH_TRACING=true`).
 
 ## Adding real human‑in‑the‑loop approval
 
