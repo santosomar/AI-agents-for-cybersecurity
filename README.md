@@ -9,7 +9,7 @@ The repository is structured with five comprehensive parts covering the spectrum
 - **`part2_prompt_templates/`**: Advanced prompt engineering techniques, template systems, and structured prompting strategies for cybersecurity applications
 - **`part3_prompt_chaining/`**: Sophisticated prompt chaining workflows using LangChain Expression Language (LCEL), including branching chains, parallel processing, and conditional logic for security incident analysis and threat hunting
 - **`part4_rag_examples/`**: Comprehensive Retrieval Augmented Generation implementations with vector databases (Chroma), text splitting strategies, embedding comparisons, metadata handling, and web scraping
-- **`part5_agents_and_tools/`**: Advanced AI agents, tools integration, LangGraph workflows, agentic RAG, and Model Context Protocol (MCP) implementations for cybersecurity automation
+- **`part5_agents_and_mcp_servers/`**: Advanced AI agents, tools integration, LangGraph workflows, agentic RAG, and Model Context Protocol (MCP) implementations for cybersecurity automation
 
 ## Comprehensive Learning Path
 This repository provides a structured learning journey covering cutting-edge AI agent technologies and their applications in cybersecurity operations.

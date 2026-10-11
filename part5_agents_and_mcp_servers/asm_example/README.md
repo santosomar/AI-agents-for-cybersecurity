@@ -229,10 +229,10 @@ echo 'OPENAI_API_KEY=your-key-here' > .env
 
 ```bash
 # From the repository root
-python part5_agents_and_tools/asm_example/main.py
+python part5_agents_and_mcp_servers/asm_example/main.py
 
 # Or from this directory
-cd part5_agents_and_tools/asm_example
+cd part5_agents_and_mcp_servers/asm_example
 python main.py
 ```
 

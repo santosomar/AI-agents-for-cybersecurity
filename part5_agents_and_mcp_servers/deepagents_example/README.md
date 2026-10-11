@@ -138,7 +138,7 @@ From the repository root:
 export OPENAI_API_KEY="your-key-here"
 
 # Run the SOC agent — uv reads the inline dependencies and isolates the run
-uv run part5_agents_and_tools/deepagents_example/soc_agent.py
+uv run part5_agents_and_mcp_servers/deepagents_example/soc_agent.py
 ```
 
 > **Important:** run the file directly (`uv run <script.py>`), **not**
@@ -150,7 +150,7 @@ Alternatively, use the shared project environment (if it syncs on your platform)
 
 ```bash
 uv sync --python python3.13
-uv run python part5_agents_and_tools/deepagents_example/soc_agent.py
+uv run python part5_agents_and_mcp_servers/deepagents_example/soc_agent.py
 ```
 
 Or with plain pip:
@@ -158,7 +158,7 @@ Or with plain pip:
 ```bash
 pip install deepagents langchain-openai python-dotenv
 export OPENAI_API_KEY="your-key-here"
-python part5_agents_and_tools/deepagents_example/soc_agent.py
+python part5_agents_and_mcp_servers/deepagents_example/soc_agent.py
 ```
 
 ## What you'll see
