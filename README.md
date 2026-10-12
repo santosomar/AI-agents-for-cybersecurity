@@ -144,6 +144,8 @@ Start at [`part8_multi-agent_harness_spec/README.md`](part8_multi-agent_harness_
 > [!WARNING]
 > Some examples (nmap scanning, Agent Zero on Kali Linux, attack surface management, ethical hacking agents) act against real systems. Run them only against systems you own or are explicitly authorized to test, ideally in an isolated lab. Part 8 is a design specification, not a scanner: its validation and impact phases stay disabled unless a human grants a task-specific approval for a named lab target.
 
+Report a vulnerability in this repository privately. See [SECURITY.md](SECURITY.md). Do not open a public issue for a security report.
+
 ## Contact Information
 
 For any queries or further information, please contact:
