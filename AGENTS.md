@@ -133,7 +133,7 @@ The `splunk-mcp/` directory contains only a README with conceptual examples — 
 
 `.cursor/agents/codeguard-reviewer.md` is a CodeGuard reviewer subagent that emits SARIF findings on explicit request.
 
-Identical rules also exist in `.windsurf/rules/` (Windsurf) and `.github/instructions/` (Copilot). To update, replace them with the per-agent ZIPs from the [upstream releases](https://github.com/cosai-oasis/project-codeguard/releases).
+Identical rules also exist in `.windsurf/rules/` (Windsurf) and `.github/instructions/` (Copilot). Claude Code and Codex get the same rules packaged as a `codeguard` skill: `.claude/skills/codeguard/` + `.claude/agents/codeguard-reviewer.md` (Claude Code) and `.agents/skills/codeguard/` + `.codex/agents/codeguard-reviewer.toml` (Codex). To update, replace them with the per-agent ZIPs from the [upstream releases](https://github.com/cosai-oasis/project-codeguard/releases).
 
 ## Gotchas
 
