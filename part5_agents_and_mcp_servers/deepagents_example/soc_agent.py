@@ -57,7 +57,7 @@ if not (os.environ.get("LANGSMITH_API_KEY") or os.environ.get("LANGCHAIN_API_KEY
 
 # The provider:model string deepagents will use for the supervisor and, by
 # default, every subagent. Keep it consistent with the rest of the repo.
-MODEL = "openai:gpt-5.4-mini"
+MODEL = "openai:gpt-6-luna"
 
 
 # ======================================================================

@@ -68,7 +68,7 @@ part4_rag_examples/
 
 -   **`basic_rag_part3.py`**
     -   **Purpose**: Puts it all together with a complete RAG chain built with LCEL.
-    -   **Functionality**: Retrieves context from `db/chroma_db_security`, combines it with the question in a `ChatPromptTemplate`, and answers with `ChatOpenAI` (`gpt-5.4-mini`).
+    -   **Functionality**: Retrieves context from `db/chroma_db_security`, combines it with the question in a `ChatPromptTemplate`, and answers with `ChatOpenAI` (`gpt-6-luna`).
 
 -   **`embedding_deep_dive.py`**
     -   **Purpose**: Compares different embedding models (OpenAI's `text-embedding-ada-002` and Hugging Face's `sentence-transformers/all-mpnet-base-v2`).

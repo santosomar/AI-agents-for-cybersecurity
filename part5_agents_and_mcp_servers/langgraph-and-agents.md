@@ -52,7 +52,7 @@ from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 
 # Initialize LLM
-llm = ChatOpenAI(model="gpt-5.4-mini", temperature=0)
+llm = ChatOpenAI(model="gpt-6-luna")
 
 # Define agent state
 class AgentState(TypedDict):
@@ -146,7 +146,7 @@ def get_weather(location: str) -> str:
 tools = [search_web, calculator, get_weather]
 
 # Bind tools to LLM
-llm = ChatOpenAI(model="gpt-5.4-mini", temperature=0)
+llm = ChatOpenAI(model="gpt-6-luna", use_responses_api=True)
 llm_with_tools = llm.bind_tools(tools)
 
 # Define state
@@ -223,7 +223,7 @@ class AgentState(TypedDict):
 
 # Simple conversational agent
 async def chat_node(state: AgentState, config):
-    llm = ChatOpenAI(model="gpt-5.4-mini")
+    llm = ChatOpenAI(model="gpt-6-luna")
     response = await llm.ainvoke(state["messages"], config)
     return {"messages": [response]}
 
@@ -269,7 +269,7 @@ class AgentState(TypedDict):
     approved: bool
 
 async def generate_draft(state: AgentState, config):
-    llm = ChatOpenAI(model="gpt-5.4-mini")
+    llm = ChatOpenAI(model="gpt-6-luna")
     response = await llm.ainvoke(state["messages"], config)
     return {"messages": [response]}
 

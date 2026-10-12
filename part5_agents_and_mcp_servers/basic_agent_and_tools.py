@@ -65,9 +65,7 @@ tools = [
 prompt = hub.pull("hwchase17/react")
 
 # Initialize a ChatOpenAI model
-llm = ChatOpenAI(
-    model="gpt-5.4-mini", temperature=0
-)
+llm = ChatOpenAI(model="gpt-6-luna")
 
 # Create the ReAct agent using the create_react_agent function
 agent = create_react_agent(
