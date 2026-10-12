@@ -136,6 +136,8 @@ Good starting points for a training session or self-study. Run all of them in an
 
 > The only real security boundary for an agent is the operating system and network around it. Approval prompts, regex scanners, and "safety" system prompts are helpful speed bumps, not walls.
 
+[Part 8](../part8_multi-agent_harness_spec/README.md) turns this baseline into a control plane for an authorized assessment: a supervisor that cannot bypass policy, workers with phase-scoped tools, and human gates for anything high-impact.
+
 Hermes Agent states this explicitly in its own `SECURITY.md`, and it applies equally to the other five frameworks. Run them in containers or VMs, give them the narrowest credentials that work, keep them off production by default, and log everything.
 
 ### Universal hardening baseline

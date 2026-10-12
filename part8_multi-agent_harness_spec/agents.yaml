@@ -1,0 +1,99 @@
+schema_version: "1.0"
+title: Authorized multi-agent security-assessment harness
+status: specification-only
+defaults:
+  network_zone: isolated-lab
+  deny_by_default: true
+  audit_required: true
+  approval_ttl_minutes: 15
+  budget:
+    max_agent_turns: 20
+    max_tool_calls: 30
+    max_retries_per_task: 1
+    max_elapsed_minutes: 30
+    warn_at_percent: 80
+    hard_stop_at_percent: 100
+
+agents:
+  supervisor:
+    kind: orchestrator
+    capabilities: [validate-policy, dispatch-task, enforce-budget, pause, abort]
+    tools: []
+    writes: [task, audit_event]
+  planner:
+    kind: planning
+    capabilities: [create-bounded-task-graph, identify-dependencies]
+    tools: []
+    writes: [task_proposal]
+  reconnaissance:
+    phase: reconnaissance
+    reads: [scope_manifest, approved_asset_ids]
+    writes: [asset_inventory, evidence]
+    capabilities:
+      - name: inventory_lab_assets
+        risk: low
+        requires_human_approval: false
+        input_schema_ref: "01-reconnaissance.md#contract"
+  vulnerability_discovery:
+    phase: vulnerability-discovery
+    reads: [asset_inventory, evidence, advisory_snapshot]
+    writes: [finding_candidate, evidence]
+    capabilities:
+      - name: correlate_finding_evidence
+        risk: low
+        requires_human_approval: false
+        input_schema_ref: "02-vulnerability-discovery.md#contract"
+  exploitation_validation:
+    phase: exploitation-validation
+    enabled_by_default: false
+    reads: [finding_candidate, approval]
+    writes: [validation_evidence]
+    capabilities:
+      - name: validate_authorized_finding
+        risk: high
+        requires_human_approval: true
+        approval_gate: G1
+        max_invocations_per_approval: 1
+        input_schema_ref: "03-exploitation-validation.md#contract"
+  post_exploitation_impact:
+    phase: post-exploitation-impact
+    enabled_by_default: false
+    reads: [validation_evidence, approval, synthetic_data_manifest]
+    writes: [impact_assessment]
+    capabilities:
+      - name: assess_isolated_lab_impact
+        risk: high
+        requires_human_approval: true
+        approval_gate: G2
+        synthetic_data_only: true
+        input_schema_ref: "04-post-exploitation-impact.md#contract"
+  remediation:
+    phase: remediation
+    reads: [accepted_finding, validation_evidence, impact_assessment]
+    writes: [remediation_recommendation]
+    capabilities:
+      - name: recommend_remediation
+        risk: low
+        requires_human_approval: false
+        mutating_actions: forbidden
+        input_schema_ref: "05-remediation.md#contract"
+  reporter:
+    kind: reporting
+    capabilities: [assemble-evidence-linked-report, redact]
+    tools: []
+    writes: [assessment_report]
+
+approval_gates:
+  G0: {required_for: assessment-start}
+  G1: {required_for: exploitation-validation, single_use: true}
+  G2: {required_for: post-exploitation-impact, single_use: true}
+  G3: {required_for: report-release-or-export}
+
+hard_stop_triggers:
+  - scope_mismatch
+  - unexpected_external_connectivity
+  - budget_exhausted
+  - approval_revoked_or_expired
+  - audit_sink_unavailable
+  - sensitive_data_exposure
+  - operator_kill_switch

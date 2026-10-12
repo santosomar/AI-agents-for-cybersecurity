@@ -2,7 +2,7 @@
 
 ## Project overview
 
-Educational Python codebase by Omar Santos, used in Pearson live trainings, video courses, [O'Reilly courses](https://www.oreilly.com/search/?q=omar%20santos&rows=100), and several of his books. Standalone scripts (no interconnected services) demonstrating AI agents for cybersecurity across seven progressive parts. See `README.md` for the full learning path.
+Educational Python codebase by Omar Santos, used in Pearson live trainings, video courses, [O'Reilly courses](https://www.oreilly.com/search/?q=omar%20santos&rows=100), and several of his books. Standalone scripts and specifications (no interconnected services) demonstrating AI agents for cybersecurity across eight progressive parts. See `README.md` for the full learning path.
 
 ## Directory structure
 
@@ -14,7 +14,17 @@ part4_rag_examples/          RAG with Chroma, text splitting, embedding comparis
 part5_agents_and_mcp_servers/ Agents, LangGraph, agentic RAG, CrewAI, MCP servers
 part6_agentic_frameworks/    Docs only: OpenClaw, Hermes, Agent Zero, OpenHands, Paperclip, Buzz (one folder each)
 part7_tokenomics/            Agent cost: caching, routing, compaction, tool overhead, batch, budgets, cost per outcome
+part8_multi-agent_harness_spec/ Spec only: authorized assessment harness (scope, gates, evidence, kill switch)
 ```
+
+### Part 8 notes
+
+- Design specification only. Markdown plus `agents.yaml`. No scripts, dependencies, services, or lab targets to run.
+- Reading order: `safety-governance.md` (overrides every implementation choice), then `architecture.md` and `agents.yaml`, then the five phase files in pipeline order, then `references.md`.
+- Pipeline: reconnaissance → vulnerability discovery → exploitation validation → post-exploitation impact → remediation. The last of those is recommendation-only. Validation and impact are `enabled_by_default: false` and require gates G1 and G2 (single-use, human-issued approval tokens).
+- Do not add payloads, exploit procedures, credential harvesting, persistence, evasion, lateral movement, or unattended high-impact actions. The spec's out-of-scope list in its README is binding.
+- Builds on Part 5 (LangGraph, attack-surface management, CrewAI, DeepAgents, MCP), Part 6 (containers, network segmentation, and identity are the boundary), and Part 7 (per-task token, cost, tool-call, and loop ceilings). `safety-governance.md` points at `part7_tokenomics/07_token_budget_guard.py` for the 80% pause / 100% hard-stop pattern.
+- Inspired by Cisco DevNet's Foundry Security Spec. An implementation may use LangGraph, CrewAI, AutoGen, the OpenAI Agents SDK, or Microsoft Agent Framework, but must keep the contracts and gates. Research snapshot: October 2026.
 
 ### Part 7 notes
 
@@ -149,4 +159,5 @@ Identical rules also exist in `.windsurf/rules/` (Windsurf) and `.github/instruc
 - The `.venv/` directory is created at the workspace root by `uv sync`.
 - ChromaDB stores are pre-committed under `part4_rag_examples/db/` — no separate database setup needed.
 - LangChain 1.x removed the legacy `langchain.*` modules. Import runnables, prompts, parsers, and tools from `langchain_core`; text splitters from `langchain_text_splitters`; and `AgentExecutor`, `hub`, memory, and classic chains from `langchain_classic`. `from langchain.agents import create_agent` is the 1.x agent API.
-- No Jupyter notebooks exist in this repo — all examples are standalone `.py` scripts.
+- Part 6 and Part 8 are documentation, not runnable scripts. Part 8 must stay a specification.
+- No Jupyter notebooks exist in this repo. Runnable examples are standalone `.py` scripts.
