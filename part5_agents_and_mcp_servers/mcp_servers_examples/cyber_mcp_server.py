@@ -1,9 +1,13 @@
 # LangGraph Example: MCP Server for Cybersecurity Tools
 #
-# This script implements a small FastAPI application that exposes a ``/scan``
-# endpoint. Given an IP address, it performs a real (but limited) port scan using
-# the :mod:`python-nmap` module. The goal is to illustrate how an MCP-style server
-# could be structured for cybersecurity purposes.
+# This script implements a FastMCP server that exposes cybersecurity tools over
+# the stdio transport:
+#   - run_nmap_scan: runs a real nmap scan against the given hosts using the
+#     :mod:`python-nmap` module.
+#   - get_cisa_kev_catalog: fetches the CISA Known Exploited Vulnerabilities
+#     (KEV) catalog.
+# MCP clients (such as cyber_agent.py) launch this script as a subprocess and
+# call these tools.
 #
 # Instructor: Omar Santos @santosomar
 
