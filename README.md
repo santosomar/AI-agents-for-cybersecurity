@@ -39,8 +39,9 @@ export OPENAI_API_KEY="your-key-here"
 
 Never commit API keys. `.env` is already in `.gitignore`.
 
-# Repository Structure
-The repository is structured with seven comprehensive parts covering the spectrum from basic AI concepts to advanced agentic implementations:
+## Repository structure
+
+The repository is structured with eight parts covering the spectrum from basic AI concepts to a specification for coordinating specialist agents through an authorized security assessment:
 
 - **`part1_foundational_topics/`**: Foundational examples covering chat models, embeddings (with TensorFlow Projector visualization), interactive chatbots, and integration with various model providers (OpenAI, Hugging Face, Ollama)
 - **`part2_prompt_templates/`**: Advanced prompt engineering techniques, template systems, and structured prompting strategies for cybersecurity applications
@@ -49,6 +50,7 @@ The repository is structured with seven comprehensive parts covering the spectru
 - **`part5_agents_and_mcp_servers/`**: Advanced AI agents, tools integration, LangGraph workflows, agentic RAG, and Model Context Protocol (MCP) implementations for cybersecurity automation
 - **`part6_agentic_frameworks/`**: Security-team guides to six ready-made agentic frameworks (OpenClaw, Hermes, Agent Zero, OpenHands, Paperclip, Buzz): what each is, where it helps, and where it should stay out
 - **`part7_tokenomics/`**: What agents cost to run and how to measure it: context compounding, prompt caching, model routing, compaction, tool-schema overhead, batch processing, per-task budgets, and cost per accepted outcome
+- **`part8_multi-agent_harness_spec/`**: A vendor-neutral design specification (not runnable code) for a supervisor-led, human-gated security-assessment harness: scope, evidence, approval gates, and a kill switch
 
 ## Comprehensive Learning Path
 This repository provides a structured learning journey covering cutting-edge AI agent technologies and their applications in cybersecurity operations.
@@ -124,13 +126,23 @@ Where the money goes in an agent, and the metric that matters (cost per accepted
 - **Batch**: Offline triage at half price with the Batch API (`08_batch_triage.py`)
 - **Cyber Index**: Using a cost-aware defensive security benchmark to choose models (`docs/07_cyber_index.md`)
 
+### Part 8: Multi-Agent Security-Assessment Harness
+A specification for coordinating specialist agents through an authorized assessment lifecycle. It is inspired by Cisco DevNet's [Foundry Security Spec](https://github.com/CiscoDevNet/foundry-security-spec): the deliverable is architecture, invariants, evidence, and safety controls. There is no scanner, payload, or service to run. Exploitation validation and post-exploitation impact are disabled by default and need a recorded human approval for every execution. Research for this part was done in October 2026.
+
+- **Safety and rules of engagement** (`safety-governance.md`): scope manifest, approval gates G0–G3, lab isolation, budgets, append-only audit, and a kill switch. Read this first; it overrides any implementation choice.
+- **Architecture** (`architecture.md`): supervisor, planner, and narrow workers; shared evidence store; A2A-style task messages; MCP tool brokers that deny by default
+- **Reference configuration** (`agents.yaml`): capabilities, approval gates, and hard-stop triggers
+- **Pipeline**: [reconnaissance](part8_multi-agent_harness_spec/01-reconnaissance.md) → [vulnerability discovery](part8_multi-agent_harness_spec/02-vulnerability-discovery.md) → [exploitation validation](part8_multi-agent_harness_spec/03-exploitation-validation.md) (human-gated) → [post-exploitation impact](part8_multi-agent_harness_spec/04-post-exploitation-impact.md) (human-gated) → [remediation](part8_multi-agent_harness_spec/05-remediation.md) (recommendations only)
+- **References** (`references.md`): MCP, A2A, OWASP agentic risks, and how Parts 5–7 feed the design
+
+Start at [`part8_multi-agent_harness_spec/README.md`](part8_multi-agent_harness_spec/README.md).
 
 **Note**: This is a **living set of resources**. Content is updated regularly as the tools, models, and threats change, so the code may be newer than the version shown in a recorded video or a printed book. If something in a book or recording no longer matches, the version in this repository is the current one.
 
 ## Responsible use
 
 > [!WARNING]
-> Some examples (nmap scanning, Agent Zero on Kali Linux, attack surface management, ethical hacking agents) act against real systems. Run them only against systems you own or are explicitly authorized to test, ideally in an isolated lab.
+> Some examples (nmap scanning, Agent Zero on Kali Linux, attack surface management, ethical hacking agents) act against real systems. Run them only against systems you own or are explicitly authorized to test, ideally in an isolated lab. Part 8 is a design specification, not a scanner: its validation and impact phases stay disabled unless a human grants a task-specific approval for a named lab target.
 
 ## Contact Information
 

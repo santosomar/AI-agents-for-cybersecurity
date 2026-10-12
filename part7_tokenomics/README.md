@@ -101,5 +101,6 @@ Tokenomics is also a security topic:
 - **Fewer tools means a smaller blast radius.** A step that cannot see `edr_isolate_host` cannot be tricked into calling it.
 - **Trimming tool output must not destroy evidence.** Keep raw tool output in storage, and give the model a summary plus a pointer to it.
 - **Batch files are data at rest.** Redact them, and delete them when the job is done.
+- **Part 8 adopts these ceilings.** The [multi-agent harness spec](../part8_multi-agent_harness_spec/safety-governance.md) pauses new work at 80% of a budget and hard-stops at 100%, using the same pattern as `07_token_budget_guard.py`.
 
 > **Note:** Prices and model names were researched in October 2026 from the provider pages listed in [`pricing.yaml`](pricing.yaml). Discounts vary by provider, model, and region. Check the current price sheets before making decisions.
