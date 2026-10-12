@@ -19,3 +19,15 @@ package-lock.json
 
 
 .vscode/settings.json
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyz
+
+output/
+batch_input*.jsonl
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+.vscode/
