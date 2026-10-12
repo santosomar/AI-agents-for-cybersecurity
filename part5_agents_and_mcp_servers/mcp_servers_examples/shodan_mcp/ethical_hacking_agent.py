@@ -66,9 +66,9 @@ async def main():
     
     print("\n🤖 Initializing AI model...")
     try:
-        # Initialize the AI model - using gpt-5.4-mini in this case. The lower the temperature, the more deterministic 
-        # the model is.
-        llm = ChatOpenAI(model="gpt-5.4-mini", temperature=0.1)
+        # Initialize the AI model - using gpt-6-luna in this case. gpt-6-luna rejects `temperature`
+        # unless reasoning effort is "none", and needs the Responses API for tool calling.
+        llm = ChatOpenAI(model="gpt-6-luna", use_responses_api=True)
         
         # Create a ReAct agent with the fetched tools
         agent = create_react_agent(llm, tools)

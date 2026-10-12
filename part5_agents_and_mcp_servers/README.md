@@ -124,13 +124,13 @@ The script will:
 ## Features
 
 - Custom tool implementation
-- Integration with OpenAI's `gpt-5.4-mini` model
+- Integration with OpenAI's `gpt-6-luna` model
 - ReAct framework implementation
 - Verbose output for debugging and understanding agent behavior
 
 ## Note
 
-The example uses `gpt-5.4-mini` as the model. Make sure to update the model name in the code if you want to use a different OpenAI model.
+The example uses `gpt-6-luna` as the model. Make sure to update the model name in the code if you want to use a different OpenAI model.
 
 
 ---
