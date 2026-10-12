@@ -23,7 +23,8 @@ import nmap
 load_dotenv()
 
 # 1. Define the Tools for our agent
-# We'll create mock tools for demonstration purposes.
+# The nmap_scan tool performs a real scan via python-nmap, while the
+# search_exploitdb tool returns simulated results for demonstration purposes.
 
 def nmap_scan(target: str) -> str:
     """Runs a real Nmap scan on a target IP or domain using python-nmap."""

@@ -106,17 +106,19 @@ def determine_indicator_type(classification_result):
         return "behavior"
 
 # Define the runnable branches for handling different indicator types
+# Each branch receives {"classification": ..., "indicator": ...}: the condition
+# reads the classification, and the prompt template reads the indicator.
 branches = RunnableBranch(
     (
-        lambda x: determine_indicator_type(x) == "ip",
+        lambda x: determine_indicator_type(x["classification"]) == "ip",
         ip_indicator_template | model | StrOutputParser()
     ),
     (
-        lambda x: determine_indicator_type(x) == "domain",
+        lambda x: determine_indicator_type(x["classification"]) == "domain",
         domain_indicator_template | model | StrOutputParser()
     ),
     (
-        lambda x: determine_indicator_type(x) == "hash",
+        lambda x: determine_indicator_type(x["classification"]) == "hash",
         hash_indicator_template | model | StrOutputParser()
     ),
     behavior_indicator_template | model | StrOutputParser()  # Default branch for behavior patterns
@@ -134,14 +136,9 @@ input_and_classification = RunnableMap({
     "indicator": lambda x: x["indicator"]
 })
 
-# Step 2: Create a function that routes to the appropriate branch based on classification
-def route_to_branch(inputs):
-    classification = inputs["classification"]
-    indicator = inputs["indicator"]
-    return branches.invoke(classification, {"indicator": indicator})
-
-# Step 3: Chain them together
-chain = input_and_classification.with_fallbacks([]).pipe(route_to_branch)
+# Step 2: Pipe the classification + indicator dict into the branches, which route
+# on the classification and pass the indicator to the selected prompt
+chain = input_and_classification | branches
 
 # Example indicators to test
 examples = [

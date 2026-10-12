@@ -1,9 +1,9 @@
 # LangGraph Example: MCP Client for Cybersecurity Tools
 #
-# This script implements a small FastAPI application that exposes a ``/scan``
-# endpoint. Given an IP address, it performs a real (but limited) port scan using
-# the :mod:`python-nmap` module. The goal is to illustrate how an MCP-style server
-# could be structured for cybersecurity purposes.
+# This script implements an MCP client. It launches cyber_mcp_server.py over the
+# stdio transport using MultiServerMCPClient from langchain-mcp-adapters, loads
+# the server's tools (run_nmap_scan and get_cisa_kev_catalog), and runs a
+# LangChain agent that can call those tools to answer cybersecurity questions.
 #
 # Instructor: Omar Santos @santosomar
 
