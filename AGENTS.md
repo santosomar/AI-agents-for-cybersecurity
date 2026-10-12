@@ -11,7 +11,7 @@ part1_foundational_topics/   Chat models, embeddings, Streamlit chatbot, Hugging
 part2_prompt_templates/      Prompt engineering: templates, placeholders, chat history
 part3_prompt_chaining/       LCEL chains: sequential, parallel, branching, threat hunting
 part4_rag_examples/          RAG with Chroma, text splitting, embedding comparison, web scraping
-part5_agents_and_tools/      Agents, LangGraph, agentic RAG, CrewAI, MCP servers
+part5_agents_and_mcp_servers/ Agents, LangGraph, agentic RAG, CrewAI, MCP servers
 ```
 
 ### Part 5 sub-directories
@@ -60,9 +60,9 @@ No `.env` files are committed (`.env` is gitignored). Scripts use `python-dotenv
 | `part1_foundational_topics/chatbot_example.py` | Streamlit cybersecurity tutor chatbot | `OPENAI_API_KEY` |
 | `part1_foundational_topics/embeddings/clustering.py` | K-means + PCA/t-SNE on CVE embeddings | Offline (uses bundled TSVs) |
 | `part4_rag_examples/basic_rag_part1.py` | Builds Chroma vector store from `data/` | `OPENAI_API_KEY` |
-| `part5_agents_and_tools/basic_agent_and_tools_scanner.py` | ReAct agent with nmap tool | `OPENAI_API_KEY`, `nmap` binary |
-| `part5_agents_and_tools/mcp_servers_examples/cyber_mcp_server.py` | FastMCP server (nmap scan + CISA KEV) | `nmap` binary |
-| `part5_agents_and_tools/mcp_servers_examples/cyber_agent.py` | MCP client agent using cyber server | `OPENAI_API_KEY`, `nmap` binary |
+| `part5_agents_and_mcp_servers/basic_agent_and_tools_scanner.py` | ReAct agent with nmap tool | `OPENAI_API_KEY`, `nmap` binary |
+| `part5_agents_and_mcp_servers/mcp_servers_examples/cyber_mcp_server.py` | FastMCP server (nmap scan + CISA KEV) | `nmap` binary |
+| `part5_agents_and_mcp_servers/mcp_servers_examples/cyber_agent.py` | MCP client agent using cyber server | `OPENAI_API_KEY`, `nmap` binary |
 
 ## Running scripts
 
@@ -77,11 +77,11 @@ uv run python part1_foundational_topics/huggingface_example.py
 uv run streamlit run part1_foundational_topics/chatbot_example.py --server.port 8501 --server.headless true
 
 # CrewAI vulnerability management
-cd part5_agents_and_tools/crewai_example/vulnerability_management
+cd part5_agents_and_mcp_servers/crewai_example/vulnerability_management
 uv run run        # or: uv run train / uv run test
 
 # Shodan MCP (from its own project dir)
-cd part5_agents_and_tools/mcp_servers_examples/shodan_mcp
+cd part5_agents_and_mcp_servers/mcp_servers_examples/shodan_mcp
 uv sync --extra agent --extra dev
 uv run python shodan_mcp.py
 ```
@@ -100,8 +100,8 @@ The `shodan_mcp` subproject has ruff/black/mypy in its own `pyproject.toml`.
 
 No formal test suite or pytest configuration at the root. Test files exist only in the Shodan MCP subproject:
 
-- `part5_agents_and_tools/mcp_servers_examples/shodan_mcp/test_shodan_openapi.py` — Shodan OpenAPI/mock tests
-- `part5_agents_and_tools/mcp_servers_examples/shodan_mcp/test_agent_setup.py` — Environment and dependency validation
+- `part5_agents_and_mcp_servers/mcp_servers_examples/shodan_mcp/test_shodan_openapi.py` — Shodan OpenAPI/mock tests
+- `part5_agents_and_mcp_servers/mcp_servers_examples/shodan_mcp/test_agent_setup.py` — Environment and dependency validation
 
 Run with: `uv run python <test_file>`.
 

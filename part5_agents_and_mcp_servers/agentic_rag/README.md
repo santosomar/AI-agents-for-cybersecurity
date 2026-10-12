@@ -13,7 +13,7 @@ answer the user's question.
 
 ## Project Structure
 ```
-part5_agents_and_tools/
+part5_agents_and_mcp_servers/
 └── agentic_rag/
     ├── agentic_rag_example.py
     └── db/

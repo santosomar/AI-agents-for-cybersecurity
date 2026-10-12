@@ -23,7 +23,7 @@
 # Instructor: Omar Santos @santosomar
 #
 # Run it self-contained with uv (no project sync needed):
-#   uv run part5_agents_and_tools/deepagents_example/soc_agent.py
+#   uv run part5_agents_and_mcp_servers/deepagents_example/soc_agent.py
 # The PEP 723 metadata block below lets uv build an isolated environment with
 # only this script's dependencies.
 
