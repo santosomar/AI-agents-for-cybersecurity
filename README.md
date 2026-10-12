@@ -3,13 +3,14 @@
 This repository contains resources and materials for [several courses](https://www.oreilly.com/search/?q=omar%20santos&rows=100) by [Omar Santos](https://www.linkedin.com/in/santosomar/).
 
 # Repository Structure
-The repository is structured with five comprehensive parts covering the spectrum from basic AI concepts to advanced agentic implementations:
+The repository is structured with six comprehensive parts covering the spectrum from basic AI concepts to advanced agentic implementations:
 
 - **`part1_foundational_topics/`**: Foundational examples covering chat models, embeddings (with TensorFlow Projector visualization), interactive chatbots, and integration with various model providers (OpenAI, Hugging Face, Ollama)
 - **`part2_prompt_templates/`**: Advanced prompt engineering techniques, template systems, and structured prompting strategies for cybersecurity applications
 - **`part3_prompt_chaining/`**: Sophisticated prompt chaining workflows using LangChain Expression Language (LCEL), including branching chains, parallel processing, and conditional logic for security incident analysis and threat hunting
 - **`part4_rag_examples/`**: Comprehensive Retrieval Augmented Generation implementations with vector databases (Chroma), text splitting strategies, embedding comparisons, metadata handling, and web scraping
 - **`part5_agents_and_mcp_servers/`**: Advanced AI agents, tools integration, LangGraph workflows, agentic RAG, and Model Context Protocol (MCP) implementations for cybersecurity automation
+- **`part6_agentic_frameworks/`**: Security-team guides to six ready-made agentic frameworks (OpenClaw, Hermes, Agent Zero, OpenHands, Paperclip, Buzz): what each is, where it helps, and where it should stay out
 
 ## Comprehensive Learning Path
 This repository provides a structured learning journey covering cutting-edge AI agent technologies and their applications in cybersecurity operations.
@@ -61,6 +62,15 @@ This repository provides a structured learning journey covering cutting-edge AI 
   - CISA KEV agent and ethical hacking automation
 - **Agentic RAG**: Reasoning-based real-time data retrieval with SSRF analysis (`agentic_rag/`)
 - **Model Context Protocol (MCP)**: FastAPI-based security servers with port scanning (`mcp_servers_examples/`)
+
+### Part 6: Agentic Frameworks for Security Teams
+What each framework is, where it helps a security team, where it should stay out, and how to harden it:
+- **OpenClaw**: Personal assistant you message in your chat apps (`openclaw/`)
+- **Hermes**: Self-improving agent from Nous Research that saves workflows as skills (`hermes/`)
+- **Agent Zero**: General-purpose agent with its own Kali Linux container (`agent_zero/`)
+- **OpenHands**: Autonomous software engineer, issue in and pull request out (`openhands/`)
+- **Paperclip**: Control plane for a "company" of agents (`paperclip/`)
+- **Buzz**: Block's shared workspace for people and agents on a self-hosted relay (`buzz/`)
 
 
 **Note**: This will continue to be a **living set of resources** with updates and new content added regularly. 

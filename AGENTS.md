@@ -12,6 +12,7 @@ part2_prompt_templates/      Prompt engineering: templates, placeholders, chat h
 part3_prompt_chaining/       LCEL chains: sequential, parallel, branching, threat hunting
 part4_rag_examples/          RAG with Chroma, text splitting, embedding comparison, web scraping
 part5_agents_and_mcp_servers/ Agents, LangGraph, agentic RAG, CrewAI, MCP servers
+part6_agentic_frameworks/    Docs only: OpenClaw, Hermes, Agent Zero, OpenHands, Paperclip, Buzz (one folder each)
 ```
 
 ### Part 5 sub-directories
