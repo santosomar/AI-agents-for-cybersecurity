@@ -11,14 +11,13 @@
 import nmap
 
 from dotenv import load_dotenv
-from langchain import hub
-from langchain.agents import (
+from langchain_classic import hub
+from langchain_classic.agents import (
     AgentExecutor,
     create_react_agent,
 )
-from langchain_core.tools import Tool
+from langchain_core.tools import StructuredTool, Tool
 from langchain_openai import ChatOpenAI
-from langchain.tools import StructuredTool
 from pydantic import BaseModel, Field
 
 # Load environment variables from .env file

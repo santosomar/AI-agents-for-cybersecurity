@@ -22,6 +22,7 @@ part6_agentic_frameworks/    Docs only: OpenClaw, Hermes, Agent Zero, OpenHands,
 | `agent_deep_dive/` | Chat agent with Wikipedia, docstore agent with Chroma retriever |
 | `agent_deep_dive/langgraph/` | LangGraph agents: URL analysis, CISA KEV, ethical hacking, branching |
 | `agentic_rag/` | LangGraph agentic RAG over SSRF data with Chroma |
+| `deepagents_example/` | DeepAgents SOC supervisor with planning, virtual filesystem, and subagents |
 | `asm_example/` | Attack surface management graph (recon → scan → analysis → exploit/report) |
 | `crewai_example/vulnerability_management/` | CrewAI crew with nmap/CVE tools (`pyproject.toml` with `crewai` scripts) |
 | `mcp_servers_examples/` | FastMCP cyber server, Shodan MCP, Splunk MCP (README only) |
@@ -36,7 +37,7 @@ part6_agentic_frameworks/    Docs only: OpenClaw, Hermes, Agent Zero, OpenHands,
 ## Runtime
 
 - **Python >= 3.13** is required (`pyproject.toml`).
-- **uv** is the package manager (`uv.lock` + `pyproject.toml`). A legacy `requirements.txt` exists at root but `pyproject.toml` is authoritative.
+- **uv** is the package manager (`uv.lock` + `pyproject.toml`). A legacy `requirements.txt` exists at root (unpinned names mirrored from `pyproject.toml`) but `pyproject.toml` is authoritative.
 - Install: `uv sync --python python3.13` (creates `.venv/` at workspace root).
 - Run scripts: `uv run python <script.py>`.
 
@@ -140,5 +141,5 @@ Identical rules also exist in `.windsurf/rules/` (Windsurf) and `.github/instruc
 - PyTorch pulls CUDA/NVIDIA packages (~3 GB) even on CPU-only machines. This is expected from the lockfile.
 - The `.venv/` directory is created at the workspace root by `uv sync`.
 - ChromaDB stores are pre-committed under `part4_rag_examples/db/` — no separate database setup needed.
-- Some READMEs reference `rag_basics_metadata_part1.py` and `chroma_db_with_metadata/` which are not present in the current tree (may be planned or generated locally).
+- LangChain 1.x removed the legacy `langchain.*` modules. Import runnables, prompts, parsers, and tools from `langchain_core`; text splitters from `langchain_text_splitters`; and `AgentExecutor`, `hub`, memory, and classic chains from `langchain_classic`. `from langchain.agents import create_agent` is the 1.x agent API.
 - No Jupyter notebooks exist in this repo — all examples are standalone `.py` scripts.

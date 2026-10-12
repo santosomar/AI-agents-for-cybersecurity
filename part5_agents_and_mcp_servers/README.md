@@ -31,11 +31,14 @@ This directory contains advanced examples demonstrating the implementation and u
   - Context-aware responses
 
 #### LangGraph Integration (`langgraph/`)
+- `basic_example.py`: URL analysis workflow with shared state and JSON output parsing
 - `branching_conditional_logic.py`: Demonstrates:
   - Complex decision workflows
   - State management in multi-step processes
   - Conditional branching logic
   - Integration with LangGraph framework
+- `cisa_kev_agent.py`: Agent that queries the CISA Known Exploited Vulnerabilities catalog
+- `ethical_hacking_agent.py`: Tool-calling agent with nmap scanning, Exploit-DB search, and a checkpointer
 
 ### Agentic RAG Implementation (`agentic_rag/`)
 - Main implementation in `agentic_rag_example.py`:
@@ -45,11 +48,20 @@ This directory contains advanced examples demonstrating the implementation and u
   - Intelligent query processing
 - Includes detailed README with implementation specifics
 
+### Attack Surface Management (`asm_example/`)
+- LangGraph workflow that routes through recon, scanning, analysis, and exploit/report nodes
+
+### CrewAI Vulnerability Management (`crewai_example/`)
+- CrewAI crew with nmap and CVE lookup tools; a self-contained project with its own `pyproject.toml`
+
+### DeepAgents SOC Agent (`deepagents_example/`)
+- `soc_agent.py`: Autonomous SOC triage agent with planning, a virtual file system, and subagents
+
 ### MCP Servers (`mcp_servers_examples/`)
-- `mcp_server.py`: FastAPI-based security server:
-  - Port scanning functionality
-  - API endpoint management
-  - Security assessment tools
+- `cyber_mcp_server.py`: FastMCP server (stdio) exposing `run_nmap_scan` and `get_cisa_kev_catalog` tools
+- `cyber_agent.py`: LangChain agent that connects to the cyber MCP server with `MultiServerMCPClient`
+- `shodan_mcp/`: Shodan MCP server generated from the Shodan OpenAPI spec, with demo agents and tests
+- `splunk-mcp/`: Conceptual Splunk MCP examples (README only)
 - Comprehensive README with setup and usage instructions
 
 ## Key Features
@@ -62,16 +74,15 @@ This directory contains advanced examples demonstrating the implementation and u
 
 ## Prerequisites
 
-- Python 3.x
-- LangChain and LangGraph
+- Python 3.13+ and [uv](https://docs.astral.sh/uv/)
 - OpenAI API access
-- Additional security tools as required by specific examples
+- Additional security tools as required by specific examples (for example, the `nmap` binary)
 
 ## Getting Started
 
-1. Install required dependencies:
+1. Install required dependencies from the repository root:
    ```bash
-   pip install -r requirements.txt
+   uv sync --python python3.13
    ```
 2. Set up environment variables in `.env`:
    - OpenAI API key
@@ -113,7 +124,7 @@ The script will:
 ## Features
 
 - Custom tool implementation
-- Integration with OpenAI's GPT-4 model
+- Integration with OpenAI's `gpt-5.4-mini` model
 - ReAct framework implementation
 - Verbose output for debugging and understanding agent behavior
 

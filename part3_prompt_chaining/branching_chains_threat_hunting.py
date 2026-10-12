@@ -8,9 +8,9 @@
 
 # Import the required libraries
 from dotenv import load_dotenv
-from langchain.prompts import ChatPromptTemplate
-from langchain.schema.output_parser import StrOutputParser
-from langchain.schema.runnable import RunnableBranch, RunnablePassthrough
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import StrOutputParser
+from langchain_core.runnables import RunnableBranch, RunnablePassthrough
 from langchain_openai import ChatOpenAI
 
 # Load environment variables from .env
@@ -126,7 +126,7 @@ branches = RunnableBranch(
 classification_chain = classification_template | model | StrOutputParser()
 
 # Create a chain that combines classification with branching logic
-from langchain.schema.runnable import RunnableMap
+from langchain_core.runnables import RunnableMap
 
 # Step 1: Create a map that runs classification and preserves input
 input_and_classification = RunnableMap({

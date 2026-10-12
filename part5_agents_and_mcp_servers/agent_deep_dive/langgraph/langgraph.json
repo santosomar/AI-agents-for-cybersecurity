@@ -1,11 +1,6 @@
 {
-  "lc": 1,
-  "type": "not_implemented",
-  "id": [
-    "langgraph",
-    "graph",
-    "state",
-    "StateGraph"
-  ],
-  "repr": "<langgraph.graph.state.StateGraph object at 0x108009e50>"
+  "dependencies": ["."],
+  "graphs": {
+    "cisa_kev_agent": "./cisa_kev_agent.py:app"
+  }
 }
