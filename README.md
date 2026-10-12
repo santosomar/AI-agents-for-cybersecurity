@@ -42,10 +42,10 @@ This repository provides a structured learning journey covering cutting-edge AI 
 - Multi-step reasoning for complex cybersecurity tasks
 
 ### Part 4: Advanced RAG Implementations
-- **Vector Database Management**: Chroma vector store creation and persistence (`basic_rag_part1.py`, `basic_rag_part2.py`)
+- **Vector Database Management**: Multi-document Chroma vector store creation, persistence, and source metadata (`basic_rag_part1.py`, `basic_rag_part2.py`)
+- **End-to-End RAG Chain**: Retriever, prompt, and LLM combined with LCEL (`basic_rag_part3.py`)
 - **Text Splitting Strategies**: Character, sentence, token, and recursive splitting techniques (`text_splitting_deep_dive.py`)
 - **Embedding Comparisons**: OpenAI vs. Hugging Face embedding models (`embedding_deep_dive.py`)
-- **Metadata Integration**: Source tracking and metadata-rich vector stores (`rag_basics_metadata_part1.py`)
 - **Web Scraping**: Dynamic content ingestion and processing (`web_scrape_basic.py`)
 - **Cost Optimization**: Embedding cost calculation utilities (`utils/embedding_cost_calculator.py`)
 - **Cybersecurity Data**: SSRF vulnerability analysis and Tesla security data examples
@@ -61,7 +61,10 @@ This repository provides a structured learning journey covering cutting-edge AI 
   - Conditional branching logic and multi-step processes
   - CISA KEV agent and ethical hacking automation
 - **Agentic RAG**: Reasoning-based real-time data retrieval with SSRF analysis (`agentic_rag/`)
-- **Model Context Protocol (MCP)**: FastAPI-based security servers with port scanning (`mcp_servers_examples/`)
+- **Attack Surface Management**: LangGraph recon → scan → analysis → report workflow (`asm_example/`)
+- **Multi-Agent Crews**: CrewAI vulnerability management crew with nmap and CVE tools (`crewai_example/`)
+- **Deep Agents**: Autonomous SOC agent with planning and subagents built on DeepAgents (`deepagents_example/`)
+- **Model Context Protocol (MCP)**: FastMCP security servers (nmap scanning, CISA KEV, Shodan) and MCP client agents (`mcp_servers_examples/`)
 
 ### Part 6: Agentic Frameworks for Security Teams
 What each framework is, where it helps a security team, where it should stay out, and how to harden it:

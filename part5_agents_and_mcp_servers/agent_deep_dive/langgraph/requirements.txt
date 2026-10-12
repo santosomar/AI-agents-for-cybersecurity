@@ -1,5 +1,7 @@
 langchain
+langchain-core
 langchain-openai
 langgraph
-dotenv
+python-dotenv
 python-nmap
+requests

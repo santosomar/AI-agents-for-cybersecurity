@@ -10,7 +10,7 @@ from typing import TypedDict, List
 
 from dotenv import load_dotenv
 from langgraph.graph import END, StateGraph
-from langchain.text_splitter import CharacterTextSplitter
+from langchain_text_splitters import CharacterTextSplitter
 from langchain_community.document_loaders import TextLoader
 from langchain_chroma import Chroma
 from langchain_core.messages import AIMessage, BaseMessage, HumanMessage

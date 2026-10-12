@@ -7,9 +7,9 @@
 # Instructor: Omar Santos @santosomar
 
 from dotenv import load_dotenv
-from langchain import hub
-from langchain.agents import AgentExecutor, create_structured_chat_agent
-from langchain.memory import ConversationBufferMemory
+from langchain_classic import hub
+from langchain_classic.agents import AgentExecutor, create_structured_chat_agent
+from langchain_classic.memory import ConversationBufferMemory
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 from langchain_core.tools import Tool
 from langchain_openai import ChatOpenAI

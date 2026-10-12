@@ -15,7 +15,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
 from langgraph.graph import StateGraph, END
 from langgraph.checkpoint.memory import MemorySaver
-from langchain.tools import Tool
+from langchain_core.tools import Tool
 from langgraph.prebuilt import ToolNode
 import nmap
 

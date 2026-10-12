@@ -9,11 +9,11 @@
 import os
 
 from dotenv import load_dotenv
-from langchain import hub
-from langchain.agents import AgentExecutor, create_react_agent
-from langchain.chains import create_history_aware_retriever, create_retrieval_chain
-from langchain.chains.combine_documents import create_stuff_documents_chain
-from langchain_community.vectorstores import Chroma
+from langchain_classic import hub
+from langchain_classic.agents import AgentExecutor, create_react_agent
+from langchain_classic.chains import create_history_aware_retriever, create_retrieval_chain
+from langchain_classic.chains.combine_documents import create_stuff_documents_chain
+from langchain_chroma import Chroma
 from langchain_core.messages import AIMessage, HumanMessage
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.tools import Tool
@@ -25,17 +25,14 @@ load_dotenv()
 # Load the existing Chroma vector store
 current_dir = os.path.dirname(os.path.abspath(__file__))
 db_dir = os.path.join(current_dir, "..", "..", "part4_rag_examples", "db")
-persistent_directory = os.path.join(db_dir, "chroma_db_with_metadata")
+persistent_directory = os.path.join(db_dir, "chroma_db_security")
 
-# Check if the Chroma vector store already exists
-if os.path.exists(persistent_directory):
-    print("Loading existing vector store...")
-    db = Chroma(persist_directory=persistent_directory,
-                embedding_function=None)
-else:
+if not os.path.exists(persistent_directory):
     raise FileNotFoundError(
-        f"The directory {persistent_directory} does not exist. Please check the path."
+        f"The directory {persistent_directory} does not exist. "
+        "Run part4_rag_examples/basic_rag_part1.py to create it."
     )
+print("Loading existing vector store...")
 
 # Define the embedding model
 embeddings = OpenAIEmbeddings(model="text-embedding-3-small")

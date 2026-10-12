@@ -7,8 +7,8 @@
 
 # Import the required libraries
 from dotenv import load_dotenv
-from langchain import hub
-from langchain.agents import (
+from langchain_classic import hub
+from langchain_classic.agents import (
     AgentExecutor,
     create_react_agent,
 )

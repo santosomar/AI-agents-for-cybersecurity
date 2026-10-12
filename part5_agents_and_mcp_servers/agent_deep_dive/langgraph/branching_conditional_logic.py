@@ -11,7 +11,7 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.messages import HumanMessage, AIMessage
 from langchain_openai import ChatOpenAI
 from langgraph.graph import StateGraph, END
-from langchain.tools import Tool
+from langchain_core.tools import Tool
 from dotenv import load_dotenv
 from typing import TypedDict, List
 
