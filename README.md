@@ -3,7 +3,7 @@
 This repository contains resources and materials for [several courses](https://www.oreilly.com/search/?q=omar%20santos&rows=100) by [Omar Santos](https://www.linkedin.com/in/santosomar/).
 
 # Repository Structure
-The repository is structured with six comprehensive parts covering the spectrum from basic AI concepts to advanced agentic implementations:
+The repository is structured with seven comprehensive parts covering the spectrum from basic AI concepts to advanced agentic implementations:
 
 - **`part1_foundational_topics/`**: Foundational examples covering chat models, embeddings (with TensorFlow Projector visualization), interactive chatbots, and integration with various model providers (OpenAI, Hugging Face, Ollama)
 - **`part2_prompt_templates/`**: Advanced prompt engineering techniques, template systems, and structured prompting strategies for cybersecurity applications
@@ -11,6 +11,7 @@ The repository is structured with six comprehensive parts covering the spectrum 
 - **`part4_rag_examples/`**: Comprehensive Retrieval Augmented Generation implementations with vector databases (Chroma), text splitting strategies, embedding comparisons, metadata handling, and web scraping
 - **`part5_agents_and_mcp_servers/`**: Advanced AI agents, tools integration, LangGraph workflows, agentic RAG, and Model Context Protocol (MCP) implementations for cybersecurity automation
 - **`part6_agentic_frameworks/`**: Security-team guides to six ready-made agentic frameworks (OpenClaw, Hermes, Agent Zero, OpenHands, Paperclip, Buzz): what each is, where it helps, and where it should stay out
+- **`part7_tokenomics/`**: What agents cost to run and how to measure it: context compounding, prompt caching, model routing, compaction, tool-schema overhead, batch processing, per-task budgets, and cost per accepted outcome
 
 ## Comprehensive Learning Path
 This repository provides a structured learning journey covering cutting-edge AI agent technologies and their applications in cybersecurity operations.
@@ -74,6 +75,17 @@ What each framework is, where it helps a security team, where it should stay out
 - **OpenHands**: Autonomous software engineer, issue in and pull request out (`openhands/`)
 - **Paperclip**: Control plane for a "company" of agents (`paperclip/`)
 - **Buzz**: Block's shared workspace for people and agents on a self-hosted relay (`buzz/`)
+
+### Part 7: Tokenomics for Security Agents
+Where the money goes in an agent, and the metric that matters (cost per accepted outcome, not cost per token):
+- **Context Compounding**: Why agent cost grows with the square of task length, and how compaction bends the curve (`01_context_growth.py`)
+- **Prompt Caching**: Provider mechanics, TTL selection, break-even math, prompt layout, and a live cache-hit check (`02_prompt_caching.py`, `03_live_cache_check.py`)
+- **Cost per Outcome**: Model + runtime + human review, divided by acceptance rate (`04_cost_per_outcome.py`)
+- **Model Routing**: Intent routers, cascades, and the escalation trap (`05_model_routing.py`)
+- **Fewer Tools**: Tool-schema token overhead, pruning by intent, and capping tool output (`06_tool_schema_overhead.py`)
+- **Budgets**: Per-task token, cost, and loop ceilings as a denial-of-wallet defense (`07_token_budget_guard.py`)
+- **Batch**: Offline triage at half price with the Batch API (`08_batch_triage.py`)
+- **Cyber Index**: Using a cost-aware defensive security benchmark to choose models (`docs/07_cyber_index.md`)
 
 
 **Note**: This will continue to be a **living set of resources** with updates and new content added regularly. 
