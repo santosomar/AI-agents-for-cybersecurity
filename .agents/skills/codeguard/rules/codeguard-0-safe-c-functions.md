@@ -1,10 +1,12 @@
 ---
-applyTo: **/*
-title: Safe C Functions and Memory and String Safety Guidelines
-version: 1.0.0
+description: Safe C Functions and Memory and String Safety Guidelines
+languages:
+- c
+- cpp
+alwaysApply: false
 ---
 
-rule_id: codeguard-1-safe-c-functions
+rule_id: codeguard-0-safe-c-functions
 
 # Prioritize Safe Memory and String Functions in C/C++
 

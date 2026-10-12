@@ -1,9 +1,9 @@
 ---
 trigger: glob
-globs: **/*.bash,**/*.dockerfile,**/*.js,**/*.jsx,**/*.mjs,**/*.ps1,**/*.sh,**/*.wsdl,**/*.xml,**/*.xsd,**/*.xslt,**/*.yaml,**/*.yml,Dockerfile*,docker-compose*
-title: DevOps, CI/CD, and containers (pipeline hardening, artifacts, Docker/K8s images,
-  virtual patching, toolchain)
-version: 1.0.0
+globs: **/*.bash,**/*.dockerfile,**/*.js,**/*.jsx,**/*.mjs,**/*.ps1,**/*.sh,**/*.yaml,**/*.yml,Dockerfile*,docker-compose*
+title: DevOps, CI/CD, and containers (pipeline hardening, artifacts, Docker/K8s images, virtual patching, toolchain)
+version: 1.5.0
+tags: [infrastructure]
 ---
 
 rule_id: codeguard-0-devops-ci-cd-containers

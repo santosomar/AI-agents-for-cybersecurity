@@ -1,9 +1,9 @@
 ---
 trigger: glob
-globs: **/*.js,**/*.jsx,**/*.m,**/*.mjs,**/*.yaml,**/*.yml
-title: Privacy & data protection (minimization, classification, encryption, rights,
-  transparency)
-version: 1.0.0
+globs: **/*.js,**/*.jsx,**/*.mjs
+title: Privacy & data protection (minimization, classification, encryption, rights, transparency)
+version: 1.5.0
+tags: [privacy]
 ---
 
 rule_id: codeguard-0-privacy-data-protection

@@ -124,13 +124,16 @@ The `splunk-mcp/` directory contains only a README with conceptual examples — 
 - `.github/workflows/greetings.yml` — Greets new contributors
 - `.github/workflows/assign_pr.yml` — Auto-assigns PRs
 - `.github/dependabot.yml` — Dependency update automation
-- `.github/instructions/` — Markdown mirrors of CodeGuard security rules
+- `.github/instructions/` — GitHub Copilot copy of the CodeGuard security rules
+- `.github/agents/codeguard-reviewer.agent.md` — Copilot CodeGuard reviewer agent (SARIF output)
 
 ## Cursor rules
 
-22 CodeGuard `.mdc` rules in `.cursor/rules/` covering: crypto algorithms, digital certificates, hardcoded credentials, safe C functions, API security, auth/MFA, authorization, input validation, cloud/K8s, data storage, DevOps CI/CD, file uploads, frameworks, IaC, logging, mobile, privacy, session management, supply chain, XML/serialization, and more.
+[Project CodeGuard](https://github.com/cosai-oasis/project-codeguard) v1.5.0 — 23 `.mdc` rules in `.cursor/rules/`. `codeguard-1-*` rules are always applied (crypto algorithms, digital certificates, hardcoded credentials); `codeguard-0-*` rules apply by context: safe C functions, MCP security, API security, auth/MFA, authorization, input validation, cloud/K8s, data storage, DevOps CI/CD, file uploads, frameworks, IaC, logging, mobile, privacy, session management, supply chain, XML/serialization, and more.
 
-Identical rules also exist in `.windsurf/rules/` (Windsurf IDE copy).
+`.cursor/agents/codeguard-reviewer.md` is a CodeGuard reviewer subagent that emits SARIF findings on explicit request.
+
+Identical rules also exist in `.windsurf/rules/` (Windsurf) and `.github/instructions/` (Copilot). Claude Code and Codex get the same rules packaged as a `codeguard` skill: `.claude/skills/codeguard/` + `.claude/agents/codeguard-reviewer.md` (Claude Code) and `.agents/skills/codeguard/` + `.codex/agents/codeguard-reviewer.toml` (Codex). To update, replace them with the per-agent ZIPs from the [upstream releases](https://github.com/cosai-oasis/project-codeguard/releases).
 
 ## Gotchas
 

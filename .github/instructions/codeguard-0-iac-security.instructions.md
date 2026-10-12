@@ -1,7 +1,8 @@
 ---
-applyTo: **/*.bash,**/*.c,**/*.d,**/*.h,**/*.js,**/*.jsx,**/*.mjs,**/*.ps1,**/*.rb,**/*.sh,**/*.yaml,**/*.yml
-title: Infrastructure as Code Security
-version: 1.0.0
+applyTo: '**/*.bash,**/*.hcl,**/*.ps1,**/*.sh,**/*.tf,**/*.tf.json,**/*.tfvars,**/*.yaml,**/*.yml'
+description: Infrastructure as Code Security
+version: 1.5.0
+tags: [infrastructure]
 ---
 
 rule_id: codeguard-0-iac-security

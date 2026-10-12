@@ -1,8 +1,8 @@
 ---
-applyTo: **/*.c,**/*.h,**/*.js,**/*.jsx,**/*.mjs,**/*.yaml,**/*.yml
-title: Logging & monitoring (structured telemetry, redaction, integrity, detection
-  & alerting)
-version: 1.0.0
+applyTo: '**/*.c,**/*.h,**/*.js,**/*.jsx,**/*.mjs'
+description: Logging & monitoring (structured telemetry, redaction, integrity, detection & alerting)
+version: 1.5.0
+tags: [privacy]
 ---
 
 rule_id: codeguard-0-logging

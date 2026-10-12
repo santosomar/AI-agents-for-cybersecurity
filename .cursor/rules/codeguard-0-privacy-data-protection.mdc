@@ -1,8 +1,8 @@
 ---
-description: Privacy & data protection (minimization, classification, encryption,
-  rights, transparency)
-globs: **/*.js,**/*.jsx,**/*.m,**/*.mjs,**/*.yaml,**/*.yml
-version: 1.0.0
+description: Privacy & data protection (minimization, classification, encryption, rights, transparency)
+globs: **/*.js,**/*.jsx,**/*.mjs
+version: 1.5.0
+tags: [privacy]
 ---
 
 rule_id: codeguard-0-privacy-data-protection

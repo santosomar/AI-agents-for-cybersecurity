@@ -1,7 +1,8 @@
 ---
 description: Additional Cryptography guidance
-globs: **/*.c,**/*.go,**/*.h,**/*.java,**/*.js,**/*.jsx,**/*.kt,**/*.kts,**/*.m,**/*.mjs,**/*.php,**/*.py,**/*.pyi,**/*.pyx,**/*.rb,**/*.swift,**/*.ts,**/*.tsx,**/*.wsdl,**/*.xml,**/*.xsd,**/*.xslt,**/*.yaml,**/*.yml
-version: 1.0.0
+globs: **/*.c,**/*.go,**/*.h,**/*.java,**/*.js,**/*.jsx,**/*.kt,**/*.kts,**/*.mjs,**/*.php,**/*.py,**/*.pyi,**/*.pyx,**/*.rb,**/*.swift,**/*.ts,**/*.tsx
+version: 1.5.0
+tags: [data-security, secrets]
 ---
 
 rule_id: codeguard-0-additional-cryptography

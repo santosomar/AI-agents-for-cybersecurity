@@ -1,7 +1,8 @@
 ---
 trigger: always_on
 title: No Hardcoded Credentials
-version: 1.0.0
+version: 1.5.0
+tags: [secrets]
 ---
 
 rule_id: codeguard-1-hardcoded-credentials
