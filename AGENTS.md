@@ -2,7 +2,7 @@
 
 ## Project overview
 
-Educational Python codebase for [O'Reilly courses](https://www.oreilly.com/search/?q=omar%20santos&rows=100) by Omar Santos. Standalone scripts (no interconnected services) demonstrating AI agents for cybersecurity across five progressive parts. See `README.md` for the full learning path.
+Educational Python codebase for [O'Reilly courses](https://www.oreilly.com/search/?q=omar%20santos&rows=100) by Omar Santos. Standalone scripts (no interconnected services) demonstrating AI agents for cybersecurity across seven progressive parts. See `README.md` for the full learning path.
 
 ## Directory structure
 
@@ -13,7 +13,14 @@ part3_prompt_chaining/       LCEL chains: sequential, parallel, branching, threa
 part4_rag_examples/          RAG with Chroma, text splitting, embedding comparison, web scraping
 part5_agents_and_mcp_servers/ Agents, LangGraph, agentic RAG, CrewAI, MCP servers
 part6_agentic_frameworks/    Docs only: OpenClaw, Hermes, Agent Zero, OpenHands, Paperclip, Buzz (one folder each)
+part7_tokenomics/            Agent cost: caching, routing, compaction, tool overhead, batch, budgets, cost per outcome
 ```
+
+### Part 7 notes
+
+- All scripts share `part7_tokenomics/pricing.yaml` (Oct 2026 price snapshot) via `token_math.py`. Update prices in the YAML, not in scripts.
+- Scripts 01, 02, 04, 05, 06, 08 run offline. `03_live_cache_check.py`, `07_token_budget_guard.py --live`, and `08_batch_triage.py --submit` need `OPENAI_API_KEY`.
+- Generated charts and batch JSONL go to `part7_tokenomics/output/` (gitignored). Write-ups live in `part7_tokenomics/docs/`.
 
 ### Part 5 sub-directories
 

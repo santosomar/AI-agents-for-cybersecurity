@@ -1,0 +1,107 @@
+# Price sheet used by every example in part7_tokenomics.
+#
+# All prices are USD per 1,000,000 tokens, Standard tier, short context.
+# Snapshot taken October 2026 from the official provider pages listed under
+# `sources`. Prices change often: edit this file, not the scripts.
+#
+# Field meanings:
+#   input        - uncached input tokens
+#   cached_input - input tokens served from the prompt cache (a "cache read")
+#   cache_write  - input tokens written to the cache (OpenAI GPT-5.6+, Anthropic 5-minute TTL)
+#   cache_write_1h - Anthropic 1-hour TTL cache write
+#   output       - output tokens, including reasoning/thinking tokens
+
+snapshot_date: "2026-10-11"
+
+models:
+  # ---------------- OpenAI (developers.openai.com/api/docs/pricing) ----------------
+  gpt-6-astra:
+    provider: openai
+    input: 10.00
+    cached_input: 1.00
+    cache_write: 12.50
+    output: 50.00
+  gpt-6.1-sol:
+    provider: openai
+    input: 2.00
+    cached_input: 0.10
+    cache_write: 2.50
+    output: 10.00
+  gpt-6-sol:
+    provider: openai
+    input: 2.00
+    cached_input: 0.20
+    cache_write: 2.50
+    output: 10.00
+  gpt-6-luna:
+    provider: openai
+    input: 0.10
+    cached_input: 0.01
+    cache_write: 0.125
+    output: 0.50
+
+  # ---------------- Anthropic (Anthropic list prices, 2026-08-31) ----------------
+  claude-fable-5.1:
+    provider: anthropic
+    input: 10.00
+    cached_input: 0.25
+    cache_write: 12.50
+    cache_write_1h: 20.00
+    output: 50.00
+  claude-opus-5:
+    provider: anthropic
+    input: 5.00
+    cached_input: 0.50
+    cache_write: 6.25
+    cache_write_1h: 10.00
+    output: 25.00
+  claude-sonnet-5:
+    provider: anthropic
+    input: 2.00
+    cached_input: 0.20
+    cache_write: 2.50
+    cache_write_1h: 4.00
+    output: 10.00
+  claude-haiku-4.5:
+    provider: anthropic
+    input: 1.00
+    cached_input: 0.10
+    cache_write: 1.25
+    cache_write_1h: 2.00
+    output: 5.00
+
+  # ---------------- Google (ai.google.dev/gemini-api/docs/pricing) ----------------
+  # Gemini Flash prices shown are valid through 2026-12-31 and double on 2027-01-01.
+  # Implicit-cache writes are billed at the normal input rate (no write premium).
+  gemini-3.8-flash:
+    provider: google
+    input: 0.75
+    cached_input: 0.075
+    cache_write: 0.75
+    output: 3.75
+  gemini-3.1-pro-preview:
+    provider: google
+    input: 2.00
+    cached_input: 0.20
+    cache_write: 2.00
+    output: 12.00
+
+# Multipliers applied to every line of a request (cache rates included).
+tiers:
+  standard: 1.0
+  batch: 0.5   # OpenAI, Anthropic, and Google Batch APIs: up to 24h turnaround
+  flex: 0.5    # OpenAI Flex / Gemini Flex: synchronous but best-effort
+  priority: 2.0  # OpenAI Fast mode / Gemini Priority (Gemini quotes 1.75x-2x)
+
+# OpenAI "long context" pricing applies to the whole request once input > 272K tokens.
+long_context:
+  openai_threshold_tokens: 272000
+  input_multiplier: 2.0
+  output_multiplier: 1.5
+
+sources:
+  - https://developers.openai.com/api/docs/pricing
+  - https://developers.openai.com/api/docs/guides/prompt-caching
+  - https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching
+  - https://ai.google.dev/gemini-api/docs/pricing
+  - https://ai.google.dev/gemini-api/docs/optimization
