@@ -1,9 +1,9 @@
 ---
 trigger: glob
-globs: **/*.c,**/*.go,**/*.h,**/*.htm,**/*.html,**/*.java,**/*.js,**/*.jsx,**/*.mjs,**/*.php,**/*.py,**/*.pyi,**/*.pyx,**/*.rb,**/*.ts,**/*.tsx
-title: Session management and secure cookies (rotation, fixation, timeouts, theft
-  detection)
-version: 1.0.0
+globs: **/*.go,**/*.java,**/*.js,**/*.jsx,**/*.mjs,**/*.php,**/*.py,**/*.pyi,**/*.pyx,**/*.rb,**/*.ts,**/*.tsx
+title: Session management and secure cookies (rotation, fixation, timeouts, theft detection)
+version: 1.5.0
+tags: [authentication, web]
 ---
 
 rule_id: codeguard-0-session-management-and-cookies

@@ -1,8 +1,7 @@
 ---
-applyTo: **/*.c,**/*.go,**/*.h,**/*.java,**/*.js,**/*.jsx,**/*.mjs,**/*.php,**/*.py,**/*.pyi,**/*.pyx,**/*.rb,**/*.ts,**/*.tsx,**/*.yaml,**/*.yml
-title: Authorization and access control (RBAC/ABAC/ReBAC, IDOR, mass assignment, transaction
-  auth)
-version: 1.0.0
+applyTo: '**/*.c,**/*.go,**/*.h,**/*.java,**/*.js,**/*.jsx,**/*.mjs,**/*.php,**/*.py,**/*.pyi,**/*.pyx,**/*.rb,**/*.ts,**/*.tsx,**/*.yaml,**/*.yml'
+description: Authorization and access control (RBAC/ABAC/ReBAC, IDOR, mass assignment, transaction auth)
+version: 1.5.0
 ---
 
 rule_id: codeguard-0-authorization-access-control

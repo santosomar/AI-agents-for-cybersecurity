@@ -1,8 +1,8 @@
 ---
-description: Kubernetes hardening (RBAC, admission policies, network policies, secrets,
-  supply chain)
-globs: **/*.js,**/*.jsx,**/*.mjs,**/*.yaml,**/*.yml
-version: 1.0.0
+description: Kubernetes hardening (RBAC, admission policies, network policies, secrets, supply chain)
+globs: **/*.yaml,**/*.yml
+version: 1.5.0
+tags: [infrastructure]
 ---
 
 rule_id: codeguard-0-cloud-orchestration-kubernetes

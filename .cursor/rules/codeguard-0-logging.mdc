@@ -1,8 +1,8 @@
 ---
-description: Logging & monitoring (structured telemetry, redaction, integrity, detection
-  & alerting)
-globs: **/*.c,**/*.h,**/*.js,**/*.jsx,**/*.mjs,**/*.yaml,**/*.yml
-version: 1.0.0
+description: Logging & monitoring (structured telemetry, redaction, integrity, detection & alerting)
+globs: **/*.c,**/*.h,**/*.js,**/*.jsx,**/*.mjs
+version: 1.5.0
+tags: [privacy]
 ---
 
 rule_id: codeguard-0-logging

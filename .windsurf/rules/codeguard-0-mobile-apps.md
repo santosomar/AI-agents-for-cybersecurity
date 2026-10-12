@@ -1,9 +1,8 @@
 ---
 trigger: glob
-globs: **/*.java,**/*.js,**/*.jsx,**/*.kt,**/*.kts,**/*.m,**/*.mjs,**/*.pl,**/*.pm,**/*.swift,**/*.wsdl,**/*.xml,**/*.xsd,**/*.xslt
-title: 'Mobile app security (iOS/Android): storage, transport, code integrity, biometrics,
-  permissions'
-version: 1.0.0
+globs: **/*.java,**/*.js,**/*.jsx,**/*.kt,**/*.kts,**/*.mjs,**/*.swift,**/*.wsdl,**/*.xml,**/*.xsd,**/*.xslt
+title: 'Mobile app security (iOS/Android): storage, transport, code integrity, biometrics, permissions'
+version: 1.5.0
 ---
 
 rule_id: codeguard-0-mobile-apps
