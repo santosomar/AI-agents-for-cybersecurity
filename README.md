@@ -1,6 +1,32 @@
 # AI Agents for Cybersecurity
 
-This repository contains resources and materials for [several courses](https://www.oreilly.com/search/?q=omar%20santos&rows=100) by [Omar Santos](https://www.linkedin.com/in/santosomar/).
+Hands-on code, labs, and reference material by [Omar Santos](https://www.linkedin.com/in/santosomar/) for building, securing, and operating AI agents in cybersecurity.
+
+## Where this repository is used
+
+This is the companion repository for several of Omar's training programs and publications:
+
+- **Pearson live trainings**: instructor-led sessions on AI agents, agentic AI security, RAG, and MCP
+- **Video courses**: on-demand courses from Pearson and on the [O'Reilly learning platform](https://www.oreilly.com/search/?q=omar%20santos&rows=100)
+- **O'Reilly live events**: live courses and workshops on the O'Reilly platform
+- **Books**: code examples and labs referenced in several of Omar's books on AI and cybersecurity
+
+If you came here from a training or a book, each part below lines up with a module or chapter. The scripts stand alone, so you can jump straight to the part you need.
+
+## Quick start
+
+```bash
+# Python 3.13+ and uv are required
+uv sync --python python3.13
+
+# Smoke-test the environment (runs offline)
+uv run python part1_foundational_topics/huggingface_example.py
+
+# Most other scripts need an OpenAI API key in your environment or a local .env file
+export OPENAI_API_KEY="your-key-here"
+```
+
+Never commit API keys. `.env` is already in `.gitignore`.
 
 # Repository Structure
 The repository is structured with seven comprehensive parts covering the spectrum from basic AI concepts to advanced agentic implementations:
@@ -68,7 +94,7 @@ This repository provides a structured learning journey covering cutting-edge AI 
 - **Model Context Protocol (MCP)**: FastMCP security servers (nmap scanning, CISA KEV, Shodan) and MCP client agents (`mcp_servers_examples/`)
 
 ### Part 6: Agentic Frameworks for Security Teams
-What each framework is, where it helps a security team, where it should stay out, and how to harden it:
+What each framework is, where it helps a security team, where it should stay out, and how to harden it. The overview also includes a side-by-side comparison, a "which one for which job" guide, a map of the 2026 CVEs and supply-chain incidents, and lab exercises:
 - **OpenClaw**: Personal assistant you message in your chat apps (`openclaw/`)
 - **Hermes**: Self-improving agent from Nous Research that saves workflows as skills (`hermes/`)
 - **Agent Zero**: General-purpose agent with its own Kali Linux container (`agent_zero/`)
@@ -88,7 +114,11 @@ Where the money goes in an agent, and the metric that matters (cost per accepted
 - **Cyber Index**: Using a cost-aware defensive security benchmark to choose models (`docs/07_cyber_index.md`)
 
 
-**Note**: This will continue to be a **living set of resources** with updates and new content added regularly. 
+**Note**: This is a **living set of resources**. Content is updated regularly as the tools, models, and threats change, so the code may be newer than the version shown in a recorded video or a printed book. If something in a book or recording no longer matches, the version in this repository is the current one.
+
+## Responsible use
+
+Several examples (nmap scanning, Agent Zero on Kali Linux, attack surface management, ethical hacking agents) can act against real systems. Run them only against systems you own or are explicitly authorized to test, ideally in an isolated lab.
 
 ## Contact Information
 

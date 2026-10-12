@@ -2,7 +2,7 @@
 
 ## Project overview
 
-Educational Python codebase for [O'Reilly courses](https://www.oreilly.com/search/?q=omar%20santos&rows=100) by Omar Santos. Standalone scripts (no interconnected services) demonstrating AI agents for cybersecurity across seven progressive parts. See `README.md` for the full learning path.
+Educational Python codebase by Omar Santos, used in Pearson live trainings, video courses, [O'Reilly courses](https://www.oreilly.com/search/?q=omar%20santos&rows=100), and several of his books. Standalone scripts (no interconnected services) demonstrating AI agents for cybersecurity across seven progressive parts. See `README.md` for the full learning path.
 
 ## Directory structure
 
