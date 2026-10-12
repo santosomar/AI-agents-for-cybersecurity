@@ -137,6 +137,10 @@ Client scripts (`cyber_agent.py`, `ethical_hacking_agent.py`) use `langchain-mcp
 
 The `splunk-mcp/` directory contains only a README with conceptual examples — no runnable server.
 
+## Security policy
+
+`SECURITY.md` is the disclosure policy for defects in this repository: leaked secrets, examples that cross the documented lab boundary, and workflow or lockfile issues. Private reports go to GitHub Security Advisories. Do not answer a report or feature request with payloads, exploit procedures, credential harvesting, persistence, evasion, or lateral movement. Part 8's out-of-scope list still applies.
+
 ## CI / GitHub
 
 - `.github/workflows/greetings.yml` — Greets new contributors
