@@ -1,5 +1,15 @@
 # AI Agents for Cybersecurity
 
+[![License: BSD 3-Clause](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](LICENSE)
+[![Python 3.13+](https://img.shields.io/badge/python-3.13%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
+[![LangChain](https://img.shields.io/badge/LangChain-1.x-1C3C3C?logo=langchain&logoColor=white)](https://www.langchain.com/)
+[![LangGraph](https://img.shields.io/badge/LangGraph-agents-1C3C3C?logo=langchain&logoColor=white)](https://www.langchain.com/langgraph)
+[![MCP](https://img.shields.io/badge/MCP-servers-6E56CF)](https://modelcontextprotocol.io/)
+[![Secured with CodeGuard](https://img.shields.io/badge/secured_with-Project_CodeGuard-2ea44f)](https://github.com/cosai-oasis/project-codeguard)
+[![GitHub stars](https://img.shields.io/github/stars/santosomar/AI-agents-for-cybersecurity?style=social)](https://github.com/santosomar/AI-agents-for-cybersecurity/stargazers)
+[![Last commit](https://img.shields.io/github/last-commit/santosomar/AI-agents-for-cybersecurity)](https://github.com/santosomar/AI-agents-for-cybersecurity/commits/main)
+
 Hands-on code, labs, and reference material by [Omar Santos](https://www.linkedin.com/in/santosomar/) for building, securing, and operating AI agents in cybersecurity.
 
 ## Where this repository is used
@@ -11,7 +21,8 @@ This is the companion repository for several of Omar's training programs and pub
 - **O'Reilly live events**: live courses and workshops on the O'Reilly platform
 - **Books**: code examples and labs referenced in several of Omar's books on AI and cybersecurity
 
-If you came here from a training or a book, each part below lines up with a module or chapter. The scripts stand alone, so you can jump straight to the part you need.
+> [!TIP]
+> **Coming from a Pearson live training, video course, O'Reilly event, or book?** Each part below maps to a module or chapter, and the scripts stand alone, so you can jump straight to the part you need. The code here may be newer than the recording or printed edition; this repository is the current version.
 
 ## Quick start
 
@@ -118,7 +129,8 @@ Where the money goes in an agent, and the metric that matters (cost per accepted
 
 ## Responsible use
 
-Several examples (nmap scanning, Agent Zero on Kali Linux, attack surface management, ethical hacking agents) can act against real systems. Run them only against systems you own or are explicitly authorized to test, ideally in an isolated lab.
+> [!WARNING]
+> Some examples (nmap scanning, Agent Zero on Kali Linux, attack surface management, ethical hacking agents) act against real systems. Run them only against systems you own or are explicitly authorized to test, ideally in an isolated lab.
 
 ## Contact Information
 
